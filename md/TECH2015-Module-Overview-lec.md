@@ -12,9 +12,8 @@ Throughout the module you are encouraged to undertake your own research in to th
 
 ## Staff
 
-**Thom Corah** (Module Leader)  
-Email: <tcorah@dmu.ac.uk>  
-Tel: 0116 207 8088
+**Dr. Francesc Martí** (Module Leader)  
+Email: <francesc.marti@dmu.ac.uk>
 
 ## Learning Outcomes
 

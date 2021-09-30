@@ -4,7 +4,7 @@
 
 # TECH2015: Multimedia II
 
-**Module Leader:** Francesc Martí
+**Module Leader:** Dr. Francesc Martí
 
 **Level:** 5
 
@@ -39,7 +39,7 @@ I hope you enjoy studying this module through your second year and find that you
 
 Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to comments, good and bad, that will help to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please get in touch as soon as possible and we’ll be able to help you more easily.
 
-Thom Corah - Module Leader
+Francesc Martí - Module Leader
 
 [Back to the Contents](#toc)
 
@@ -47,9 +47,8 @@ Thom Corah - Module Leader
 
 ## Module Tutors
 
-**Thom Corah** (Module Leader)  
-Email: <tcorah@dmu.ac.uk>  
-Tel: 0116 207 8088
+**Dr. Francesc Martí** (Module Leader)  
+Email: <francesc.marti@dmu.ac.uk>
 
 [Back to the Contents](#toc)
 
@@ -267,13 +266,13 @@ All practical work uploaded to your public server space
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 5th October </td>
+	<td><b>Date set:</b></td><td> 5th October 2021</td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Monday 21st December </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Tuesday 21st December 2021 </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Tuesday 26th January </td>
+	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Wednesday 26th January 2021</td>
 </tr>
 <tr>
 	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
@@ -474,13 +473,13 @@ The user enters their name and other details on page 1, before being presented w
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 11th January 2021 </td>
+	<td><b>Date set:</b></td><td> 11th January 2022 </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Tuesday 4th May 2021 </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Wednesday 4th May 2022 </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Wednesday 2nd June 2021 </td>
+	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Thursday 2nd June 2022 </td>
 </tr>
 <tr>
 	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />

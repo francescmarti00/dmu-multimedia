@@ -4,11 +4,11 @@
 
 # TECH2015: Multimedia II
 
-**Module Leader:** Thom Corah
+**Module Leader:** Francesc Martí
 
 **Level:** 5
 
-**Session:** 2020/21
+**Session:** 2021/22
 
 <div style="page-break-after: always;"></div>
 

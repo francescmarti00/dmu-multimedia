@@ -269,10 +269,10 @@ All practical work uploaded to your public server space
 	<td><b>Date set:</b></td><td> 5th October 2021</td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Tuesday 21st December 2021 </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Friday 17th December 2021 </td>
 </tr>
 <tr>
-	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Wednesday 26th January 2022</td>
+	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Thursday 20th January 2022</td>
 </tr>
 <tr>
 	<td colspan='2'>If for any reason this is not forthcoming by the due date your module leader will let you know why and when it can be expected. The Associate Professor Student Experience (<a href='mailto:CEMstudentexperience@dmu.ac.uk'>CEMstudentexperience@dmu.ac.uk</a>) should be informed of any issues relating to the return of marked coursework and feedback. <br />
@@ -315,7 +315,7 @@ All practical work uploaded to your public server space
 
 Coursework 1 will see you tackle the specification and design of a media-driven web app. You will produce an interactive prototype which you will use for testing your design. You will also submit documentation that details what your web app is and does, your testing results, and justification for your design choices.
 
-The submission deadline for this work is midday (12pm) on Monday 21st December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
+The submission deadline for this work is midday (12pm) on Friday 17th December. You are encouraged to seek feedback from your lab tutor throughout the first semester on your ongoing work.
 
 This design and specification can form the basis of what you produce for Coursework 2, so this is a great opportunity to get some thorough feedback before moving onto production for the second coursework.
 

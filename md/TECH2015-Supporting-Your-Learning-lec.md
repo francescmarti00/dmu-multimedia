@@ -4,7 +4,7 @@ These are difficult and unprecedented times. You may have keen worries about you
 
 ## Labs
 
-Each week you will have a for this module. These labs will take place in Q3.12 on Tuesdays 15:00 - 17:00.
+Each week you will have a lab for this module. These labs will take place in Q3.12 on Tuesdays 15:00 - 17:00.
 
 ## Lectures
 

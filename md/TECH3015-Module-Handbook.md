@@ -49,9 +49,6 @@ Francesc Martí - Module Leader
 **Dr Francesc Martí** (Module Leader)  
 Email: <francesc.marti@dmu.ac.uk>  
 
-**Dave Everitt** (lectures only)  
-Email: <deveritt@dmu.ac.uk>
-
 [Contents](#tableofcontents)
 
 ## Module Description

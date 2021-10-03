@@ -19,3 +19,5 @@ There are a wide range of helpful resources on the web for learning to create we
 Ask each other, ask your tutors. There are no stupid questions (except the ones you don't ask).
 
 In many ways we are finding our feet with new ways of doing things, so there's every chance we've not communicated something in a way that totally makes sense. Please do ask if that's the case.
+
+In order to ensure close and fluid communication between us, we have created a MS Teams team for the module. You can use the module team to share your thoughts or questions about the module. Obviously, we will also continue using the official DMU email as means of communication. 

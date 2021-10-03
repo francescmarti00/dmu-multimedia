@@ -68,7 +68,7 @@ Each week we will have a ‘face to face’ lab.
 
 ### Practical Lab Sessions
 
-The module labs will be face-to-face. and they will take place in Q3.12 on Tuesdays 15:00 - 17:00.
+The module labs will be face-to-face. and they will take place in Q3.12 on Wednesdays 11:00 - 13:00.
 
 ### Learning Materials
 
@@ -214,13 +214,13 @@ You will be assessed continuously through the module with formal feedback given 
 
 ### Coursework 1
 
-**Date and time due: 12pm (midday) on Monday 21st December 2020**
+**Date and time due: 12pm (midday) on Friday 17th December 2021**
 
 Worth **40%** of the module total, your first coursework will see you produce an individual piece of work. This will involve planning and designing a responsive website, this should include wireframe sketches, final designs including navigation, mood board, content inventory, testing from card-sorting in the labs and interaction design (what changes, how and why). You also need to explain how you will prepare media types and text content for web delivery.
 
 ### Coursework 2
 
-**Date and time due: 12pm (midday) on Tuesday 4th May 2021**
+**Date and time due: 12pm (midday) on Wednesday 4th May 2022**
 
 Worth **60%** of the module total, this coursework will tackle HTML5, CSS3 and JavaScript ES6 to have you produce the website or web application you designed for coursework 1.
 
@@ -265,9 +265,9 @@ This coursework constitutes **40% of the overall module mark**.
 | Key Dates                           |                                             |
 | :---------------------------------- | ------------------------------------------: |
 | This coursework is:                 |                  **Individual / ~~Group~~** |
-| Date set:                           |                        **5th October 2020** |
-| Date and time due:                  | **12pm (midday) Monday 21st December 2020** |
-| Marked coursework and feedback due: |               **Tuesday 26th January 2021** |
+| Date set:                           |                        **5th October 2021** |
+| Date and time due:                  | **12pm (midday) Friday 17th December 2021** |
+| Marked coursework and feedback due: |              **Thursday 20th January 2022** |
 
 ---
 
@@ -525,12 +525,12 @@ The learning outcomes that are assessed by this coursework are:
 
 This coursework constitutes **60% of the overall module mark**.
 
-| Key Dates                                |                                        |
-| :--------------------------------------- | -------------------------------------: |
-| This coursework is:                      |             **Individual / ~~Group~~** |
-| Date set:                                |                  **11th January 2021** |
-| Date and time due:                       | **12pm (midday) Tuesday 4th May 2021** |
-| Your marked coursework and feedback due: |             **Thursday 3rd June 2021** |
+| Key Dates                                |                                          |
+| :--------------------------------------- |   -------------------------------------: |
+| This coursework is:                      |               **Individual / ~~Group~~** |
+| Date set:                                |                    **11th January 2022** |
+| Date and time due:                       | **12pm (midday) Wednesday 4th May 2022** |
+| Your marked coursework and feedback due: |               **Thursday 2nd June 2022** |
 
 ---
 

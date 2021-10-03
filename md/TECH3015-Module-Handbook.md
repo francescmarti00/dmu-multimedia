@@ -9,11 +9,11 @@ https://tech3015.github.io/lectures/module-handbook.md
 
 # TECH3015: Multimedia III
 
-**Module Leader:** Thom Corah (GH6.62)
+**Module Leader:** Dr. Francesc Martí
 
 **Level:** 6
 
-**Session:** 2020/2021
+**Session:** 2021/22
 
 <div style="page-break-after: always;"></div>
 

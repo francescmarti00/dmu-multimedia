@@ -250,7 +250,7 @@ To reiterate:
 | Module Name:             |            **Multimedia III** |
 | Module Code:             |                  **TECH3015** |
 | Title of Assessment:     |              **Coursework 1** |
-| This coursework item is: | **Summative** |
+| This coursework item is: |                 **Summative** |
 
 ---
 
@@ -264,7 +264,7 @@ This coursework constitutes **40% of the overall module mark**.
 
 | Key Dates                           |                                             |
 | :---------------------------------- | ------------------------------------------: |
-| This coursework is:                 |                  **Individual** |
+| This coursework is:                 |                              **Individual** |
 | Date set:                           |                        **5th October 2021** |
 | Date and time due:                  | **12pm (midday) Friday 17th December 2021** |
 | Marked coursework and feedback due: |              **Thursday 20th January 2022** |
@@ -512,7 +512,7 @@ The user enters their name and other details on page 1, before being presented w
 | Module Name:             |            **Multimedia III** |
 | Module Code:             |                  **TECH3015** |
 | Title of Assessment:     |              **Coursework 2** |
-| This coursework item is: | **Summative / ~~Formative~~** |
+| This coursework item is: |                 **Summative** |
 
 ---
 
@@ -527,7 +527,7 @@ This coursework constitutes **60% of the overall module mark**.
 
 | Key Dates                                |                                          |
 | :--------------------------------------- |   -------------------------------------: |
-| This coursework is:                      |               **Individual** |
+| This coursework is:                      |                           **Individual** |
 | Date set:                                |                    **11th January 2022** |
 | Date and time due:                       | **12pm (midday) Wednesday 4th May 2022** |
 | Your marked coursework and feedback due: |               **Thursday 2nd June 2022** |

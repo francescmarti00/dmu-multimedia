@@ -68,27 +68,22 @@ Throughout the module you are encouraged to undertake your own research into the
 
 ## How the module works
 
-These are difficult and unprecedented times. You may have keen worries about your own health, or those you care for, or you may not. We wanted this module to be one which you can tackle in the way in which you feel most safe and comfortable.
+There are no lectures for this module.
+Each week we will have a ‘face to face’ lab. These labs will take place in Q3.12 on Tuesdays 15:00 - 17:00.
 
 ### Practical Lab Sessions
 
-In previous years, you would have a one hour lecture and a two hour lab session every week. However, we've changed this slightly.
-
-The whole cohort have a single practical lab session together. This will alternate each week between face-to-face and online. If you would rather not attend any of the face-to-face sessions, that's fine. I'll have an online classroom open so that you can still pop in and ask questions, share code and so on.
-
-The lab in week 1 will be face-to-face, and then alternate from there. I'll email you at the end of each week with a reminder of what we're doing the following Monday.
+The module labs will be face-to-face. and they will take place in Q3.12 on Tuesdays 15:00 - 17:00.
 
 ### Learning Materials
 
-In past years, you'd walk into your lab session and we'd start off with your tutor giving a live demo at the front. You'd then work through a task that sees you learning whatever we're doing at that point. Ideally you'd finish before the end of the lab.
+This year, you'd walk into your lab session and we'd start off with your tutor giving a live demo at the front. You'd then work through a task that sees you learning whatever we're doing at that point. Ideally you'd finish before the end of the lab.
 
-This year, things will be slightly different. There will be no live demo at the front of the room. Instead, we are producing a series of short explainers for each lab session. Each of these will discuss a particular 'thing', such as a HTML refresher for example, with both a video and a text version. There will then be a guided activity that will see you using those techniques. All of these will be available via Blackboard from the beginning of the week BEFORE the lab.
-
-This means you can start on this at home really early. You can start on week 2 work as soon as you've finished your week 1 lab for example. You don't have to, but you can if you want, if that's what suits you. You might find you get to week 2 and it all made total sense and you don't need to go to the physical lab session. If that's the case, just check in with a tutor via email or pop online for a quick review.
+We have also produced a series of short explainers for each lab session. Each of these will discuss a particular 'thing', such as a HTML refresher for example, with both a video and a text version. All of these will be available via Blackboard from the beginning of the week BEFORE the lab.
 
 ### Lectures
 
-As with all modules, lectures will be asynchronous through the whole module - this means they will be pre-recorded and made available the week before that for which they are intended. Please do watch these as they will communicate many of the practical techniques and technologies that you'll need to make use of for the lab work, and indeed, for your coursework.
+As already pointed out, there are no lectures for this module.
 
 [Contents](#tableofcontents)
 

@@ -69,7 +69,7 @@ Throughout the module you are encouraged to undertake your own research into the
 ## How the module works
 
 There are no lectures for this module.
-Each week we will have a ‘face to face’ lab. These labs will take place in Q3.12 on Tuesdays 15:00 - 17:00.
+Each week we will have a ‘face to face’ lab.
 
 ### Practical Lab Sessions
 

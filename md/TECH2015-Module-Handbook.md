@@ -241,7 +241,7 @@ All practical work uploaded to your public server space
 	<td><b>Title of Assessment:</b></td><td> Coursework 1 </td>
 </tr>
 <tr>
-	<td><b>This coursework item is:</b></td><td> Summative / <del>Formative</del> </td>
+	<td><b>This coursework item is:</b></td><td> Summative </td>
 </tr>
 <tr>
 	<td colspan='2'><b>The learning outcomes that are assessed by this coursework are</b></td>
@@ -258,7 +258,7 @@ All practical work uploaded to your public server space
 	<td colspan='2'><b>This coursework constitutes 40% of the overall module mark.</b></td>
 </tr>
 <tr>
-	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
+	<td><b>This coursework is:</b></td><td> Individual </td>
 </tr>
 <tr>
 	<td><b>Date set:</b></td><td> 5th October 2021</td>
@@ -446,7 +446,7 @@ The user enters their name and other details on page 1, before being presented w
 	<td><b>Title of Assessment:</b></td><td> Coursework 2 </td>
 </tr>
 <tr>
-	<td><b>This coursework item is:</b></td><td> Summative / <del>Formative</del> </td>
+	<td><b>This coursework item is:</b></td><td> Summative </td>
 </tr>
 <tr>
 	<td colspan='2'><b>The learning outcomes that are assesses by this coursework are</b></td>
@@ -465,7 +465,7 @@ The user enters their name and other details on page 1, before being presented w
 	<td colspan='2'><b>This coursework constitutes 60% of the overall module mark.</b></td>
 </tr>
 <tr>
-	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
+	<td><b>This coursework is:</b></td><td> Individual </td>
 </tr>
 <tr>
 	<td><b>Date set:</b></td><td> 11th January 2022 </td>

@@ -20,7 +20,6 @@
 [Module Tutors](#tutors)  
 [Module Description](#description)  
 [How the Module Works](#how)
-
 [Learning Outcomes](#outcomes)  
 [Key Topics](#topics)  
 [Module Reading](#reading)  

@@ -40,16 +40,14 @@ I hope you enjoy studying this module through your final year and find that you 
 
 Throughout the module please get in touch if you have anything to say on the content or the way we teach it. We’re very open to both positive and negative feedback — it helps to shape and improve the module. Similarly, if you’re having problems keeping up or don’t understand a particular concept, please let us know as soon as possible so we can help you as soon as possible.
 
-Thom Corah - Module Leader
+Francesc Martí - Module Leader
 
 [Contents](#tableofcontents)
 
 ## Module Tutors
 
-**Thom Corah** (Module Leader)  
-Location: GH6.62  
-Email: <tcorah@dmu.ac.uk>  
-Tel: 0116 207 8088
+**Dr Francesc Martí** (Module Leader)  
+Email: <francesc.marti@dmu.ac.uk>  
 
 **Dave Everitt** (lectures only)  
 Email: <deveritt@dmu.ac.uk>

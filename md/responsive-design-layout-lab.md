@@ -33,7 +33,7 @@ Just make sure you've got the boilerplate html in there.
 
 Add meta tags to the head section to tell the device to scale the site to the viewport properly.
 
-This page on the MDN has some useful info about setting the viewport: <https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag>
+This page on the MDN has some useful info about setting the viewport: <https://developer.mozilla.org/en-US/docs/Web/CSS/Viewport_concepts>
 
 ## Add the content
 

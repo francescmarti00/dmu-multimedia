@@ -4,7 +4,7 @@ This worksheet will guide you through the creation of a responsive mobile-first 
 
 The website will be photography gallery, containing a responsive grid of images.
 
-You can see a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/animalImages.html>
+You can see a completed example here: <https://francescmarti00.github.io/dmu-multimedia/resources/animalImages.html>
 
 Resize your browser to see how the grid of images adapts to different screen sizes.
 
@@ -22,7 +22,7 @@ You can do everything in Atom now.
 
 ### 4. Get the images
 
-You'll find them at <https://thomcorah.github.io/dmu-multimedia/resources/animalImages.zip>  
+You'll find them at <https://francescmarti00.github.io/dmu-multimedia/resources/animalImages.zip>  
 They've already been cropped to all be the same size. Put them in your images folder. You might want to rename them to make writing those urls easier!
 
 ### 4. Create your html file

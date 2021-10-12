@@ -6,9 +6,9 @@ Your task is to take a mobile optimised site and use media queries to make bette
 
 Here's what it looks like on mobile.
 
-![Mobile View](https://thomcorah.github.io/dmu-multimedia/resources/img/callSiteSmall.png)
+![Mobile View](https://francescmarti00.github.io/dmu-multimedia/resources/img/callSiteSmall.png)
 
-You can see the mobile version in your browser here: <https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveSite/mobileOnly/>
+You can see the mobile version in your browser here: <https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveSite/mobileOnly/>
 
 Make sure to view it at mobile size.
 
@@ -20,7 +20,7 @@ Your task is to use media queries to adapt the code work at tablet sized display
 
 There are just a few changes that are necessary for tablets, mostly concerning the menu.
 
-![Tablet View](https://thomcorah.github.io/dmu-multimedia/resources/img/callaSiteMedium.png)
+![Tablet View](https://francescmarti00.github.io/dmu-multimedia/resources/img/callaSiteMedium.png)
 
 ### 1. Add a media query
 
@@ -69,7 +69,7 @@ This can be done by inserting a marker at the end of the section, and applying t
 
 The changes at desktop size are more wide ranging, particularly in terms of layout.
 
-![Desktop View](https://thomcorah.github.io/dmu-multimedia/resources/img/callaSiteLarge.png)
+![Desktop View](https://francescmarti00.github.io/dmu-multimedia/resources/img/callaSiteLarge.png)
 
 ### 1. Change the Header
 
@@ -110,6 +110,6 @@ The `<article>` element that contains all the contents needs its width restricti
 
 There may be a few niggles, or things that you'd like to do differently, so if you've got this far, feel free to have a play with it.
 
-If you'd like to see a fully completed version, head to <https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveSite/responsive/>
+If you'd like to see a fully completed version, head to <https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveSite/responsive/>
 
 There's also a comprehensive reference guide to media queries on the CSS Tricks website here: <https://css-tricks.com/a-complete-guide-to-css-media-queries/>

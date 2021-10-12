@@ -44,7 +44,7 @@ And then scale content
 
 What does that look like?
 
-<https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/noviewport.html>
+<https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveExamples/noviewport.html>
 
 ## Viewport Dimension
 
@@ -76,7 +76,7 @@ Both together?
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 ```
 
-<https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/withviewport.html>
+<https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveExamples/withviewport.html>
 
 ---
 
@@ -88,7 +88,7 @@ We might accidentally make something too wide!
 
 What does that look like?
 
-<https://thomcorah.github.io/dmu-multimedia/resources/ResponsiveExamples/toowide.html>
+<https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveExamples/toowide.html>
 
 ## Relative Units
 

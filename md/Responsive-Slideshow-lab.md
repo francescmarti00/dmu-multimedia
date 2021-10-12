@@ -8,11 +8,11 @@ The aim of this lab is to create an image slideshow. It should have several char
 
 Two resources are provided, a zip file of images, and some starting HTML and JavaScript.
 
-You can find the images at <https://thomcorah.github.io/dmu-multimedia/resources/SlideshowExample/badgers.zip>
+You can find the images at <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/badgers.zip>
 
 The start code is included at the bottom of this lab sheet. Copy and paste it into a new document.
 
-You can see a completed example of the slideshow at <https://thomcorah.github.io/dmu-multimedia/resources/SlideshowExample/>
+You can see a completed example of the slideshow at <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/>
 
 ## Setup your site.
 

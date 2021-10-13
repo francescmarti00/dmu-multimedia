@@ -10,7 +10,7 @@ Here's what it looks like on mobile.
 
 You can see the mobile version in your browser here: <https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveSite/mobileOnly/>
 
-Make sure to view it at mobile size. (You can use http://appsimulator.net/webapp/?frame=apple_iphone_6_v or http://whatismyscreenresolution.net/multi-screen-test, for example).
+Make sure to view it at mobile size. (You can use <http://appsimulator.net/webapp/?frame=apple_iphone_6_v/> or <http://whatismyscreenresolution.net/multi-screen-test/>, for example).
 
 You can download the code here: <https://drive.google.com/file/d/1YWpQBOvnwmAZxngvEZMHJSn5aX3Yc0VE/view?usp=sharing>
 

@@ -314,7 +314,7 @@ However, there are a number of points that your plans should satisfy:
 - uses animation in the user interface
 - is accessible
 - is mobile-first, then adapts to any screen size
-- is valid HTML
+- is valid HTML (i.e. the site renders well across all browsers)
 - contains multiple pages/sections
 
 If you’re stuck for an idea, you’ll find some [suggestions at the end of this brief](#examplewebsiteideas), so feel free to use one of them.

@@ -118,13 +118,13 @@ From here, you could:
 
       nextSlide = () => {
         currentSlide++;
-        if (currentSlide >= slides.length) currentSlide = 0;
+        // [TODO: configure the loop]
         showSlide();
       };
 
       prevSlide = () => {
         currentSlide--;
-        if (currentSlide < 0) currentSlide = slides.length - 1;
+        // [TODO: configure the loop]
         showSlide();
       };
 

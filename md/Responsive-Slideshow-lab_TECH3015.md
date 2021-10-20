@@ -18,6 +18,22 @@ You can see a completed example of the slideshow at <https://francescmarti00.git
 
 Create a new folder for the slideshow. Create a new HTML file in there and paste the starter code in. Create an 'img' folder and put the unzipped images in there.
 
+## Configure the 'loop'.
+
+As you can see, the slideshow script is incomplete. You have to find a way the script display the images in loop mode
+
+      nextSlide = () => {
+        currentSlide++;
+        // [TODO: configure the loop]
+        showSlide();
+      };
+
+      prevSlide = () => {
+        currentSlide--;
+        // [TODO: configure the loop]
+        showSlide();
+      };
+
 ## Some Styling to Start.
 
 There is no CSS in the starting code at all. What this means is that you've got a `<div>` with a series of images, each displaying at their native size.

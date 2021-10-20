@@ -106,8 +106,9 @@ You have a slideshow that serves image files based on screen size, crops them to
 
 From here, you could:
 
-- carry on styling your slideshow
+- display the images in a random order
 - add a timer to automatically transition the slides every two seconds
+- carry on styling your slideshow
 - make the 'hit' area of those buttons larger on devices that have 'coarse' pointer ability
 - try adapting the slideshow to include a video or two - the cropping works with them too
 

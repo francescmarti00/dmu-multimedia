@@ -12,6 +12,8 @@ You can find the images at <https://francescmarti00.github.io/dmu-multimedia/res
 
 The start code is included at the bottom of this lab sheet. Copy and paste it into a new document.
 
+You can see the start example of the slideshow at <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/index-start_TECH3015.html>
+
 You can see a completed example of the slideshow at <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/>
 
 ## Setup your site.

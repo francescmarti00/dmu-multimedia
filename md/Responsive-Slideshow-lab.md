@@ -12,11 +12,29 @@ You can find the images at <https://francescmarti00.github.io/dmu-multimedia/res
 
 The start code is included at the bottom of this lab sheet. Copy and paste it into a new document.
 
+You can see the start example of the slideshow at <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/index-start_TECH3015.html>
+
 You can see a completed example of the slideshow at <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/>
 
 ## Setup your site.
 
 Create a new folder for the slideshow. Create a new HTML file in there and paste the starter code in. Create an 'img' folder and put the unzipped images in there.
+
+## Configure the 'loop'.
+
+As you can see, the slideshow script is incomplete. You have to find a way the script display the images in loop mode
+
+      nextSlide = () => {
+        currentSlide++;
+        // [TODO: configure the loop]
+        showSlide();
+      };
+
+      prevSlide = () => {
+        currentSlide--;
+        // [TODO: configure the loop]
+        showSlide();
+      };
 
 ## Some Styling to Start.
 
@@ -88,8 +106,9 @@ You have a slideshow that serves image files based on screen size, crops them to
 
 From here, you could:
 
-- carry on styling your slideshow
+- display the images in a random order
 - add a timer to automatically transition the slides every two seconds
+- carry on styling your slideshow
 - make the 'hit' area of those buttons larger on devices that have 'coarse' pointer ability
 - try adapting the slideshow to include a video or two - the cropping works with them too
 
@@ -118,13 +137,13 @@ From here, you could:
 
       nextSlide = () => {
         currentSlide++;
-        if (currentSlide >= slides.length) currentSlide = 0;
+        // [TODO: configure the loop]
         showSlide();
       };
 
       prevSlide = () => {
         currentSlide--;
-        if (currentSlide < 0) currentSlide = slides.length - 1;
+        // [TODO: configure the loop]
         showSlide();
       };
 
@@ -147,4 +166,3 @@ From here, you could:
     </script>
   </body>
 </html>
-```

@@ -1,4 +1,4 @@
-# Responsive Slideshow
+# Responsive Slideshow_
 
 The aim of this lab is to create an image slideshow. It should have several characteristics:
 

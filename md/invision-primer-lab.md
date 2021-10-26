@@ -44,7 +44,7 @@ If it asks for your email address during download or installation, be sure to en
 
 ### 3. Resources
 
-You'll find the screen images as well as the PSD they all came from here -> <https://thomcorah.github.io/dmu-multimedia/resources/ReminderAppScreenDesigns.zip>
+You'll find the screen images as well as the PSD they all came from here -> <https://francescmarti00.github.io/dmu-multimedia/resources/ReminderAppScreenDesigns.zip>
 
 Right-click and save to your computer, then unzip.
 

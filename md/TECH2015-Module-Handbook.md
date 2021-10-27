@@ -421,7 +421,7 @@ Here are a few examples of what you could do. You can use one of these ideas as 
 
 Multiple sections combine into a single long vertical-scrolling page. As the user scrolls down, new sections are introduced through a combination of background (colour, shape, image) and foreground (text, graphics) animations. A menu provides direct access to each section.
 
-#### Online Gallary
+#### Online Gallery
 
 A grid of thumbnails presents a range of artwork. Click on one and you can see it full size, alongside notes such as the artist, medium, date etc. The thumbnails in the grid are resizeable - when they're made larger, you get less in a row - they rearrange. The grid is filterable: the user selects to just show photography, everything else disappears and the grid rearranges.
 

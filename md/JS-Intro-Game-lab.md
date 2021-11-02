@@ -8,13 +8,13 @@ This lab will see you make a fairly simple game. In doing so, you'll use JavaScr
 
 The game will randomly flash a picture of either a mole or a hedgehog on the screen. If the user taps/clicks the mole, they get a point. If they tap/click the hedgehog, they lose a point. They will have 30 seconds to get as many moles as they can, at which point a game over screen will tell them their final score.
 
-You can see a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/JSIntroGame/>
+You can see a completed example here: <https://francesc.marti.github.io/dmu-multimedia/resources/JSIntroGame/>
 
 Use this example to get a better idea of what you're aiming for, and inspect the code if you're stuck. The CSS, HTML, and JS are all on the one page to make this a little easier.
 
 You can find the two images here:
-Mole: <https://thomcorah.github.io/dmu-multimedia/resources/JSIntroGame/img/mole.png>
-Hedgehog: <https://thomcorah.github.io/dmu-multimedia/resources/JSIntroGame/img/hedgehog.png>
+Mole: <https://francesc.marti.github.io/dmu-multimedia/resources/JSIntroGame/img/mole.png>
+Hedgehog: <https://francesc.marti.github.io/dmu-multimedia/resources/JSIntroGame/img/hedgehog.png>
 
 Or use your own.
 

@@ -1,6 +1,6 @@
-# JavaScript Introduction Game
+# Section 1: JavaScript Introduction Game
 
-This lab will see you make a fairly simple game. In doing so, you'll use JavaScript to
+This section will see you make a fairly simple game. In doing so, you'll use JavaScript to
 
 - Get references to elements on the page
 - Keep track of things with variables
@@ -291,3 +291,44 @@ let randomDelay = Math.random() * 1500 + 500;
 ```
 
 You can then use this in `setTimeout` as the delay length.
+
+# Section 2: Making your game more interesting
+
+In this section we are going to make some changes in the game to make it a little bit more interesting. Take the following steps!
+
+## Add more animals to your game
+
+You can find more images for your game here: <https://www.dreamstime.com/stock-vector-illustrations-clipart>
+Download two new animals. For example, a horse and a pinguin.
+
+## Working with probabilities
+
+In the original game, the probability of displaying the mole was 50% and the probability of displaying the hedgehog was 50%. Modify your code to implement the following probabilities:
+
+Pinguin: 50%
+Horse: 30%
+Hedgehog: 20%
+Mole: 10%
+
+## Change the point system
+
+In the original game, the user should get a point if they click on the mole, and lose a point if they click on the hedgehog.
+Let's make something a little bit more interesting:
+
+1. If the user click on the mole, add 2 to the score
+2. Hedgehog, add 1 to the score
+3. Horse, subtract 1
+4. Pinguin, subtract 2
+
+## Adding random positions and sizes
+
+In the original game, we have used random numbers to control which animal is displayed. But we can also use random numbers to control other aspects of the game.
+herefore:
+
+1. Add three new random number generators to your game.
+2. Use one of these random numbers to controls de dimensions of the animal.
+3. Use the other two random numbers to control the position of the animal in the screen.
+
+
+
+

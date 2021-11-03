@@ -66,17 +66,16 @@
        */
       showAnimal = () => {
         let showMole = Math.random() > 0.5;
-        let imgH = Math.random() * 100;
-        let imgW = Math.random() * 100;
+        let imgSize = Math.random() * 100;
         if (showMole) {
           document.getElementById("mole").style.display = "block";
-          document.getElementById("mole").style.height = imgH + '%';
-          document.getElementById("mole").style.width = imgW + '%';
+          document.getElementById("mole").style.height = imgSize + '%';
+          document.getElementById("mole").style.width = imgSize + '%';
           setTimeout(hideMole, 500);
         } else {
           document.getElementById("hedgehog").style.display = "block";
-          document.getElementById("hedgehog").style.height = imgH + '%';
-          document.getElementById("hedgehog").style.width = imgW + '%';
+          document.getElementById("hedgehog").style.height = imgSize + '%';
+          document.getElementById("hedgehog").style.width = imgSize + '%';
           setTimeout(hideHedgehog, 500);
         }
 

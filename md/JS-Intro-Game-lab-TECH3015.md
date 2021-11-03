@@ -292,6 +292,7 @@ let randomDelay = Math.random() * 1500 + 500;
 
 You can then use this in `setTimeout` as the delay length.
 
+
 # Section 2: Making your game more interesting
 
 In this section we are going to make some changes in the game to make it a little bit more interesting. Take the following steps!

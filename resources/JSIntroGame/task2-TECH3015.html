@@ -13,7 +13,6 @@
         width: 100%;
         display: none;
         position: absolute;
-        left: 300;
       }
 
       #score,
@@ -69,15 +68,18 @@
       showAnimal = () => {
         let showMole = Math.random() > 0.5;
         let imgSize = Math.random() * 100;
+        let imgLeft = Math.random() * 800;
         if (showMole) {
           document.getElementById("mole").style.display = "block";
           document.getElementById("mole").style.height = imgSize + '%';
           document.getElementById("mole").style.width = imgSize + '%';
+          document.getElementById("mole").style.left = imgLeft + 'px';
           setTimeout(hideMole, 500);
         } else {
           document.getElementById("hedgehog").style.display = "block";
           document.getElementById("hedgehog").style.height = imgSize + '%';
           document.getElementById("hedgehog").style.width = imgSize + '%';
+          document.getElementById("hedgehog").style.left = imgLeft + 'px';
           setTimeout(hideHedgehog, 500);
         }
 

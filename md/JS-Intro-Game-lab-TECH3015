@@ -329,6 +329,11 @@ herefore:
 2. Use one of these random numbers to controls de dimensions of the animal.
 3. Use the other two random numbers to control the position of the animal in the screen.
 
+## Changing the game speed
 
+Finally, let's make more interesting the game by modifying its speed. So:
+
+1. If the score is 0 or lower than 0, the game will run at the normal speed.
+2. The speed of the game must to increase in in synchronization with the score. So, the higher the score, the fastest the game.
 
 

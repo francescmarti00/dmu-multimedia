@@ -7,7 +7,7 @@ This lab will walk you through the creation of a browser-based quiz game. This w
 - They come sequentially, one at a time
 - Once all questions have been asked, we get a screen with the score
 
-You can see a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/mathsGameV3/game.html>
+You can see a completed example here: <https://francescmarti00.github.io/dmu-multimedia/resources/mathsGameV3/game.html>
 
 ## The Bigger Picture
 
@@ -31,7 +31,7 @@ With that in mind, let's get started.
 
 ### 1. Start off a new project as usual
 
-There's a step-by-step guide here: <https://thomcorah.github.io/dmu-multimedia/lab-reader.html?starting-a-project-short.md>
+There's a step-by-step guide here: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?starting-a-project-short.md>
 
 ### 2. Create your HTML
 

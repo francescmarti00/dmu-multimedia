@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather Where You Are</title>
+  </head>
+
+  <body>
+    <section>
+      <h1 id="city">Weather Where You Are</h1>
+      <p>
+        <span id="temperature"></span> <span id="weather">by Thom Corah</span>
+      </p>
+    </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script>
+      // First off, get the location
+      $.getJSON("https://ipinfo.io", function (data) {
+        console.log(data);
+        var location = data.loc.split(",");
+        getWeather(location[0], location[1], data.city);
+      });
+    </script>
+  </body>
+</html>

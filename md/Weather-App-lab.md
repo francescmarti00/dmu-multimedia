@@ -10,7 +10,7 @@ To do that we’re going to use three different free API.
 **openweathermap.org** We’ll use Open Weather Map to find out the weather given the location.  
 **flickr.com** Flickr have a very rich database of user-submitted photos that we can query by location and tags.
 
-You can see a fully completed version of this here: <https://thomcorah.github.io/dmu-multimedia/resources/WeatherApp/weather.html>
+You can see a fully completed version of this here: <https://francescmarti00.github.io/dmu-multimedia/resources/WeatherApp/weather.html>
 
 ## jQuery
 
@@ -39,7 +39,7 @@ $.getJSON();
 
 ## Setting up the Interface
 
-![Weather App Screenshot](https://thomcorah.github.io/dmu-multimedia/resources/img/weatherApp.png)
+![Weather App Screenshot](https://francescmarti00.github.io/dmu-multimedia/resources/img/weatherApp.png)
 
 Before we get into the mechanics, we need to set up our page. This is pretty straightforward, as you can see from the screenshot above.
 

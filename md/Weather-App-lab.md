@@ -2,6 +2,8 @@
 
 Your task in this lab is to draw on three separate API and combine their outputs into something usable.
 
+What is an API? An API (application programming interface) is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. A document or standard that describes how to build or use such a connection or interface is called an API specification.
+
 This is a simple web app that finds out a visitor’s location based on their IP address and then displays the weather and an image for that location.
 
 To do that we’re going to use three different free API.

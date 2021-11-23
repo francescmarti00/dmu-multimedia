@@ -20,5 +20,3 @@ There are two courseworks for this module.
 - Make what you designed for Coursework 1
 - Demonstrate technical prowess!
 - Due midday, Wednesday 4th May
-
-Note: if you don't want to use what you did for coursework 1, we can supply you with a design to work from.

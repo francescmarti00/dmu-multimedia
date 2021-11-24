@@ -345,6 +345,7 @@ Your final submission will be **a single compiled report of around 1200 words** 
 - wireframes (mobile, tablet, desktop)
 - design sketches and finished design
 - evidence of user feedback
+- details of any changes made based on feedback
 - commentary and/or annotations on images
 - critical analysis
 
@@ -481,6 +482,7 @@ This is concerned with your ability to critically evaluate your own skills, need
 To help you meet the criteria above, consider preparing any or all of the following:
 
 - evidence of user feedback (e.g. card sorting, design feedback, ...)
+- details of any changes made based on feedback
 - consistent reference formatting
 
 [Back to CW1 Marking Criteria](#cw1markingcriteria)

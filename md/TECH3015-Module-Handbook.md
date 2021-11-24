@@ -326,7 +326,7 @@ Once you know what your website is going to be all about you can start planning 
 - start writing out any **text content** you need (in plain text)
 - think about your **menu structure** (and possibly do some **card sorting** with some friends)
 - experiment with different **colour schemes** and **fonts**
-- using your wireframes as a guide, produce more **detailed designs** (use Photoshop or similar or an online service)
+- using your wireframes as a guide, produce more **detailed designs** (Invision, Photoshop or similar or an online service)
 - get **feedback** from friends and others and keep a **record of their comments**
 - make sure your media content is **resized**, **compressed**, etc. for the web
 - experiment with **different layouts**, especially for different **screen sizes**

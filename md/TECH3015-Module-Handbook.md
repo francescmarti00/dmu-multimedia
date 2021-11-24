@@ -427,7 +427,7 @@ To help you meet the criteria above, consider preparing any or all of the follow
 
 This is concerned with your plans for user interaction with elements on your page (e.g. clicks, hovers, and scrolls). This may include transitions, animations, and transforms.
 
-- adherence to PARC principles
+- adherence to PARC [PARC](https://jaydnedwards.com/blog/parc-principles/) principles
 - creative use of white space (no overcrowding, especially at desktop size)
 - consistent margins and alignment of design elements
 - legible fonts and colour choices

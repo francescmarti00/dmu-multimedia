@@ -46,7 +46,8 @@ JavaScript can also change element contents. In this example, the JavaScript met
 
 ### Exercises
 
-1. Modify the last example and change the element content (innerHTML) to "Hi my name is (*your name*)"
+1. Modify the last example and change the element content (innerHTML) to "Hi my name is (*your name*)".
+2. Repeat the previous exercise using the onmousemove and ondblclick events.
 
 ### 2. JavaScript Can Change HTML Styles
 
@@ -115,6 +116,17 @@ Let's use JavaScript to show it:
 </body>
 </html> 
 ```
+
+### Resources
+
+Including JavaScript in your web page: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Including-JavaScript-talk.md
+Referencing HTML elements: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Referencing-HTML-Elements-talk.md
+Events: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Events-talk.md
+
+
+## JavaScript Variables
+
+Let's create a program that counts the number of times you click on a button. Let's start with this code:
 
 ### Tutorials
 

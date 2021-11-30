@@ -1,4 +1,4 @@
-# JavaScript Introduction
+# JavaScript Basics
 
 In this lab we will continue exploring JavaScript with examples and exercises.
 

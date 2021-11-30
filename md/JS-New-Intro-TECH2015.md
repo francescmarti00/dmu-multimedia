@@ -46,7 +46,7 @@ JavaScript can also change element contents. In this example, the JavaScript met
 
 ### Exercises
 
-1. Modify the last example and change the element content (innerHTML) to "Hi my name is (*your name*)".
+1. Modify the last example and change the element content (innerHTML) to "Hi! My name is (*your name*)".
 2. Repeat the previous exercise using the onmousemove and ondblclick events.
 
 ### 2. JavaScript Can Change HTML Styles

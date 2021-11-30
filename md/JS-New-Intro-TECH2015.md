@@ -24,6 +24,10 @@ The JavaScript methods getElementById() "finds" an HTML element (with id="demo")
 </html>
 ```
 
+### Exercises
+
+1. Change the element content (innerHTML) to "Hi my name is (*your name*)"
+
 ### 2. JavaScript Can Change HTML Styles
 
 In this example JavaScript changes the style of a text using the fontsize attribute:
@@ -42,6 +46,10 @@ In this example JavaScript changes the style of a text using the fontsize attrib
 </body>
 </html> 
 ```
+
+### Exercises
+1. Change the font colour to red.
+2. Change the font to bold.
 
 ### 3. JavaScript Can Hide or Show HTML Elements
 
@@ -87,7 +95,7 @@ Let's use JavaScript to show it:
 </html> 
 ```
 
-If at any point your page is working, use the developer tools to try to find out why. The Console tab will give you any errors that JavaScript creates, and tell you where they are. Check your work regularly in the browser and pick up errors as they occur.
+
 
 ## Set up the HTML
 

@@ -279,7 +279,7 @@ Loops in JavaScript enable us to perform the same code repeatedly.
 <html>
 <body>
 
-<h2>JavaScript Arrays</h2>
+<h2>Cars</h2>
 
 <p id="demo"></p>
 
@@ -320,7 +320,7 @@ Conditional Logic: https://francescmarti00.github.io/dmu-multimedia/lab-reader.h
 <html>
 <body>
 
-<h2>JavaScript Arrays</h2>
+<h2>Cars</h2>
 
 <p id="demo"></p>
 

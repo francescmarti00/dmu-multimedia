@@ -3,9 +3,11 @@
 This lab will see ...
 
 
-## JavaScript Can Change HTML Content
+## JavaScript Can Change HTML Content / Styles / Hide or Show HTML Elements
 
-### 1. Study this example
+### 1. JavaScript Can Change HTML Content
+
+The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript".
 
 ```JS
 <!DOCTYPE html>
@@ -20,6 +22,69 @@ This lab will see ...
 
 </body>
 </html>
+```
+
+### 2. JavaScript Can Change HTML Styles
+
+In this example JavaScript changes the style of a text using the fontsize attribute:
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
+
+</body>
+</html> 
+```
+
+### 3. JavaScript Can Hide or Show HTML Elements
+
+JavaScript can hide or show HTML elements by changing the display style. Let's hide the HTML element with id="demo":
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can hide HTML elements.</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
+
+</body>
+</html> 
+```
+
+Now, the element with id="demo" is hidden:
+
+```JS
+<p id="demo" style="display:none">Hello JavaScript!</p>
+```
+
+Let's use JavaScript to show it:
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can show hidden HTML elements.</p>
+
+<p id="demo" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+
+</body>
+</html> 
 ```
 
 If at any point your page is working, use the developer tools to try to find out why. The Console tab will give you any errors that JavaScript creates, and tell you where they are. Check your work regularly in the browser and pick up errors as they occur.

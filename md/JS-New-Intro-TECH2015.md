@@ -119,9 +119,9 @@ Let's use JavaScript to show it:
 
 ### Resources
 
-Including JavaScript in your web page: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Including-JavaScript-talk.md
-Referencing HTML elements: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Referencing-HTML-Elements-talk.md
-Events: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Events-talk.md
+Including JavaScript in your web page: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Including-JavaScript-talk.md>
+Referencing HTML elements: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Referencing-HTML-Elements-talk.md>
+Events: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Events-talk.md>
 
 
 ## JavaScript Functions
@@ -158,7 +158,7 @@ function myFirstFunction() {
 3. Change the name of the function.
  
 ### Resources
-Functions: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Functions-talk.md  
+Functions: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Functions-talk.md>
 
 
 ## JavaScript Variables
@@ -222,7 +222,7 @@ function countClicks() {
 
 ### Resoources  
 
-Variables: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Variables-talk.md
+Variables: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Variables-talk.md>
   
   
 ## Arrays
@@ -259,11 +259,11 @@ document.getElementById("demo").innerHTML = cars[1];
 
 1. Modify the previous code in order to display the name of the fourth brand "Renault".
 2. Create a program that displays the name of a different brands everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
-3. Explore the arithmetic operator Modulus (https://www.w3schools.com/js/js_arithmetic.asp). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
+3. Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
 
 ### Resources  
   
-Arrays: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Arrays-talk.md  
+Arrays: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Arrays-talk.md>
 
 
 ## Loops
@@ -301,7 +301,7 @@ function showCars() {
   
 ### Resources  
 
-Loops: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Loops-talk.md  
+Loops: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Loops-talk.md>
   
 ## JavaScript Conditional Logic
   
@@ -309,7 +309,7 @@ It is possible to have code execute based on a condition. If something is true, 
 
 ### Resources  
  
-Conditional Logic: https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Conditional-Logic-talk.md  
+Conditional Logic: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Conditional-Logic-talk.md>
 
 ### Exercises  
 

@@ -120,7 +120,9 @@ Let's use JavaScript to show it:
 ### Resources
 
 Including JavaScript in your web page: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Including-JavaScript-talk.md>
+
 Referencing HTML elements: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Referencing-HTML-Elements-talk.md>
+
 Events: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Events-talk.md>
 
 

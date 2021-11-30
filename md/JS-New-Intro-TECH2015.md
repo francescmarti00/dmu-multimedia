@@ -237,7 +237,7 @@ You access an array element by referring to the index number. So, cars[0] =  "Sa
   
 In this code, let's define an array of car brands, and let's display the second brand "Volvo".
   
-```JS  
+```JS
 <!DOCTYPE html>
 <html>
 <body>
@@ -253,7 +253,7 @@ document.getElementById("demo").innerHTML = cars[1];
 
 </body>
 </html>
-```
+```  
 
 ### Exercises
 

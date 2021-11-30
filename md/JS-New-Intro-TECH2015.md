@@ -1,13 +1,32 @@
 # JavaScript Introduction
 
-This lab will see ...
+In this lab we will continue exploring JavaScript with examples and exercises.
 
 
-## JavaScript Can Change HTML Content / Styles / Hide or Show HTML Elements
+## JavaScript Can Change and Create HTML Content / Styles / Hide or Show Elements
 
 ### 1. JavaScript Can Change HTML Content
 
-The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript".
+The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript in Body</h2>
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "My First JavaScript";
+</script>
+
+</body>
+</html> 
+```
+
+JavaScript can also change element contents. In this example, the JavaScript methods getElementById() "finds" an HTML element (with id="demo") and changes the element content (innerHTML) from "JavaScript can change HTML content" to "Hello JavaScript"
 
 ```JS
 <!DOCTYPE html>
@@ -26,7 +45,7 @@ The JavaScript methods getElementById() "finds" an HTML element (with id="demo")
 
 ### Exercises
 
-1. Change the element content (innerHTML) to "Hi my name is (*your name*)"
+1. Modify the last example and change the element content (innerHTML) to "Hi my name is (*your name*)"
 
 ### 2. JavaScript Can Change HTML Styles
 
@@ -48,6 +67,7 @@ In this example JavaScript changes the style of a text using the fontsize attrib
 ```
 
 ### Exercises
+
 1. Change the font colour to red.
 2. Change the font to bold.
 
@@ -95,7 +115,7 @@ Let's use JavaScript to show it:
 </html> 
 ```
 
-
+### Tutorials
 
 ## Set up the HTML
 

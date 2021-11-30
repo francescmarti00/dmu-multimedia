@@ -274,7 +274,7 @@ Loops in JavaScript enable us to perform the same code repeatedly.
 
 1. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
 
-```JS  
+```JS
 <!DOCTYPE html>
 <html>
 <body>
@@ -295,7 +295,7 @@ function showCars() {
 
 </body>
 </html>
-``` 
+```  
 
 2. Repeat the previous exercise using a 'do/while' loop.  
   
@@ -315,7 +315,7 @@ Conditional Logic: https://francescmarti00.github.io/dmu-multimedia/lab-reader.h
 
 1. Create a program that displays a list of car brands if, and only if you click three times a button. Use the following code as a start.
   
-```JS  
+```JS
 <!DOCTYPE html>
 <html>
 <body>
@@ -336,7 +336,7 @@ function showCars() {
 
 </body>
 </html>
-```
+```  
   
 2. Create a program that displays a list of car brands if, and only if you click more than two times a button.
 

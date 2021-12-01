@@ -263,7 +263,7 @@ function countClicks() {
   </html>
 ```
 
-### Exercise 11: Create a program that displays the name of a different brands everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
+### Exercise 11: Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
 
 ```JS
 <!DOCTYPE html>
@@ -318,7 +318,7 @@ function countClicks() {
     // Let's print the brand name number 'count'
     document.getElementById("demo").innerHTML = cars[count];
     // Every time we click on the button, we add '1' to the variable 'x'.
-    // Here we use the module '%' to create a 'loop'
+    // Here we use the modulus '%' to create a 'loop'
     // Note: we can also use 'cars.length' instead of '5'
     count = (count + 1) % 5;
   }

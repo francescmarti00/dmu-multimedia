@@ -446,7 +446,7 @@ Solution:
   let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
   
   function showCars() {
-    // Every time we click on the button, we add '1' to the variable 'x'.
+    // Every time we click on the button, we add '1' to the variable 'count'.
     count = count + 1;
     
     // Here we check if we have clicked 3 times
@@ -490,7 +490,7 @@ Solution:
   let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
   
   function showCars() {
-    // Every time we click on the button, we add '1' to the variable 'x'.
+    // Every time we click on the button, we add '1' to the variable 'count'.
     count = count + 1;
     
     // Here we check if we have clicked more than 2 times
@@ -531,7 +531,7 @@ Solution:
   let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
   
   function showCars() {
-    // Every time we click on the button, we add '1' to the variable 'x'.
+    // Every time we click on the button, we add '1' to the variable 'count'.
     count = count + 1;
     
     // Here we check if we have clicked between 2 and 5 times

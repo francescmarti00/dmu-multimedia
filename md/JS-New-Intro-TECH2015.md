@@ -1,6 +1,6 @@
 # JavaScript Basics
 
-In this lab we will continue exploring JavaScript with examples and exercises.
+In this lab we will continue exploring JavaScript with examples and exercises. Most of these exercises are based on the w3schools JavaScript tutorial: <https://www.w3schools.com/js/default.asp>
 
 
 ## JavaScript Can Change and Create HTML Content / Styles / Hide or Show Elements

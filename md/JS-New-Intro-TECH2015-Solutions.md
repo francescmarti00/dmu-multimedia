@@ -426,3 +426,58 @@ Solution:
 </body>
 </html>
 ```
+
+### Exercise 15: Create a program that displays a list of car brands if, and only if, you click three times a button. Use the following code as a start.  
+
+Solution:
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cars</h2>
+
+<p id="demo"></p>
+
+<script>
+  // Let's define a variable. Its initial value is 0 (0 clicks)
+  let count = 0;
+  // The array of car brands
+  let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+  
+  function showCars() {
+    // Every time we click on the button, we add '1' to the variable 'x'.
+    count = count + 1;
+    
+    // Here we check if we have clicked 3 times
+    if (count == 3) {
+      // Let's define a variable to save the text we want to show.
+      // Initially, this variable is empty.
+      let text = "";
+      for (let i = 0; i < cars.length; i++) {
+        text = text + cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  }
+</script>
+
+<button type="button" onclick="showCars()">Click 3 times to display the list of cars!</button>
+
+</body>
+</html>
+```
+
+### Exercise 16: Repeat the previous exercise using a 'do/while' loop.  
+
+Solution:
+```JS
+
+```
+
+### Exercise 17: Repeat the previous exercise using a 'do/while' loop.  
+
+Solution:
+```JS
+
+```

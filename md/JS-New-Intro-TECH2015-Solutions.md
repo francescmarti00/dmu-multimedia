@@ -2,6 +2,7 @@
 
 ### Exercise 1: Modify the last example and change the element content (innerHTML) to "Hi! My name is (*your name*)".
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -19,6 +20,7 @@
 
 ### Exercise 2.1: Repeat the previous exercise replacing the 'onclick' event by the 'onmousemove' event.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -36,6 +38,7 @@
 
 ### Exercise 2.2: Repeat the previous exercise replacing the 'onclick' event by the 'ondblclick' event.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -53,6 +56,7 @@
 
 ### Exercise 3: On button click, change the font colour of the text to red.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -70,6 +74,7 @@
 
 ### Exercise 4: On button click, change the font of the text to bold.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -87,6 +92,7 @@
 
 ### Exercise 5: Modify myFirstFunction() in order to change the font colour to red and the font to bold on button click.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -112,6 +118,7 @@ function myFirstFunction() {
 
 ### Exercise 6.1: Repeat the previous exercise using the 'onmousemove' event to invoke the function myFirstFunction().
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -137,6 +144,7 @@ function myFirstFunction() {
 
 ### Exercise 6.2: Repeat the previous exercise using the 'ondblclick' event to invoke the function myFirstFunction().
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -162,6 +170,7 @@ function myFirstFunction() {
 
 ### Exercise 7: Change the name of the function to 'otherFunction()'.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -187,6 +196,7 @@ function otherFunction() {
 
 ### Exercise 8: Modify the previous code and use the event 'ondblclick' to invoke the function countClicks().
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -216,6 +226,7 @@ function countClicks() {
 
 ### Exercise 9: Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -245,6 +256,7 @@ function countClicks() {
 
 ### Exercise 10: Modify the previous code in order to display the name of the fourth brand "Renault".
 
+Solution:
 ```JS
   <!DOCTYPE html>
   <html>
@@ -265,6 +277,7 @@ function countClicks() {
 
 ### Exercise 11: Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -298,6 +311,7 @@ function countClicks() {
 
 ### Exercise 12: Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -333,6 +347,7 @@ function countClicks() {
 
 ### Exercise 13: Create a program that displays a list of car brands when you click on a button using a 'for' loop.
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>
@@ -364,6 +379,7 @@ function countClicks() {
 
 ### Exercise 14: Repeat the previous exercise using a 'do/while' loop.  
 
+Solution:
 ```JS
 <!DOCTYPE html>
 <html>

@@ -54,7 +54,7 @@ JavaScript can also change element contents. In this example, the JavaScript met
 ### Exercises
 
 1. Modify the last example and change the element content (innerHTML) to "Hi! My name is (*your name*)".
-2. Repeat the previous exercise using the onmousemove and ondblclick events.
+2. Repeat the previous exercise replacing the 'onclick' event by 'onmousemove' and 'ondblclick' events.
 
 ### 2. JavaScript Can Change HTML Styles
 
@@ -77,8 +77,8 @@ In this example JavaScript changes the style of a text using the fontsize attrib
 
 ### Exercises
 
-1. On click, change the font colour to red.
-2. On click, change the font to bold.
+3. On button click, change the font colour of the text to red.
+4. On button click, change the font of the text to bold.
 
 ### 3. JavaScript Can Hide or Show HTML Elements
 
@@ -144,7 +144,7 @@ In this example, a JavaScript function is placed in the <body> section of an HTM
 <html>
 <body>
 
-<h2>Demo JavaScript in Body</h2>
+<h2>JavaScript Function</h2>
 
 <p id="demo">A Paragraph</p>
 
@@ -162,9 +162,9 @@ function myFirstFunction() {
 
 ### Exercises
 
-1. Modify myFirstFunction() in order that changes the font colour to red and the font to bold.
-2. Repeat the previous exercise using the onmousemove and ondblclick events to invoke myFirstFunction().
-3. Change the name of the function.
+5. Modify myFirstFunction() in order to change the font colour to red and the font to bold on button click.
+6. Repeat the previous exercise using 'onmousemove' and 'ondblclick' events to invoke the function myFirstFunction().
+7. Change the name of the function to 'otherFunction()'.
  
 ### Resources
 Functions: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Functions-talk.md>
@@ -226,8 +226,8 @@ function countClicks() {
   
 ### Exercises
 
-1. Modify the previous code and use the event 'ondblclick' to invoke countClicks().
-2. Change the countClicks in order to count the clicks in a correct way. That is, now the result should be 2, 4, 6 etc. 
+8. Modify the previous code and use the event 'ondblclick' to invoke the function countClicks().
+9. Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 
 
 ### Resoources  
 
@@ -266,9 +266,9 @@ document.getElementById("demo").innerHTML = cars[1];
 
 ### Exercises
 
-1. Modify the previous code in order to display the name of the fourth brand "Renault".
-2. Create a program that displays the name of a different brands everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
-3. Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
+10. Modify the previous code in order to display the name of the fourth brand "Renault".
+11. Create a program that displays the name of a different brands everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
+12. Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
 
 ### Resources  
   
@@ -281,7 +281,7 @@ Loops in JavaScript enable us to perform the same code repeatedly.
 
 ### Exercises
 
-1. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
+13. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
 
 ```JS
 <!DOCTYPE html>
@@ -306,7 +306,7 @@ function showCars() {
 </html>
 ```  
 
-2. Repeat the previous exercise using a 'do/while' loop.  
+14. Repeat the previous exercise using a 'do/while' loop.  
   
 ### Resources  
 

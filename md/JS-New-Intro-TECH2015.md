@@ -322,7 +322,7 @@ Conditional Logic: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.
 
 ### Exercises  
 
-1. Create a program that displays a list of car brands if, and only if you click three times a button. Use the following code as a start.
+15. Create a program that displays a list of car brands if, and only if, you click on a button three times. Use the following code as a start.
   
 ```JS
 <!DOCTYPE html>
@@ -347,6 +347,6 @@ function showCars() {
 </html>
 ```  
   
-2. Create a program that displays a list of car brands if, and only if you click more than two times a button.
+16. Create a program that displays a list of car brands if, and only if you click on a button more than two times.
 
-3. Create a program that displays a list of car brands if, and only if you click a button between two and five times.  
+17. Create a program that displays a list of car brands if, and only if you click on a button between two and five times.  

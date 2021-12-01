@@ -27,7 +27,7 @@ document.getElementById("demo").innerHTML = "My First JavaScript";
 </html> 
 ```
 
-JavaScript can also change element contents. In this example, the JavaScript methods getElementById() "finds" an HTML element (with id="demo") and changes the element content (innerHTML) from "JavaScript can change HTML content" to "Hello JavaScript"
+JavaScript can also change element contents. In this example, the JavaScript methods getElementById() "finds" an HTML element (with id="demo") and changes the element content (innerHTML) from "JavaScript can change HTML content" to "Hello JavaScript!"
 
 ```JS
 <!DOCTYPE html>

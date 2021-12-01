@@ -1,6 +1,6 @@
 ## JavaScript Basics Lab: Task solutions.
 
-### Exercise 1: Modify the last example and change the element content (innerHTML) to "Hi! My name is (*your name*)".
+### Exercise 1: Modify the last example and change the element content (innerHTML) from "Hello JavaScript!" to "Hi! My name is (*your name*)".
 
 Solution:
 ```JS

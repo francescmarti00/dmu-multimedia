@@ -8,7 +8,14 @@ In this lab we will continue exploring JavaScript with examples and exercises.
 ### 1. JavaScript Can Change HTML Content
 
 In HTML, JavaScript code is inserted between <script> and </script> tags.
-The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).
+
+```JS
+<script>
+// The JavaScript code
+</script>
+```
+
+In this example, the JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).
 
 ```JS
 <!DOCTYPE html>

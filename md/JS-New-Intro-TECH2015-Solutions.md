@@ -280,7 +280,7 @@ Solution:
 
   <script>
   let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-  <!-- Important: the fourth brand is in the array position '3'! -->
+  <!-- Important: the fourth brand is in the array index '3'! -->
   <!-- The first brand is in car[0], the second brand in car[1], etc. -->
   document.getElementById("demo").innerHTML = cars[3];
   </script>

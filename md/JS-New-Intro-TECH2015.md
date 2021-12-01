@@ -53,7 +53,7 @@ JavaScript can also change element contents. In this example, the JavaScript met
 
 ### Exercises
 
-1. Modify the last example and change the element content (innerHTML) to "Hi! My name is (*your name*)".
+1. Modify the last example and change the element content (innerHTML) from "Hello JavaScript!" to "Hi! My name is (*your name*)".
 2. Repeat the previous exercise replacing the 'onclick' event by 'onmousemove' and 'ondblclick' events.
 
 ### 2. JavaScript Can Change HTML Styles
@@ -267,7 +267,7 @@ document.getElementById("demo").innerHTML = cars[1];
 ### Exercises
 
 10. Modify the previous code in order to display the name of the fourth brand "Renault".
-11. Create a program that displays the name of a different brands everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
+11. Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
 12. Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
 
 ### Resources  

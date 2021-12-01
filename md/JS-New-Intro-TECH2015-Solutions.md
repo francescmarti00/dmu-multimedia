@@ -427,7 +427,7 @@ Solution:
 </html>
 ```
 
-### Exercise 15: Create a program that displays a list of car brands if, and only if, you click three times a button. Use the following code as a start.  
+### Exercise 15: Create a program that displays a list of car brands if, and only if, you click on a button three times.  
 
 Solution:
 ```JS
@@ -471,7 +471,7 @@ Solution:
 </html>
 ```
 
-### Exercise 16: Create a program that displays a list of car brands if, and only if, you click more than two times a button.  
+### Exercise 16: Create a program that displays a list of car brands if, and only if, you click on a button more than two times.  
 
 Solution:
 ```JS
@@ -512,7 +512,7 @@ Solution:
 </html>
 ```
 
-### Exercise 17: Create a program that displays a list of car brands if, and only if you click a button between two and five times.  
+### Exercise 17: Create a program that displays a list of car brands if, and only if you click on a button between two and five times.  
 
 Solution:
 ```JS

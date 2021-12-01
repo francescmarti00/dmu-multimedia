@@ -458,26 +458,100 @@ Solution:
         text = text + cars[i] + "<br>";
       }
       document.getElementById("demo").innerHTML = text;
+    } else {
+      document.getElementById("demo").innerHTML = "";
     }
   }
 </script>
 
 <button type="button" onclick="showCars()">Click 3 times to display the list of cars!</button>
+<p>* If you click more than 3 times, you hide the list again</p>
 
 </body>
 </html>
 ```
 
-### Exercise 16: Repeat the previous exercise using a 'do/while' loop.  
+### Exercise 16: Create a program that displays a list of car brands if, and only if, you click more than two times a button.  
 
 Solution:
 ```JS
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>Cars</h2>
+
+<p id="demo"></p>
+
+<script>
+  // Let's define a variable. Its initial value is 0 (0 clicks)
+  let count = 0;
+  // The array of car brands
+  let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+  
+  function showCars() {
+    // Every time we click on the button, we add '1' to the variable 'x'.
+    count = count + 1;
+    
+    // Here we check if we have clicked more than 2 times
+    if (count > 2) {
+      // Let's define a variable to save the text we want to show.
+      // Initially, this variable is empty.
+      let text = "";
+      for (let i = 0; i < cars.length; i++) {
+        text = text + cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  }
+</script>
+
+<button type="button" onclick="showCars()">Click more than 2 times to display the list of cars!</button>
+
+</body>
+</html>
 ```
 
-### Exercise 17: Repeat the previous exercise using a 'do/while' loop.  
+### Exercise 17: Create a program that displays a list of car brands if, and only if you click a button between two and five times.  
 
 Solution:
 ```JS
+<!DOCTYPE html>
+<html>
+<body>
 
+<h2>Cars</h2>
+
+<p id="demo"></p>
+
+<script>
+  // Let's define a variable. Its initial value is 0 (0 clicks)
+  let count = 0;
+  // The array of car brands
+  let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+  
+  function showCars() {
+    // Every time we click on the button, we add '1' to the variable 'x'.
+    count = count + 1;
+    
+    // Here we check if we have clicked between 2 and 5 times
+    if (count > 1 && count < 6) {
+      // Let's define a variable to save the text we want to show.
+      // Initially, this variable is empty.
+      let text = "";
+      for (let i = 0; i < cars.length; i++) {
+        text = text + cars[i] + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+    } else {
+      document.getElementById("demo").innerHTML = "";
+    }
+  }
+</script>
+
+<button type="button" onclick="showCars()">Click between 2 and 5 times to display the list of cars!</button>
+<p>* If you click more than 5 times, you hide the list again</p>
+
+</body>
+</html>
 ```

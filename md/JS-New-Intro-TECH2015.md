@@ -15,7 +15,7 @@ In HTML, JavaScript code is inserted between <script> and </script> tags.
 </script>
 ```
 
-In this example, the JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).
+The next example shows how JavaScript can create content. The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).
 
 ```JS
 <!DOCTYPE html>

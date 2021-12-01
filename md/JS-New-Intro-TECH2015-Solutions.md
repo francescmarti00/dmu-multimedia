@@ -12,6 +12,7 @@ Solution:
 
 <p id="demo">JavaScript can change HTML content.</p>
 
+// We have to replace the sentence "Hello JavaScript!" by "Hi! My name is Francesc!"
 <button type="button" onclick='document.getElementById("demo").innerHTML = "Hi! My name is Francesc!"'>Click Me!</button>
 
 </body>
@@ -30,6 +31,7 @@ Solution:
 
 <p id="demo">JavaScript can change HTML content.</p>
 
+// We have to replace the event 'onclick' by the event 'onmousemove'
 <button type="button" onmousemove='document.getElementById("demo").innerHTML = "Hi! My name is Francesc!"'>Click Me!</button>
 
 </body>
@@ -48,6 +50,7 @@ Solution:
 
 <p id="demo">JavaScript can change HTML content.</p>
 
+// We have to replace the event 'onclick' by the event 'ondblclick'
 <button type="button" ondblclick='document.getElementById("demo").innerHTML = "Hi! My name is Francesc!"'>Click Me!</button>
 
 </body>

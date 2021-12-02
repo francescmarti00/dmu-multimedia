@@ -1,6 +1,6 @@
 ## JavaScript Basics Lab: Task solutions.
 
-IMPORTANT: Remember that this module doesn't have lectures. So, it is very important you watch the video lectures we have created for the module. You have the links to the JS video lectures in Blackboard > Labs > Week 9.
+IMPORTANT: Remember that this module doesn't have lectures. So, it is very important you watch the video lectures we have created for the module. You can find these links in Blackboard > Labs > Week 9.
 
 ### Exercise 1: Modify the last example and change the element content (innerHTML) from "Hello JavaScript!" to "Hi! My name is (*your name*)".
 

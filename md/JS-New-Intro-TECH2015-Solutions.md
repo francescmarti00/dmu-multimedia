@@ -218,14 +218,14 @@ Solution:
 <p id="demo">You have clicked 0 times.</p>
   
 <script>
-<!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
-let x = 0;
+<!-- Let's define a variable. Its name is going to be 'count'. Its initial value is 0 (0 clicks) -->
+let count = 0;
   
 function countClicks() {
   <!-- Every time we execute the function, we add '1' to the variable -->
-  x = x + 1;
+  count = count + 1;
   <!-- Let's print the result! -->
-  document.getElementById("demo").innerHTML = "You have clicked " + x + " times";
+  document.getElementById("demo").innerHTML = "You have clicked " + count + " times";
 }
 </script>
 
@@ -250,13 +250,13 @@ Solution:
   
 <script>
 <!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
-let x = 0;
+let count = 0;
   
 function countClicks() {
   <!-- Every time we execute the function, we add '2' (because we do 'double click') to the variable that counts the clicks.-->
-  x = x + 2;
+  count = count + 2;
   <!-- Let's print the result! -->
-  document.getElementById("demo").innerHTML = "You have clicked " + x + " times";
+  document.getElementById("demo").innerHTML = "You have clicked " + count + " times";
 }
 </script>
   
@@ -311,7 +311,7 @@ Solution:
   function countClicks() {
     <!-- Let's print the brand name number 'count'. -->
     document.getElementById("demo").innerHTML = cars[count];
-    <!-- Every time we click on the button, we add '1' to the variable 'x'. -->
+    <!-- Every time we click on the button, we add '1' to the variable 'count'. -->
     count = count + 1;
   }
   
@@ -345,7 +345,7 @@ Solution:
   function countClicks() {
     <!-- Let's print the brand name number 'count' -->
     document.getElementById("demo").innerHTML = cars[count];
-    <!-- Every time we click on the button, we add '1' to the variable 'x'. -->
+    <!-- Every time we click on the button, we add '1' to the variable 'count'. -->
     <!-- Here we use the modulus '%' to create a 'loop'. -->
     <!-- Note: we can also use 'cars.length' instead of '5' -->
     count = (count + 1) % 5;

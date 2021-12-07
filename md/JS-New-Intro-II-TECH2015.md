@@ -47,39 +47,37 @@ onclick='"document.getElementById("myTxt").style.color="red"
 onmouseover='"document.getElementById("myTxt").style.fontWeight="bold"
 ```
 
-The next example shows how JavaScript can create content. The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).
+### 3. Finally: how to connect these JavaScript commands and HTML
+
+This is straightforward! We have just to put the JavaScript command inside the HTML tag we want to use as a 'control'. For example, we can put the JavaScript command inside the <html> tag, so if we click anywhere inside our web page, the JavaScript command will be run.
+
+The next example shows how to change the font colour by clicking anywhere on the web page.
 
 ```JS
 <!DOCTYPE html>
-<html>
+<html onclick='document.getElementById("myTxt").style.color="red"'>
+  
 <body>
 
-<h2>JavaScript in Body</h2>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML = "My First JavaScript";
-</script>
+<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
 
 </body>
-</html> 
+  
+</html>
 ```
 
-JavaScript can also change element contents. In this example, the JavaScript methods getElementById() "finds" an HTML element (with id="demo") and changes the element content (innerHTML) from "JavaScript can change HTML content" to "Hello JavaScript!"
-
+For example, we can use the attribute inneHTML to change the content of the element "myText"
+	
 ```JS
 <!DOCTYPE html>
-<html>
+<html onclick='document.getElementById("myText").innerHTML = "This is very easy!"'>
+  
 <body>
 
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">JavaScript can change HTML content.</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+<p id="myText">Welcome to the easiest JavaScript example ever!</p>
 
 </body>
+  
 </html>
 ```
 

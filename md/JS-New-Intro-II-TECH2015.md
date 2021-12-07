@@ -124,7 +124,7 @@ You are going to use this code to do the following exercises
 
 ### 1. A very simple example	
 	
-Ok, but how to change two or more attributes simultaneously. We can use a function!	
+Ok, but how to change two or more attributes simultaneously? We can use a function!	
 	
 A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
 	
@@ -166,7 +166,7 @@ In this example, a JavaScript function is placed in the <body> section of an HTM
 ### 2. Adding commands to a function	
 
 One of the advantages of using functions is that we can run several JavaScripts events simultaneously.
-Study this example. Wehn we click on the web page we change two attributes: the text and colour of the text. 
+Study this example. When we click on the web page we change two attributes: the text and colour of the text. 
 	
 ```JS
 <!DOCTYPE html>

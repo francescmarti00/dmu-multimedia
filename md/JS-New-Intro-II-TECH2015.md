@@ -30,6 +30,12 @@ Let's create a very simple (and powerful) JavaScript command using the getElemen
 
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById_2.jpg)
 
+For example, we can create the JavaScript command 
+
+```JS
+ondblclick='"document.getElementById("myTxt").style.fontSize="30px"
+```
+
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById_3.jpg)
 
 In HTML, JavaScript code is inserted between <script> and </script> tags.

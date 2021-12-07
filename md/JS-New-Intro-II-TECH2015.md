@@ -66,26 +66,11 @@ The next example shows how to change the font colour by clicking anywhere on the
 </html>
 ```
 
-### 4. So, do I need to memorise all the HTML Events and Attributes?
-	
-No.
-	
-No one remember all HTML Events and Attributes. For example, do you want to change the font of your text? Go to the w3shools css reference <https://www.w3schools.com/cssref/pr_font_font.asp>, look for the CSS font Property "font" and check what is the JavaScript syntax you have to use.
-
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_3.png)
-
-
-	
-	
-	
-	Finally: how to connect these JavaScript commands and HTML	
-	
-	
-For example, we can use the attribute inneHTML to change the content of the element "myText"
+For example, we can use the attribute inneHTML to change the content of the element "myTxt"
 	
 ```JS
 <!DOCTYPE html>
-<html onclick='document.getElementById("myText").innerHTML = "This is very easy!"'>
+<html onclick='document.getElementById("myTxt").innerHTML = "This is very easy!"'>
   
 <body>
 
@@ -95,8 +80,21 @@ For example, we can use the attribute inneHTML to change the content of the elem
   
 </html>
 ```
+	
+### 4. So, do I need to memorise all the HTML Events and Attributes?
+	
+No.
+	
+No one remember all HTML Events and Attributes. For example, do you want to change the font of your text? Go to the w3shools css reference <https://www.w3schools.com/cssref/pr_font_font.asp>, look for the CSS font Property "font" and check what is the JavaScript syntax you have to use.
 
-### Exercises
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_4.png)
+
+Do you want to use other HTML events? Check <https://www.w3schools.com/TAGS/ref_eventattributes.asp>
+
+	
+## Exercises
+
+You are going to use this code to do the following exercises	
 	
 ```JS
 <!DOCTYPE html>
@@ -111,97 +109,88 @@ For example, we can use the attribute inneHTML to change the content of the elem
 </html>
 ```	
 	
-1. Study the following code
+Exercise 1. Modify the previous code so that the text changes to blue if you click anywhere on the web page.
 
+Exercise 2. Modify the previous code so that the text changes to bold if you double-click anywhere on the web page.
 
-
-
+Exercise 3. Modify the previous code so that the size of the text changes to "50px" if you move the mouse.
 	
-	Modify the last example and change the element content (innerHTML) from "Hello JavaScript!" to "Hi! My name is (*your name*)".
-2. Repeat the previous exercise replacing the 'onclick' event by 'onmousemove' and 'ondblclick' events.
+Exercise 4. Modify the previous code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
 
-### 2. JavaScript Can Change HTML Styles
-
-In this example JavaScript changes the style of a text using the fontsize attribute:
-
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">JavaScript can change the style of an HTML element.</p>
-
-<button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">Click Me!</button>
-
-</body>
-</html> 
-```
-
-### Exercises
-
-3. On button click, change the font colour of the text to red.
-4. On button click, change the font of the text to bold.
-
-### 3. JavaScript Can Hide or Show HTML Elements
-
-JavaScript can hide or show HTML elements by changing the display style. Let's hide the HTML element with id="demo":
-
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">JavaScript can hide HTML elements.</p>
-
-<button type="button" onclick="document.getElementById('demo').style.display='none'">Click Me!</button>
-
-</body>
-</html> 
-```
-
-Now, the element with id="demo" is hidden:
-
-```JS
-<p id="demo" style="display:none">Hello JavaScript!</p>
-```
-
-Let's use JavaScript to show it:
-
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>What Can JavaScript Do?</h2>
-
-<p>JavaScript can show hidden HTML elements.</p>
-
-<p id="demo" style="display:none">Hello JavaScript!</p>
-
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
-
-</body>
-</html> 
-```
-
-### Resources
-
-Including JavaScript in your web page: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Including-JavaScript-talk.md>
-
-Referencing HTML elements: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Referencing-HTML-Elements-talk.md>
-
-Events: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Events-talk.md>
+Exercise 5. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
 
 
 ## JavaScript Functions
 
+### 1. A very simple example	
+	
+Ok, but how to change two or more attributes simultaneously. We can use a function!	
+	
 A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
+	
+Study these two programs. They do the same!	
 
-In this example, a JavaScript function is placed in the <body> section of an HTML page. The function is invoked (called) when a button is clicked:
+```JS
+<!DOCTYPE html>
+<html onclick='document.getElementById("myTxt").innerHTML = "This is very easy!"'>
+  
+<body>
+
+<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
+
+</body>
+  
+</html>
+```
+In this example, a JavaScript function is placed in the <body> section of an HTML page. The function is invoked (called) when we click on the web page.
+	
+```JS
+<!DOCTYPE html>
+<html onclick='myFirstFunction()'>
+  
+<body>
+
+<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
+  
+<script>
+  function myFirstFunction() {
+  document.getElementById("myTxt").innerHTML = "This is very easy!";
+}
+</script>  
+
+</body>
+  
+</html>
+```	
+
+### 2. Adding commands to a function	
+
+One of the advantages of using functions is that we can run several JavaScripts events simultaneously.
+Study this example. Wehn we click on the web page we change two attributes: the text and colour of the text. 
+	
+```JS
+<!DOCTYPE html>
+<html onclick='myFirstFunction()'>
+  
+<body>
+
+<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
+  
+<script>
+  function myFirstFunction() {
+	document.getElementById("myText").innerHTML = "This is very easy!";
+	document.getElementById("myTxt").style.color="red";
+}
+</script>  
+
+</body>
+  
+</html>
+```	
+
+	
+	
+	In this example, a JavaScript function is placed in the <body> section of an HTML page. The function is invoked (called) when a button is clicked:
 
 ```JS
 <!DOCTYPE html>

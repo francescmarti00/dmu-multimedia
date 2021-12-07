@@ -15,7 +15,7 @@ Study the following program. In this program there is no JavaScript, only HTML c
   
 <body>
 
-<p id="myText">Welcome to the easiest JavaScript example ever!</p>
+<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
 
 </body>
   
@@ -24,7 +24,13 @@ Study the following program. In this program there is no JavaScript, only HTML c
 
 ### 2. The JavaScript getElementById() method
 
+Let's create a very simple (and powerful) JavaScript command using the getElementById() method
+
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById.jpg)
+
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById2.jpg)
+
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById3.jpg)
 
 In HTML, JavaScript code is inserted between <script> and </script> tags.
 

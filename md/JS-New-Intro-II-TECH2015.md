@@ -40,12 +40,11 @@ ondblclick='"document.getElementById("myTxt").style.fontSize="30px"
 
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById_3.jpg)
 
-In HTML, JavaScript code is inserted between <script> and </script> tags.
+Other examples could be
 
 ```JS
-<script>
-// The JavaScript code
-</script>
+onclick='"document.getElementById("myTxt").style.color="red"
+onmouseover='"document.getElementById("myTxt").style.fontWeight="bold"
 ```
 
 The next example shows how JavaScript can create content. The JavaScript methods getElementById() "finds" an HTML element (with id="demo") and creates the element content (innerHTML).

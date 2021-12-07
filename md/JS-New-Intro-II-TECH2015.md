@@ -26,11 +26,11 @@ Study the following program. In this program there is no JavaScript, only HTML c
 
 Let's create a very simple (and powerful) JavaScript command using the getElementById() method
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_1.png)
 
 In this Figure, we can see how we can 'build' commands based on the getElementById() method
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById_2.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_2.png)
 
 For example, we can create the JavaScript command 
 
@@ -38,7 +38,7 @@ For example, we can create the JavaScript command
 ondblclick='"document.getElementById("myTxt").style.fontSize="30px"
 ```
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById_3.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_3.png)
 
 Other examples could be
 

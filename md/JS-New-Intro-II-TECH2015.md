@@ -28,9 +28,9 @@ Let's create a very simple (and powerful) JavaScript command using the getElemen
 
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById.jpg)
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById2.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById_2.jpg)
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById3.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById_3.jpg)
 
 In HTML, JavaScript code is inserted between <script> and </script> tags.
 

@@ -1,13 +1,30 @@
 # JavaScript Basics (part 2)
 
+In this lab we will continue exploring JavaScript with examples and exercises.
+
+
+## Welcome to the easiest JavaScript program ever!
+
+### 1. HTML code
+
+Study the following program. In this program there is no JavaScript, only HTML code. 
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<p id="myText">Welcome to the easiest JavaScript example ever!</p>
+
+</body>
+  
+</html>
+```
+
+### 2. The JavaScript getElementById() method
+
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById.jpg)
-
-In this lab we will continue exploring JavaScript with examples and exercises. Most of these exercises are based on the w3schools JavaScript tutorial: <https://www.w3schools.com/js/default.asp>
-
-
-## JavaScript Can Change and Create HTML Content / Styles / Hide or Show Elements
-
-### 1. JavaScript Can Change HTML Content
 
 In HTML, JavaScript code is inserted between <script> and </script> tags.
 

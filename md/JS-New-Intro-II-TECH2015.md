@@ -26,9 +26,9 @@ Study the following program. In this program there is no JavaScript, only HTML c
 
 Let's create a very simple (and powerful) JavaScript command using the getElementById() method
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById.jpg)
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById_2.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById_2.jpg)
 
 For example, we can create the JavaScript command 
 
@@ -36,7 +36,7 @@ For example, we can create the JavaScript command
 ondblclick='"document.getElementById("myTxt").style.fontSize="30px"
 ```
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/Intro_JS/getElementById_3.jpg)
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById_3.jpg)
 
 In HTML, JavaScript code is inserted between <script> and </script> tags.
 

@@ -109,13 +109,13 @@ You are going to use this code to do the following exercises
 </html>
 ```	
 	
-**Exercise 1**. Modify the previous code so that the text changes to blue if you click anywhere on the web page.
+**Exercise 1**. Modify the original code so that the text changes to blue if you click anywhere on the web page.
 
-**Exercise 2**. Modify the previous code so that the text changes to bold if you double-click anywhere on the web page.
+**Exercise 2**. Modify the original code so that the text changes to bold if you double-click anywhere on the web page.
 
-**Exercise 3**. Modify the previous code so that the size of the text changes to "50px" if you move the mouse.
+**Exercise 3**. Modify the original code so that the size of the text changes to "50px" if you move the mouse.
 	
-**Exercise 4**. Modify the previous code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
+**Exercise 4**. Modify the original code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
 
 **Exercise 5**. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
 </br> 
@@ -206,9 +206,9 @@ You are going to use this code to do the following exercises
 </html>
 ```	
 	
-**Exercise 6**. Add a function to the previous code so that the text changes to blue if you click anywhere on the web page.
+**Exercise 6**. Add a function to the original code so that the text changes to blue if you click anywhere on the web page.
 
-**Exercise 7**. Add a function to the previous code so that the text changes to bold and text background changes to green if someone double-click on the text (Attention, on the text, not on the web page).
+**Exercise 7**. Add a function to the original code so that the text changes to bold and text background changes to green if someone double-click on the text (Attention, on the text, not on the web page).
 </br> 
 </br>
 ## JavaScript Variables
@@ -244,10 +244,38 @@ In this example, we are going to define a function called countClicks() that wil
   
 </html>
 ```
+
 </br> 
 </br>	
+
 ## Exercises
 
-**Exercise 8**. Modify the previous code and use the event 'ondblclick' to invoke the function countClicks().
+You are going to use this code to do the following exercises
 
-**Exercise 9**. Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 
+```JS
+<!DOCTYPE html>
+<html onclick='countClicks()'>
+  
+<body>
+
+<p id="myTxt">Let's count clicks!</p>
+  
+<script>
+   // Let's define a variable. Its initial value is 0 (0 clicks)
+   let x = 0;
+   function countClicks() {
+     // Every time we click on the button, we add '1' to the variable.
+     x = x + 1;
+     // Let's print the result!
+     document.getElementById("myTxt").innerHTML = "You have clicked " + x + " times";
+}
+</script>  
+
+</body>
+  
+</html>
+```
+
+**Exercise 8**. The module math operator %: In the original code, replace "x = x + 1" by " x = (x + 1) % 5 and study the result. Replace 5 by 8, and study the result.
+
+**Exercise 9**. Modify the original code and use the event 'ondblclick' to invoke the function countClicks(). Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 

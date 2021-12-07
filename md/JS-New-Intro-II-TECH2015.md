@@ -249,4 +249,5 @@ In this example, we are going to define a function called countClicks() that wil
 ## Exercises
 
 **Exercise 8**. Modify the previous code and use the event 'ondblclick' to invoke the function countClicks().
+
 **Exercise 9**. Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 

@@ -1,9 +1,9 @@
 # JavaScript Basics (part 2)
 
 In this lab we will continue exploring JavaScript with examples and exercises.
-  
- 
- 
+ </br> 
+  </br> 
+ </br>  
 ## Welcome to the easiest JavaScript program ever!
 
 ### 1. HTML code

@@ -3,6 +3,7 @@
 In this lab we will continue exploring JavaScript with examples and exercises.
 
 
+
 ## Welcome to the easiest JavaScript program ever!
 
 ### 1. HTML code
@@ -91,6 +92,7 @@ No one remember all HTML Events and Attributes. For example, do you want to chan
 
 Do you want to use other HTML events? Check <https://www.w3schools.com/TAGS/ref_eventattributes.asp>
 
+
 	
 ## Exercises
 
@@ -120,6 +122,7 @@ Exercise 4. Modify the previous code so that the text changes to red if someone 
 Exercise 5. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
 
 
+	
 ## JavaScript Functions
 
 ### 1. A very simple example	
@@ -187,6 +190,39 @@ Study this example. Wehn we click on the web page we change two attributes: the 
   
 </html>
 ```	
+
+
+
+## Exercises
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<p id="myText">Welcome to the easiest JavaScript example ever!</p>
+
+</body>
+  
+</html>
+```	
+	
+Exercise 6. Add a function to the previous code so that the text changes to blue if you click anywhere on the web page.
+
+Exercise 7. Add a function to the previous code so that the text changes to bold and text background changes to green if someone double-click on the text (Attention, on the text, not on the web page).
+
+	
+	
+	
+	if you double-click anywhere on the web page.
+
+Exercise 3. Modify the previous code so that the size of the text changes to "50px" if you move the mouse.
+	
+Exercise 4. Modify the previous code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).	
+	
+	
+You are going to use this code to do the following exercises
 
 	
 	

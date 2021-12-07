@@ -1,9 +1,8 @@
 # JavaScript Basics (part 2)
 
 In this lab we will continue exploring JavaScript with examples and exercises.
- </br> 
-  </br> 
- </br>  
+</br> 
+</br>  
 ## Welcome to the easiest JavaScript program ever!
 
 ### 1. HTML code
@@ -91,9 +90,8 @@ No one remember all HTML Events and Attributes. For example, do you want to chan
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_4.png)
 
 Do you want to use other HTML events? Check <https://www.w3schools.com/TAGS/ref_eventattributes.asp>
-
-
-	
+</br> 
+</br>	
 ## Exercises
 
 You are going to use this code to do the following exercises	
@@ -120,9 +118,8 @@ Exercise 3. Modify the previous code so that the size of the text changes to "50
 Exercise 4. Modify the previous code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
 
 Exercise 5. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
-
-
-	
+</br> 
+</br>	
 ## JavaScript Functions
 
 ### 1. A very simple example	
@@ -190,10 +187,11 @@ Study this example. Wehn we click on the web page we change two attributes: the 
   
 </html>
 ```	
-
-
-
+</br> 
+</br>
 ## Exercises
+
+You are going to use this code to do the following exercises
 
 ```JS
 <!DOCTYPE html>

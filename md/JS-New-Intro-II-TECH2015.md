@@ -28,6 +28,8 @@ Let's create a very simple (and powerful) JavaScript command using the getElemen
 
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById.jpg)
 
+In this Figure, we can see how we can 'build' commands based on the getElementById() method
+
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/getElementById_2.jpg)
 
 For example, we can create the JavaScript command 

@@ -66,6 +66,18 @@ The next example shows how to change the font colour by clicking anywhere on the
 </html>
 ```
 
+### 4. So, do I need to memorise all the HTML Events and Attributes?
+	
+No.
+	
+No one remember all HTML Events and Attributes. You want to change the font of your text? Go to the w3shools css reference, look for "font" and 
+	
+	<https://www.w3schools.com/cssref/pr_font_font.asp>
+	
+	
+	Finally: how to connect these JavaScript commands and HTML	
+	
+	
 For example, we can use the attribute inneHTML to change the content of the element "myText"
 	
 ```JS
@@ -82,8 +94,27 @@ For example, we can use the attribute inneHTML to change the content of the elem
 ```
 
 ### Exercises
+	
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
 
-1. Modify the last example and change the element content (innerHTML) from "Hello JavaScript!" to "Hi! My name is (*your name*)".
+<p id="myTxt">I am going to modify this text with JavaScript!</p>
+
+</body>
+  
+</html>
+```	
+	
+1. Study the following code
+
+
+
+
+	
+	Modify the last example and change the element content (innerHTML) from "Hello JavaScript!" to "Hi! My name is (*your name*)".
 2. Repeat the previous exercise replacing the 'onclick' event by 'onmousemove' and 'ondblclick' events.
 
 ### 2. JavaScript Can Change HTML Styles

@@ -70,9 +70,12 @@ The next example shows how to change the font colour by clicking anywhere on the
 	
 No.
 	
-No one remember all HTML Events and Attributes. You want to change the font of your text? Go to the w3shools css reference, look for "font" and 
+No one remember all HTML Events and Attributes. For example, do you want to change the font of your text? Go to the w3shools css reference <https://www.w3schools.com/cssref/pr_font_font.asp>, look for the CSS font Property "font" and check what is the JavaScript syntax you have to use.
+
+![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_3.png)
+
+
 	
-	<https://www.w3schools.com/cssref/pr_font_font.asp>
 	
 	
 	Finally: how to connect these JavaScript commands and HTML	

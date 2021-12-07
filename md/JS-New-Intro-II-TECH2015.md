@@ -1,5 +1,7 @@
 # JavaScript Basics (part 2)
 
+![image](https://www.w3resource.com/w3r_images/string-bold-method.gif)
+
 In this lab we will continue exploring JavaScript with examples and exercises. Most of these exercises are based on the w3schools JavaScript tutorial: <https://www.w3schools.com/js/default.asp>
 
 

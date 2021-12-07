@@ -109,15 +109,15 @@ You are going to use this code to do the following exercises
 </html>
 ```	
 	
-Exercise 1. Modify the previous code so that the text changes to blue if you click anywhere on the web page.
+**Exercise 1**. Modify the previous code so that the text changes to blue if you click anywhere on the web page.
 
-Exercise 2. Modify the previous code so that the text changes to bold if you double-click anywhere on the web page.
+**Exercise 2**. Modify the previous code so that the text changes to bold if you double-click anywhere on the web page.
 
-Exercise 3. Modify the previous code so that the size of the text changes to "50px" if you move the mouse.
+**Exercise 3**. Modify the previous code so that the size of the text changes to "50px" if you move the mouse.
 	
-Exercise 4. Modify the previous code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
+**Exercise 4**. Modify the previous code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
 
-Exercise 5. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
+**Exercise 5**. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
 </br> 
 </br>	
 ## JavaScript Functions
@@ -206,189 +206,47 @@ You are going to use this code to do the following exercises
 </html>
 ```	
 	
-Exercise 6. Add a function to the previous code so that the text changes to blue if you click anywhere on the web page.
+**Exercise 6**. Add a function to the previous code so that the text changes to blue if you click anywhere on the web page.
 
-Exercise 7. Add a function to the previous code so that the text changes to bold and text background changes to green if someone double-click on the text (Attention, on the text, not on the web page).
+**Exercise 7**. Add a function to the previous code so that the text changes to bold and text background changes to green if someone double-click on the text (Attention, on the text, not on the web page).
 </br> 
 </br>
 ## JavaScript Variables
 
-Let's create a program that counts the number of times you click on a button. Let's start with this code:
-
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>What Can JavaScript Do?</h2>
-
-<p id="demo">You have clicked 0 times.</p>
-
-<button type="button" onclick='document.getElementById("demo").innerHTML = "You have clicked 1 times!"'>Click Me!</button>
-
-</body>
-</html>
-```
-
-As we can see, this program doesn't work very well... To count the number of click we need to define a variable. To declare a variable in JavaScript we are going to use the the 'let' keyword.
+To declare a variable in JavaScript we are going to use the the 'let' keyword.
   
 ```JS
 let x = 0;
 ```
 
-And we are going to define a function called countClicks() that will count and display the number of times we click on the mouse.
-  
+In this example, we are going to define a function called countClicks() that will count and display the number of times we click on the mouse.
+
 ```JS
 <!DOCTYPE html>
-<html>
+<html onclick='countClicks()'>
+  
 <body>
 
-<h2>Let's count clicks!</h2>
-
-<p id="demo">You have clicked 0 times.</p>
+<p id="myTxt">Let's count clicks!</p>
   
 <script>
-// Let's define a variable. Its initial value is 0 (0 clicks)
-let x = 0;
-  
-function countClicks() {
-  // Every time we click on the button, we add '1' to the variable.
-  x = x + 1;
-  // Let's print the result!
-  document.getElementById("demo").innerHTML = "You have clicked " + x + " times";
+   // Let's define a variable. Its initial value is 0 (0 clicks)
+   let x = 0;
+   function countClicks() {
+     // Every time we click on the button, we add '1' to the variable.
+     x = x + 1;
+     // Let's print the result!
+     document.getElementById("myTxt").innerHTML = "You have clicked " + x + " times";
 }
-</script>
-  
-<button type="button" onclick='countClicks()'>Click Me!</button>
+</script>  
 
 </body>
+  
 </html>
 ```
-  
-### Exercises
+</br> 
+</br>	
+## Exercises
 
-8. Modify the previous code and use the event 'ondblclick' to invoke the function countClicks().
-9. Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 
-
-### Resoources  
-
-Variables: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Variables-talk.md>
-  
-  
-## Arrays
-
-An array is a special variable, which can hold more than one value. For example:  
-
-```JS
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-```  
-
-You access an array element by referring to the index number. So, cars[0] =  "Saab", cars[1] =  "Volvo", etc.
-  
-In this code, let's define an array of car brands, and let's display the second brand "Volvo".
-  
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>JavaScript Arrays</h2>
-
-<p id="demo"></p>
-
-<script>
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-document.getElementById("demo").innerHTML = cars[1];
-</script>
-
-</body>
-</html>
-```  
-
-### Exercises
-
-10. Modify the previous code in order to display the name of the fourth brand "Renault".
-11. Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
-12. Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
-
-### Resources  
-  
-Arrays: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Arrays-talk.md>
-
-
-## Loops
-  
-Loops in JavaScript enable us to perform the same code repeatedly.
-
-### Exercises
-
-13. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
-
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Cars</h2>
-
-<p id="demo"></p>
-
-<script>
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-
-function showCars() {
-	// Your code here    
-    }
-</script>
-
-<button type="button" onclick="showCars()">Click to display the list of cars!</button>
-
-</body>
-</html>
-```  
-
-14. Repeat the previous exercise using a 'do/while' loop.  
-  
-### Resources  
-
-Loops: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Loops-talk.md>
-  
-## JavaScript Conditional Logic
-  
-It is possible to have code execute based on a condition. If something is true, a thing will happen, otherwise it wont.
-
-### Resources  
- 
-Conditional Logic: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Conditional-Logic-talk.md>
-
-### Exercises  
-
-15. Create a program that displays a list of car brands if, and only if, you click on a button three times. Use the following code as a start.
-  
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Cars</h2>
-
-<p id="demo"></p>
-
-<script>
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-
-function showCars() {
-	// Your code here    
-    }
-</script>
-
-<button type="button" onclick="showCars()">Click to display the list of cars!</button>
-
-</body>
-</html>
-```  
-  
-16. Create a program that displays a list of car brands if, and only if you click on a button more than two times.
-
-17. Create a program that displays a list of car brands if, and only if you click on a button between two and five times.  
-
+**Exercise 8**. Modify the previous code and use the event 'ondblclick' to invoke the function countClicks().
+**Exercise 9**. Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 

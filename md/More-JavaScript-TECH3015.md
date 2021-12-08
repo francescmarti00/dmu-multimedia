@@ -26,6 +26,7 @@ Study the following program. In this program there is no JavaScript, only HTML c
 
 Let's create a very simple (and powerful) JavaScript command using the getElementById() method
 
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_1.png)
 ![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_1.png)
 
 In this Figure, we can see how we can 'build' commands based on the getElementById() method

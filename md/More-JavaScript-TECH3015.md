@@ -312,8 +312,8 @@ document.getElementById("demo").innerHTML = cars[1];
 
 ## Exercises
 
-**Exercise 10**. Modify the previous code in order to display the name of the fourth brand "Renault".
-**Exercise 11**. Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
+**Exercise 10**. Modify the previous code in order to display the name of the fourth brand "Renault".</br> 
+**Exercise 11**. Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.</br> 
 **Exercise 12**. Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc. (Tip: use the arithmetic operator modulus).
 </br> 
 </br> 

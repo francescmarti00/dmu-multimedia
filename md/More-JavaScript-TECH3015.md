@@ -111,7 +111,7 @@ You are going to use this code to do the following exercises
 	
 **Exercise 1**. Modify the original code so that the text changes to blue if you click anywhere on the web page.
 
-**Exercise 2**. Modify the original code so that the text changes to bold if you double-click anywhere on the web page.
+**Exercise 2**. Modify the original code (attention, the original code, not the code you have created in Exercise 1) so that the text changes to bold if you double-click anywhere on the web page.
 
 **Exercise 3**. Modify the original code so that the size of the text changes to "50px" if you move the mouse.
 	

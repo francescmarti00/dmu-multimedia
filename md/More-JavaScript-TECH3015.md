@@ -87,7 +87,7 @@ No.
 	
 No one remember all HTML Events and Attributes. For example, do you want to change the font of your text? Go to the w3shools css reference <https://www.w3schools.com/cssref/pr_font_font.asp>, look for the CSS font Property "font" and check what is the JavaScript syntax you have to use.
 
-![image](https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/byId_4.png)
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_4.png)
 
 Do you want to use other HTML events? Check <https://www.w3schools.com/TAGS/ref_eventattributes.asp>
 </br> 

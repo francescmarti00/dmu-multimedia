@@ -280,3 +280,121 @@ You are going to use this code to do the following exercises
 
 **Exercise 9**. Modify the original code and use the event 'ondblclick' to invoke the function countClicks(). Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 
 
+## Arrays
+
+An array is a special variable, which can hold more than one value. For example:  
+
+```JS
+let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+```  
+
+You access an array element by referring to the index number. So, cars[0] =  "Saab", cars[1] =  "Volvo", etc.
+  
+In this code, let's define an array of car brands, and let's display the second brand "Volvo".
+  
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+
+<script>
+let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+document.getElementById("demo").innerHTML = cars[1];
+</script>
+
+</body>
+</html>
+```  
+
+### Exercises
+
+10. Modify the previous code in order to display the name of the fourth brand "Renault".
+11. Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.
+12. Explore the arithmetic operator Modulus (<https://www.w3schools.com/js/js_arithmetic.asp>). Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc.
+
+### Resources  
+  
+Arrays: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Arrays-talk.md>
+
+
+## Loops
+  
+Loops in JavaScript enable us to perform the same code repeatedly.
+
+### Exercises
+
+13. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cars</h2>
+
+<p id="demo"></p>
+
+<script>
+let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+
+function showCars() {
+	// Your code here    
+    }
+</script>
+
+<button type="button" onclick="showCars()">Click to display the list of cars!</button>
+
+</body>
+</html>
+```  
+
+14. Repeat the previous exercise using a 'do/while' loop.  
+  
+### Resources  
+
+Loops: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Loops-talk.md>
+  
+## JavaScript Conditional Logic
+  
+It is possible to have code execute based on a condition. If something is true, a thing will happen, otherwise it wont.
+
+### Resources  
+ 
+Conditional Logic: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?Conditional-Logic-talk.md>
+
+### Exercises  
+
+15. Create a program that displays a list of car brands if, and only if, you click on a button three times. Use the following code as a start.
+  
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Cars</h2>
+
+<p id="demo"></p>
+
+<script>
+let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+
+function showCars() {
+	// Your code here    
+    }
+</script>
+
+<button type="button" onclick="showCars()">Click to display the list of cars!</button>
+
+</body>
+</html>
+```  
+  
+16. Create a program that displays a list of car brands if, and only if you click on a button more than two times.
+
+17. Create a program that displays a list of car brands if, and only if you click on a button between two and five times.  
+
+

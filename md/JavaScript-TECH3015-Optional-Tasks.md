@@ -110,6 +110,8 @@ Now, you are going to use this code (let's call it 'Code B') to do the next two 
 
 <p id="myTxt1">This is the paragraph number 1</p>
 <p id="myTxt2">This is the paragraph number 2</p>
+	
+<button>Click me!</button>
 
 </body>
   
@@ -118,7 +120,9 @@ Now, you are going to use this code (let's call it 'Code B') to do the next two 
 
 **Exercise 5**. Modify 'Code B' so that the text of 'paragraph number 2' changes to blue if you click anywhere on the web page.
 
-**Exercise 6**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.	
+**Exercise 6**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.
+	
+**Exercise 7**. Modify 'Code B' so that the text background of 'paragraph number 2' changes to blue if you click on the button. (You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>).
 </br>
 </br> 
 ## JavaScript Functions
@@ -202,20 +206,99 @@ Use this code (let's call it 'Code C') to do the following exercises
 
 <p id="myTxt1">This is the paragraph number 1</p>
 <p id="myTxt2">This is the paragraph number 2</p>
+	
+<button>Click me!</button>
 
 </body>
   
 </html>
 ```	
 	
-**Exercise 7**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to green if you click anywhere on the web page.
-
 **Exercise 8**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
 
+**Exercise 9**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to rgb(34, 56, 120) and text background changes to rgb(10, 255, 255) if someone click on the button.
 
+Now, let's use this code (let's call it 'Code D') to do the following two exercises
 
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
 
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+	
+<button>Click me!</button>
+
+</body>
+  
+</html>
+```		
+
+**Exercise 10**. Add a function to 'Code D' so that the bulb 'turn on' when you click on the button. (This is the JavaScript command to change the source of an image document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif').	
+	
 </br> 
+## JavaScript Conditional Logic
+  
+It is possible to have code execute based on a condition. If something is true, a thing will happen, otherwise it won't.
+The condition logic can be used to store the 'status' of an element. Study this example
+
+```JS
+<!DOCTYPE html>
+<html onclick='changeColor()'>
+  
+<body>
+
+<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
+   
+<script>
+  // Status is a variable
+  // We are going to use status = 0 for black, and status = 1 for red
+  let status = 0;
+  function changeColor() {
+    if (status == 0) {
+      document.getElementById("myTxt").style.color="red";
+      status = 1;
+    } else {
+      document.getElementById("myTxt").style.color="black";
+      status = 0;
+    }
+}
+</script>    
+
+</body>
+  
+</html>
+```  
+</br> 
+
+## Exercises
+
+To do Exercise 11, we are going to use the following code (let's call it 'Code E').
+
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<img id="myImage" src="https://www.w3schools.com/js/pic_bulboff.gif" style="width:100px">
+	
+<button onclick="changeImage()">On/Off</button>
+
+<script>
+  function changeImage() {
+	document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'
+  }
+</script>    
+  
+</body>
+  
+</html>
+
+**Exercise 11**. Modify 'Code E' so that the bulb 'turn on/off' when you click on the button.
+
+
+
 
 ## JavaScript Variables
 

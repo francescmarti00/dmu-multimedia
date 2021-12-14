@@ -192,7 +192,7 @@ Study this example. When we click on the web page we change two attributes: the 
 </body>
   
 </html>
-```	
+```
 </br>
 
 ## Exercises
@@ -331,7 +331,7 @@ To do Exercise 13, we are going to use the following code (let's call it 'Code F
 </html>
 ``` 
 
-**Exercise 13**. Modify 'Code E' so that the bulb 'turn on/off' when you click on the button.
+**Exercise 13**. Modify 'Code F' so that the bulb 'turn on/off' when you click on the button.
 </br> 
 
 ## Loops

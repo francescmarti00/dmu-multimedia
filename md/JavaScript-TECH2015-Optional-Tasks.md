@@ -100,7 +100,7 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 	
 **Exercise 4**. Modify the previous code so the text background changes to italic if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_font_font.asp>
 
-Now, you are going to use this code (let's call it 'Code B') to do the next two exercises	
+Now, you are going to use this code (let's call it 'Code B') to do the next three exercises	
 	
 ```JS
 <!DOCTYPE html>

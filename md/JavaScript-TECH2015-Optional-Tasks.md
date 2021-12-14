@@ -90,8 +90,8 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 </body>
   
 </html>
-```	
-	
+```
+
 **Exercise 1**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="red" in 'Code A', so that the text changes to red if you click anywhere on the web page.
 	
 **Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="red" in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
@@ -116,7 +116,7 @@ Now, you are going to use this code (let's call it 'Code B') to do the next thre
 </body>
   
 </html>
-```		
+```
 
 **Exercise 5**. Modify 'Code B' so that the text of 'paragraph number 2' changes to blue if you click anywhere on the web page.
 
@@ -147,6 +147,7 @@ Study these two programs. They do the same!
   
 </html>
 ```
+
 In this example, a JavaScript function is placed in the <body> section of an HTML page. The function is invoked (called) when we click on the web page.
 	
 ```JS
@@ -166,7 +167,7 @@ In this example, a JavaScript function is placed in the <body> section of an HTM
 </body>
   
 </html>
-```	
+```
 
 ### 2. Adding commands to a function	
 
@@ -192,7 +193,7 @@ Study this example. When we click on the web page we change two attributes: the 
   
 </html>
 ```	
-</br>	
+</br>
 
 ## Exercises
 
@@ -212,7 +213,7 @@ Use this code (let's call it 'Code C') to do the following exercises
 </body>
   
 </html>
-```	
+```
 	
 **Exercise 8**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
 
@@ -233,7 +234,7 @@ Now, let's use this code (let's call it 'Code D') to do the following two exerci
 </body>
   
 </html>
-```		
+```
 
 **Exercise 10**. Add a function to 'Code D' so that the bulb 'turn on' when you click on the button. (This is the JavaScript command to change the source of an image document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif').		
 </br> 
@@ -269,7 +270,7 @@ The condition logic can be used to store the 'status' of an element. Study this 
 </body>
   
 </html>
-```  
+```
 </br> 
 
 ## Exercises
@@ -301,7 +302,7 @@ Let's use the following code (let's call it 'Code E') to do the following two ex
 </body>
   
 </html>
-```  
+```
 
 **Exercise 11**. Add two JavaScript commands to 'Code E' so that the text changes to bold if you click everywhere on the webpage. The text must change to normal if you click again.
 

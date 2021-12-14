@@ -276,6 +276,7 @@ The condition logic can be used to store the 'status' of an element. Study this 
 
 To do Exercise 11, we are going to use the following code (let's call it 'Code E').
 
+```JS
 <!DOCTYPE html>
 <html>
   
@@ -294,6 +295,7 @@ To do Exercise 11, we are going to use the following code (let's call it 'Code E
 </body>
   
 </html>
+``` 
 
 **Exercise 11**. Modify 'Code E' so that the bulb 'turn on/off' when you click on the button.
 

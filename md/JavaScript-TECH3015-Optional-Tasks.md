@@ -49,22 +49,22 @@ The next example shows how to change the font colour by clicking anywhere on the
 </html>
 ```
 
-For example, we can use the attribute innerHTML to change the content of the element "myTxt"
+This example shows how to change the content of the element "myTxt" (using the attribute innerHTML) clicking on 'Welcome...'. (Note that the JavaScript command is inside the <p> tag.). 
 	
 ```JS
 <!DOCTYPE html>
-<html onclick='document.getElementById("myTxt").innerHTML = "This is very easy!"'>
+<html>
   
 <body>
 
-<p id="myText">Welcome to the easiest JavaScript example ever!</p>
+<p id="myText" onclick='document.getElementById("myTxt").innerHTML = "This is very easy!"'>Welcome to the easiest JavaScript example ever!</p>
 
 </body>
   
 </html>
 ```
 	
-### 4. So, do I need to memorise all the HTML Events and Attributes?
+### 3. So, do I need to memorise all the HTML Events and Attributes?
 	
 No.
 	
@@ -77,7 +77,7 @@ Do you want to use other HTML events? Check <https://www.w3schools.com/TAGS/ref_
 </br>	
 ## Exercises
 
-You are going to use this code to do the following exercises	
+You are going to use this code (let's call it 'Code A') to do the following exercises	
 	
 ```JS
 <!DOCTYPE html>
@@ -92,16 +92,34 @@ You are going to use this code to do the following exercises
 </html>
 ```	
 	
-**Exercise 1**. Modify the original code so that the text changes to blue if you click anywhere on the web page.
-
-**Exercise 2**. Modify the original code (attention, the original code, not the code you have created in Exercise 1) so that the text changes to bold if you double-click anywhere on the web page.
-
-**Exercise 3**. Modify the original code so that the size of the text changes to "50px" if you move the mouse.
+**Exercise 1**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="red" in 'Code A', so that the text changes to red if you click anywhere on the web page.
 	
-**Exercise 4**. Modify the original code so that the text changes to red if someone click on the text (attention, not on the web page, on the text).
+**Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="red" in 'Code A' ('Code A' is original program), so that the text changes to red if you click on the text.	
 
-**Exercise 5**. Modify the previous code so the text background changes to green if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>	
-</br> 
+**Exercise 3**. Modify 'Code A' so that the size of the text changes to "40px" if you move the mouse.
+	
+**Exercise 4**. Modify the previous code so the text background changes to italic if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_font_font.asp>
+
+Now, you are going to use this code (let's call it 'Code B') to do the next two exercises	
+	
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<p id="myTxt1">This is the paragraph number 1</p>
+<p id="myTxt2">This is the paragraph number 2</p>
+
+</body>
+  
+</html>
+```		
+
+**Exercise 5**. Modify 'Code B' so that the text of 'paragraph number 2' changes to blue if you click anywhere on the web page.
+
+**Exercise 6**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.	
+</br>
 </br> 
 ## JavaScript Functions
 

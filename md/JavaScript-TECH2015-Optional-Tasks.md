@@ -159,8 +159,8 @@ In this example, a JavaScript function is placed in the <body> section of an HTM
   
 <script>
   function myFirstFunction() {
-  document.getElementById("myTxt").innerHTML = "This is very easy!";
-}
+	document.getElementById("myTxt").innerHTML = "This is very easy!";
+  }
 </script>  
 
 </body>
@@ -274,7 +274,40 @@ The condition logic can be used to store the 'status' of an element. Study this 
 
 ## Exercises
 
-To do Exercise 11, we are going to use the following code (let's call it 'Code E').
+Let's use the following code (let's call it 'Code E') to do the following two exercises.
+
+```JS
+<!DOCTYPE html>
+<html onclick='changeColor()'>
+  
+<body>
+
+<p id="myTxt">My text!</p>
+   
+<script>
+  // Status
+  let status = 0;
+  function changeColor() {
+    if (status == 0) {
+      // Insert here the JavaScript command 1
+      status = 1;
+    } else {
+      // Insert here the JavaScript command 2
+      status = 0;
+    }
+}
+</script>    
+
+</body>
+  
+</html>
+```  
+
+**Exercise 11**. Add two JavaScript commands to 'Code E' so that the text changes to bold if you click everywhere on the webpage. The text must change to normal if you click again.
+
+**Exercise 12**. Add two JavaScript commands to 'Code E' so that the text background changes to red if you click everywhere on the webpage. The text background must change to white if you click again.
+
+To do Exercise 13, we are going to use the following code (let's call it 'Code F').
 
 ```JS
 <!DOCTYPE html>
@@ -297,182 +330,9 @@ To do Exercise 11, we are going to use the following code (let's call it 'Code E
 </html>
 ``` 
 
-**Exercise 11**. Modify 'Code E' so that the bulb 'turn on/off' when you click on the button.
-
-
-
-
-## JavaScript Variables
-
-To declare a variable in JavaScript we are going to use the the 'let' keyword.
-  
-```JS
-let x = 0;
-```
-
-In this example, we are going to define a function called countClicks() that will count and display the number of times we click on the mouse.
-
-```JS
-<!DOCTYPE html>
-<html onclick='countClicks()'>
-  
-<body>
-
-<p id="myTxt">Let's count clicks!</p>
-  
-<script>
-   // Let's define a variable. Its initial value is 0 (0 clicks)
-   let x = 0;
-   function countClicks() {
-     // Every time we click on the button, we add '1' to the variable.
-     x = x + 1;
-     // Let's print the result!
-     document.getElementById("myTxt").innerHTML = "You have clicked " + x + " times";
-}
-</script>  
-
-</body>
-  
-</html>
-```
+**Exercise 13**. Modify 'Code E' so that the bulb 'turn on/off' when you click on the button.
 </br> 
 
-## Exercises
-
-You are going to use this code to do the following exercises
-
-```JS
-<!DOCTYPE html>
-<html onclick='countClicks()'>
-  
-<body>
-
-<p id="myTxt">Let's count clicks!</p>
-  
-<script>
-   // Let's define a variable. Its initial value is 0 (0 clicks)
-   let x = 0;
-   function countClicks() {
-     // Every time we click on the button, we add '1' to the variable.
-     x = x + 1;
-     // Let's print the result!
-     document.getElementById("myTxt").innerHTML = "You have clicked " + x + " times";
-}
-</script>  
-
-</body>
-  
-</html>
-```
-
-**Exercise 8**. The module math operator %: In the original code, replace "x = x + 1" by " x = (x + 1) % 5 and study the result. Replace 5 by 8, and study the result.
-
-**Exercise 9**. Modify the original code and use the event 'ondblclick' to invoke the function countClicks(). Change the function countClicks() in order to count the number of clicks correctly. That is, now the result should be 2, 4, 6 etc. 
-</br> 
-</br> 
-## Arrays
-
-An array is a special variable, which can hold more than one value. For example:  
-
-```JS
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-```  
-
-You access an array element by referring to the index number. So, cars[0] =  "Saab", cars[1] =  "Volvo", etc.
-  
-In this code, let's define an array of car brands, and let's display the second brand "Volvo".
-  
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>JavaScript Arrays</h2>
-
-<p id="demo"></p>
-
-<script>
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-document.getElementById("demo").innerHTML = cars[1];
-</script>
-
-</body>
-</html>
-```  
-</br> 
-
-## Exercises
-
-**Exercise 10**. Modify the previous code in order to display the name of the fourth brand "Renault".</br> 
-**Exercise 11**. Create a program that displays the name of a car brand everytime you click on a button. So, if you click 1 time, the program should show the brand "Saab", if you click 2 times "Volvo", 3 times "BMW", etc.</br> 
-**Exercise 12**. Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc. (Tip: use the arithmetic operator modulus).
-</br> 
-</br> 
-## JavaScript Conditional Logic
-  
-It is possible to have code execute based on a condition. If something is true, a thing will happen, otherwise it won't.
-The condition logic can be used to store the 'status' of an element. Study this example
-
-```JS
-<!DOCTYPE html>
-<html onclick='changeColor()'>
-  
-<body>
-
-<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
-   
-<script>
-  // status = 0 = black, status = 1 = red
-  let status = 0;
-  function changeColor() {
-    if (status == 0) {
-      document.getElementById("myTxt").style.color="red";
-      status = 1;
-    } else {
-      document.getElementById("myTxt").style.color="black";
-      status = 0;
-    }
-}
-</script>    
-
-</body>
-  
-</html>
-```  
-</br> 
-
-## Exercises
-
-**Exercise 13**. Create a program that displays a list of car brands if, and only if, you click on a button three times. Use the following code as a start.
-  
-```JS
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>Cars</h2>
-
-<p id="demo"></p>
-
-<script>
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-
-function showCars() {
-	// Your code here    
-    }
-</script>
-
-<button type="button" onclick="showCars()">Click to display the list of cars!</button>
-
-</body>
-</html>
-```  
-  
-**Exercise 14**. Create a program that displays a list of car brands if, and only if you click on a button more than two times.
-
-**Exercise 15**. Create a program that displays a list of car brands if, and only if you click on a button between two and five times.  
-</br> 
-</br> 
 ## Loops
   
 Loops in JavaScript enable us to perform the same code repeatedly.
@@ -480,7 +340,7 @@ Loops in JavaScript enable us to perform the same code repeatedly.
 
 ## Exercises
 
-**Exercise 16**. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
+**Exercise 14**. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
 
 ```JS
 <!DOCTYPE html>
@@ -505,4 +365,4 @@ function showCars() {
 </html>
 ```  
 
-**Exercise 17**. Repeat the previous exercise using a 'do/while' loop.  
+**Exercise 15**. Repeat the previous exercise using a 'do/while' loop.  

@@ -235,9 +235,9 @@ Now, let's use this code (let's call it 'Code D') to do the following two exerci
 </html>
 ```		
 
-**Exercise 10**. Add a function to 'Code D' so that the bulb 'turn on' when you click on the button. (This is the JavaScript command to change the source of an image document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif').	
-	
+**Exercise 10**. Add a function to 'Code D' so that the bulb 'turn on' when you click on the button. (This is the JavaScript command to change the source of an image document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif').		
 </br> 
+
 ## JavaScript Conditional Logic
   
 It is possible to have code execute based on a condition. If something is true, a thing will happen, otherwise it won't.

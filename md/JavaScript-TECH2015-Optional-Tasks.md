@@ -334,36 +334,32 @@ To do Exercise 13, we are going to use the following code (let's call it 'Code F
 **Exercise 13**. Modify 'Code F' so that the bulb 'turn on/off' when you click on the button.
 </br> 
 
-## Loops
-  
-Loops in JavaScript enable us to perform the same code repeatedly.
-</br> 
-
-## Exercises
-
-**Exercise 14**. Create a program that displays a list of car brands when you click on a button using a 'for' loop. Use the following code as a start.
+Finally, you are going to use the following code (let's call if 'Code G') to do the last exercises
 
 ```JS
 <!DOCTYPE html>
-<html>
+<html onclick='countClicks()'>
+  
 <body>
 
-<h2>Cars</h2>
-
-<p id="demo"></p>
-
+<p id="myTxt">Let's count clicks!</p>
+  
 <script>
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
-
-function showCars() {
-	// Your code here    
-    }
-</script>
-
-<button type="button" onclick="showCars()">Click to display the list of cars!</button>
+   // Let's define a variable. Its initial value is 0 (0 clicks)
+   let x = 0;
+   function countClicks() {
+     // Every time we click on the button, we add '1' to the variable.
+     x = x + 1;
+     // Let's print the result!
+     document.getElementById("myTxt").innerHTML = "You have clicked " + x + " times";
+}
+</script>  
 
 </body>
+  
 </html>
-```  
+```
 
-**Exercise 15**. Repeat the previous exercise using a 'do/while' loop.  
+**Exercise 14**. Create a program that changes the text background to red if, and only if you click on the webpage more than four times.
+
+**Exercise 15**. Create a program that changes the text background to blue if, and only if you click on a button between two and five times. So, if you click six time the text background must be white again.

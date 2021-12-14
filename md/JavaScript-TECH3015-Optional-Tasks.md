@@ -49,7 +49,7 @@ The next example shows how to change the font colour by clicking anywhere on the
 </html>
 ```
 
-This example shows how to change the content of the element "myTxt" (using the attribute innerHTML) clicking on 'Welcome...'. (Note that the JavaScript command is inside the <p> tag.). 
+This example shows how to change the content of the element "myTxt" (using the attribute innerHTML) clicking on 'Welcome...'. (Note that the JavaScript command is inside the 'p' tag.). 
 	
 ```JS
 <!DOCTYPE html>
@@ -192,7 +192,7 @@ Study this example. When we click on the web page we change two attributes: the 
 
 ## Exercises
 
-Use this code to do the following exercises
+Use this code (let's call it 'Code C') to do the following exercises
 
 ```JS
 <!DOCTYPE html>
@@ -200,16 +200,21 @@ Use this code to do the following exercises
   
 <body>
 
-<p id="myText">Welcome to the easiest JavaScript example ever!</p>
+<p id="myTxt1">This is the paragraph number 1</p>
+<p id="myTxt2">This is the paragraph number 2</p>
 
 </body>
   
 </html>
 ```	
 	
-**Exercise 6**. Add a function to the original code so that the text changes to blue if you click anywhere on the web page.
+**Exercise 7**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to green if you click anywhere on the web page.
 
-**Exercise 7**. Add a function to the original code so that the text changes to bold and text background changes to green if someone double-click on the text (Attention, on the text, not on the web page).
+**Exercise 8**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
+
+
+
+
 </br> 
 
 ## JavaScript Variables

@@ -382,6 +382,8 @@ Study this example. Notice how we use the variable 'count' to display the array 
 
 <p id="theAnimal"></p>
 
+<button type="button" onclick="countClicks()">Click me!</button>
+
 <script>
   
   <!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
@@ -398,8 +400,6 @@ Study this example. Notice how we use the variable 'count' to display the array 
   
 </script>
 
-    <button type="button" onclick="countClicks()">Click me!</button>
-  
 </body>
 </html>
 ```
@@ -438,4 +438,4 @@ Finally, let's study this (very useful!) example. This example allows us to disp
 </body>
 ```
 
-**Exercise 16**. Modify the previous example in order to display the animals in loop. That is, if you click on the button 3 times, your program has to show the pic of the elephant, 4 times the gorilla, etc.
+**Exercise 16**. Modify the previous example in order to display the animals in loop. That is, if you click on the image 3 times, your program has to show the pic of the elephant, 4 times the gorilla, etc.

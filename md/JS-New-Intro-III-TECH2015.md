@@ -92,13 +92,13 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 </html>
 ```
 
-**Exercise 1**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="red" in 'Code A', so that the text changes to red if you click anywhere on the web page.
+**Exercise 1**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue" in 'Code A', so that the text changes to red if you click anywhere on the web page.
 	
-**Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="red" in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
+**Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue" in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
 
-**Exercise 3**. Modify 'Code A' so that the size of the text changes to "40px" if you move the mouse.
+**Exercise 3 (Optional)**. Modify 'Code A' so that the size of the text changes to "40px" if you move the mouse.
 	
-**Exercise 4**. Modify the previous code so the text background changes to italic if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_font_font.asp>
+**Exercise 4 (Optional)**. Modify the previous code so the text background changes to italic if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_font_font.asp>
 
 Now, you are going to use this code (let's call it 'Code B') to do the next three exercises	
 	
@@ -122,7 +122,7 @@ Now, you are going to use this code (let's call it 'Code B') to do the next thre
 
 **Exercise 6**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.
 	
-**Exercise 7**. Modify 'Code B' so that the text background of 'paragraph number 2' changes to blue if you click on the button. (You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>).
+**Exercise 7 (Optional)**. Modify 'Code B' so that the text background of 'paragraph number 2' changes to blue if you click on the button. (You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>).
 </br>
 </br> 
 ## JavaScript Functions
@@ -217,9 +217,9 @@ Use this code (let's call it 'Code C') to do the following exercises
 	
 **Exercise 8**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
 
-**Exercise 9**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to rgb(34, 56, 120) and text background changes to rgb(10, 255, 255) if someone click on the button.
+**Exercise 9 (Optional)**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to rgb(34, 56, 120) and text background changes to rgb(10, 255, 255) if someone click on the button.
 
-Now, let's use this code (let's call it 'Code D') to do the following two exercises
+Now, let's use this code (let's call it 'Code D') to do the following exercise.
 
 ```JS
 <!DOCTYPE html>

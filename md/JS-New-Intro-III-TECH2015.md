@@ -373,7 +373,7 @@ let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
 
 You access an array element by referring to the index number. So, animals[0] =  "elephant", cars[1] =  "gorilla", etc.
 
-Study this example. Notice how we use the variable 'count' to display the array elements. (Yes, there is a problem is we clickon the button more than 5 times. We will fix this in the next exercise).
+Study this example. Notice how we use the variable 'count' to display the array elements. (Yes, there is a problem is we click on the button more than 5 times. We will fix this in the next exercise).
 
 ```JS
 <!DOCTYPE html>
@@ -404,6 +404,38 @@ Study this example. Notice how we use the variable 'count' to display the array 
 </html>
 ```
 
-**Exercise 15**. Modify your program in order to display the animals in loop. That is, if you click on the button 6 times, your program has to show the first animal "elephant", 7 times "gorilla", etc. (Tip: remember we can do this with the arithmetic operator Modulus. Remember that, for example 6 % 5 = 1, 7 % 5 = 2, etc.).
+**Exercise 15**. Modify your program in order to display the names of the animals in loop. That is, if you click on the button 6 times, your program has to show the first animal name "elephant", 7 times "gorilla", etc. (Tip: remember we can do this with the arithmetic operator Modulus. Remember that, for example 6 % 5 = 1, 7 % 5 = 2, etc.).
 
-![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg)
+Finally, let's study this (very useful!) example. This example allows us to display an array of images using JavaScript and - as always - the command getElementById. Every time we click on the image, we display the next image in the array. (Yes, again, there is a problem is we click on the image more than 3 times. We will fix this in the next exercise).
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<img id="myImage" src="https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg" style="width:100px" onclick="changeImage()">
+	
+<script>
+  var cont = 0;
+  var imgArray = new Array();
+  
+  imgArray[0] = new Image();
+  imgArray[0].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg';
+ 
+  imgArray[1] = new Image();
+  imgArray[1].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/gorilla.jpg';
+  
+  imgArray[2] = new Image();
+  imgArray[2].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/leopard.jpg';
+  
+  function changeImage() {
+    cont = cont + 1;
+    document.getElementById('myImage').src=imgArray[cont].src
+  }
+</script>    
+  
+</body>
+```
+
+**Exercise 16**. Modify the previous example in order to display the animals in loop. That is, if you click on the button 3 times, your program has to show the pic of the elephant, 4 times the gorilla, etc.

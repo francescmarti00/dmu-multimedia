@@ -118,11 +118,9 @@ Now, you are going to use this code (let's call it 'Code B') to do the next thre
 </html>
 ```
 
-**Exercise 5**. Modify 'Code B' so that the text of 'paragraph number 2' changes to blue if you click anywhere on the web page.
-
-**Exercise 6**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.
+**Exercise 5**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.
 	
-**Exercise 7 (Optional)**. Modify 'Code B' so that the text background of 'paragraph number 2' changes to blue if you click on the button. (You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>).
+**Exercise 6 (Optional)**. Modify 'Code B' so that the text background of 'paragraph number 2' changes to blue if you click on the button. (You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>).
 </br>
 </br> 
 ## JavaScript Functions
@@ -215,9 +213,9 @@ Use this code (let's call it 'Code C') to do the following exercises
 </html>
 ```
 	
-**Exercise 8**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
+**Exercise 7**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
 
-**Exercise 9 (Optional)**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to rgb(34, 56, 120) and text background changes to rgb(10, 255, 255) if someone click on the button.
+**Exercise 8 (Optional)**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to rgb(34, 56, 120) and text background changes to rgb(10, 255, 255) if someone click on the button.
 
 Now, let's use this code (let's call it 'Code D') to do the following exercise.
 
@@ -236,7 +234,7 @@ Now, let's use this code (let's call it 'Code D') to do the following exercise.
 </html>
 ```
 
-**Exercise 10**. Add a function to 'Code D' so that the bulb 'turn on' when you click on the button. (This is the JavaScript command to change the source of an image document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif').		
+**Exercise 9**. Add a function to 'Code D' so that the bulb 'turn on' when you click on the button. (This is the JavaScript command to change the source of an image document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif').		
 </br> 
 
 ## JavaScript Conditional Logic
@@ -304,11 +302,11 @@ Let's use the following code (let's call it 'Code E') to do the following two ex
 </html>
 ```
 
-**Exercise 11**. Add two JavaScript commands to 'Code E' so that the text changes to bold if you click everywhere on the webpage. The text must change to normal if you click again.
+**Exercise 10**. Add two JavaScript commands to 'Code E' so that the text changes to bold if you click everywhere on the webpage. The text must change to normal if you click again.
 
-**Exercise 12**. Add two JavaScript commands to 'Code E' so that the text background changes to red if you click everywhere on the webpage. The text background must change to white if you click again.
+**Exercise 11 (Optional)**. Add two JavaScript commands to 'Code E' so that the text background changes to red if you click everywhere on the webpage. The text background must change to white if you click again.
 
-To do Exercise 13, we are going to use the following code (let's call it 'Code F').
+To do Exercise 12, we are going to use the following code (let's call it 'Code F').
 
 ```JS
 <!DOCTYPE html>
@@ -331,7 +329,7 @@ To do Exercise 13, we are going to use the following code (let's call it 'Code F
 </html>
 ``` 
 
-**Exercise 13**. Modify 'Code F' so that the bulb 'turn on/off' when you click on the button.
+**Exercise 12**. Modify 'Code F' so that the bulb 'turn on/off' when you click on the button.
 </br> 
 
 Finally, you are going to use the following code (let's call if 'Code G') to do the last exercises
@@ -360,6 +358,52 @@ Finally, you are going to use the following code (let's call if 'Code G') to do 
 </html>
 ```
 
-**Exercise 14**. Create a program that changes the text background to red if, and only if you click on the webpage more than four times.
+**Exercise 13**. Create a program that changes the text background to red if, and only if you click on the webpage more than four times.
 
-**Exercise 15**. Create a program that changes the text background to blue if, and only if you click on a button between two and five times. So, if you click six time the text background must be white again.
+**Exercise 14 (optional)**. Create a program that changes the text background to blue if, and only if you click on a button between two and five times. So, if you click six time the text background must be white again.
+</br> 
+
+## Arrays
+
+An array is a special variable, which can hold more than one value. For example:  
+
+```JS
+let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+```  
+
+You access an array element by referring to the index number. So, cars[0] =  "Saab", cars[1] =  "Volvo", etc.
+
+Study this example. Notice how we use the variable 'count' to display the array elements. (Yes, there is a problem is we clickon the button more than 5 times. We will fix this in the next exercise).
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array example</h2>
+
+<p id="demo"></p>
+
+<script>
+  
+  <!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
+  let count = 0;
+  <!-- The array of car brands -->
+  let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+  
+  function countClicks() {
+    <!-- Let's print the brand name number 'count' -->
+    document.getElementById("demo").innerHTML = cars[count];
+    <!-- Every time we click on the button, we add '1' to the variable 'count'. -->
+    count = count + 1;
+  }
+  
+</script>
+
+    <button type="button" onclick="countClicks()">Click me!</button>
+  
+</body>
+</html>
+```
+
+**Exercise 15**. Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc. (Tip: remember we can do this with the arithmetic operator Modulus. Remember that, for example 6 % 5 = 1, 7 % 5 = 2, etc.).

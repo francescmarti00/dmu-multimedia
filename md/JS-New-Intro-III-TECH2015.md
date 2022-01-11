@@ -368,10 +368,10 @@ Finally, you are going to use the following code (let's call if 'Code G') to do 
 An array is a special variable, which can hold more than one value. For example:  
 
 ```JS
-let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
 ```  
 
-You access an array element by referring to the index number. So, cars[0] =  "Saab", cars[1] =  "Volvo", etc.
+You access an array element by referring to the index number. So, animals[0] =  "elephant", cars[1] =  "gorilla", etc.
 
 Study this example. Notice how we use the variable 'count' to display the array elements. (Yes, there is a problem is we clickon the button more than 5 times. We will fix this in the next exercise).
 
@@ -380,20 +380,18 @@ Study this example. Notice how we use the variable 'count' to display the array 
 <html>
 <body>
 
-<h2>JavaScript Array example</h2>
-
-<p id="demo"></p>
+<p id="theAnimal"></p>
 
 <script>
   
   <!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
   let count = 0;
   <!-- The array of car brands -->
-  let cars = ["Saab", "Volvo", "BMW", "Renault", "Mini"];
+  let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
   
   function countClicks() {
     <!-- Let's print the brand name number 'count' -->
-    document.getElementById("demo").innerHTML = cars[count];
+    document.getElementById("theAnimal").innerHTML = animals[count];
     <!-- Every time we click on the button, we add '1' to the variable 'count'. -->
     count = count + 1;
   }
@@ -406,4 +404,4 @@ Study this example. Notice how we use the variable 'count' to display the array 
 </html>
 ```
 
-**Exercise 15**. Modify your program in order to display the brands in loop. That is, if you click on the button 6 times, your program has to show the first brand "Saab", 7 times "Volvo", etc. (Tip: remember we can do this with the arithmetic operator Modulus. Remember that, for example 6 % 5 = 1, 7 % 5 = 2, etc.).
+**Exercise 15**. Modify your program in order to display the animals in loop. That is, if you click on the button 6 times, your program has to show the first animal "elephant", 7 times "gorilla", etc. (Tip: remember we can do this with the arithmetic operator Modulus. Remember that, for example 6 % 5 = 1, 7 % 5 = 2, etc.).

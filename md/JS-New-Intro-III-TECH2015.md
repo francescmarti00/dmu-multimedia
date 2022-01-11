@@ -405,3 +405,5 @@ Study this example. Notice how we use the variable 'count' to display the array 
 ```
 
 **Exercise 15**. Modify your program in order to display the animals in loop. That is, if you click on the button 6 times, your program has to show the first animal "elephant", 7 times "gorilla", etc. (Tip: remember we can do this with the arithmetic operator Modulus. Remember that, for example 6 % 5 = 1, 7 % 5 = 2, etc.).
+
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/elephant.jpg)

@@ -2,11 +2,11 @@
 
 In this lab we’re going to bring a few things together to make a card flip game where the player has to remember the location of cards to match up pairs. Just to make things a bit trickier (for us) we’re going to randomise the order of the cards each time.
 
-You can see a completed example here: <https://thomcorah.github.io/dmu-multimedia/resources/CardFlip/>
+You can see a completed example here: <https://francescmarti00.github.io/dmu-multimedia/resources/CardFlip/>
 
 This is quite a trick one, so once you've had a play, open up the source code to refer to if you need to.
 
-![Card Flip Game](https://thomcorah.github.io/dmu-multimedia/resources/img/cardFlip.png)
+![Card Flip Game](https://francescmarti00.github.io/dmu-multimedia/resources/img/cardFlip.png)
 
 There are a number of steps we’re going to run through to achieve this.
 
@@ -23,7 +23,7 @@ This bit’s quite straightforward as we’re going to borrow what somebody else
 - Copy the HTML from the pen and put that in the <body> of your HTML.
 - For the CSS, what’s shown in CodePen is slightly different to standard CSS, it’s SCSS. However, if you click the little arrow button at the top-right of the CSS panel you can select to view compiled CSS. Do this, and then copy all the CSS into your CSS file.
 
-![CodePen Screenshot](https://thomcorah.github.io/dmu-multimedia/resources/img/codePen.png)
+![CodePen Screenshot](https://francescmarti00.github.io/dmu-multimedia/resources/img/codePen.png)
 
 The last bit is to add the JavaScript.
 
@@ -34,7 +34,7 @@ With this all in place, load up your HTML file in the browser. Hopefully it work
 
 However, it’s not showing a picture of an animal! There are six animal pictures we want to use. You can find them all zipped up here:
 
-<https://thomcorah.github.io/dmu-multimedia/resources/CardFlip/img.zip>
+<https://frncescmarti00.github.io/dmu-multimedia/resources/CardFlip/img.zip>
 
 There's also an image for the back of the card in there.
 

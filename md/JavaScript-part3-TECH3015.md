@@ -94,7 +94,7 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 
 **Exercise 1**. Copy and paste the following JavaScript command onclick='document.getElementById("myTxt").style.color="blue"' in Code A, so that the text changes to blue if you click anywhere on the web page.
 	
-**Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue" in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
+**Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue"' in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
 
 **Exercise 3 (Optional)**. Modify 'Code A' so that the size of the text changes to "40px" if you move the mouse.
 	

@@ -414,7 +414,7 @@ Finally, let's study this (very useful!) example. This example allows us to disp
   
 <body>
 
-<img id="myImage" src="https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg" style="width:100px" onclick="changeImage()">
+<img id="myImage" src="https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg" onclick="changeImage()">
 	
 <script>
   var cont = 0;

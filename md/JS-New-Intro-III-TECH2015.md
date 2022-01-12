@@ -92,7 +92,7 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 </html>
 ```
 
-**Exercise 1**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue" in 'Code A', so that the text changes to red if you click anywhere on the web page.
+**Exercise 1**. Copy and paste the following JavaScript command onclick='document.getElementById("myTxt").style.color="blue"' in Code A, so that the text changes to blue if you click anywhere on the web page.
 	
 **Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue" in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
 
@@ -371,7 +371,7 @@ An array is a special variable, which can hold more than one value. For example:
 let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
 ```  
 
-You access an array element by referring to the index number. So, animals[0] =  "elephant", cars[1] =  "gorilla", etc.
+You access an array element by referring to the index number. So, animals[0] =  "elephant", animals[1] =  "gorilla", etc.
 
 Study this example. Notice how we use the variable 'count' to display the array elements. (Yes, there is a problem is we click on the button more than 5 times. We will fix this in the next exercise).
 
@@ -388,7 +388,7 @@ Study this example. Notice how we use the variable 'count' to display the array 
   
   <!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
   let count = 0;
-  <!-- The array of car brands -->
+  <!-- The array of animals -->
   let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
   
   function countClicks() {

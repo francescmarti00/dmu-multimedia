@@ -452,13 +452,13 @@ Finally, let's study this (very useful!) example. This example allows us to disp
   
 <body>
 
-<p id="myMenu1" onclick='changeMenu(1)'>Menu 1</p>
-<p id="myMenu2" onclick='changeMenu(2)'>Menu 2</p>
+<p id="myMenu1" onclick='changeMenu()'>Menu 1</p>
+<p id="myMenu2" onclick='changeMenu()'>Menu 2</p>
   
 <script>
   // Status
   let status = 0;
-  function changeMenu(menuSelected) {
+  function changeMenu() {
     if (status == 0) {
       document.getElementById("myMenu1").style.fontWeight="bold"
       document.getElementById("myMenu2").style.fontWeight="normal"

@@ -273,38 +273,39 @@ The condition logic can be used to store the 'status' of an element. Study this 
 
 ## Exercises
 
-Let's use the following code (let's call it 'Code E') to do the following two exercises.
+Let's use the following code (let's call it 'Code E') to do the following exercises.
 
 ```JS
 <!DOCTYPE html>
-<html onclick='changeColor()'>
+<html>
   
 <body>
 
-<p id="myTxt">My text!</p>
-   
+<p id="myMenu1" onclick='changeMenu()'>Menu 1</p>
+<p id="myMenu2" onclick='changeMenu()'>Menu 2</p>
+  
 <script>
   // Status
   let status = 0;
-  function changeColor() {
+  function changeMenu() {
     if (status == 0) {
-      // Insert here the JavaScript command 1
+      // Insert here JavaScript commands
       status = 1;
     } else {
-      // Insert here the JavaScript command 2
+      // Insert here JavaScript commands
       status = 0;
     }
 }
-</script>    
-
+</script>   
+	
 </body>
   
 </html>
 ```
 
-**Exercise 10**. Add two JavaScript commands to 'Code E' so that the text changes to bold if you click everywhere on the webpage. The text must change to normal if you click again.
+**Exercise 10**. Add the necessary JavaScript commands to 'Code E' so that the selected menu changes to bold if you click on it, and the non-selected menu changes to normal.
 
-**Exercise 11 (Optional)**. Add two JavaScript commands to 'Code E' so that the text background changes to red if you click everywhere on the webpage. The text background must change to white if you click again.
+**Exercise 11**. Adda a new menu (Menu 3) to 'Code E'. Modify the code so that the selected menu changes to bold if you click on it, and the other two menus change to normal.
 
 To do Exercise 12, we are going to use the following code (let's call it 'Code F').
 
@@ -371,7 +372,7 @@ An array is a special variable, which can hold more than one value. For example:
 let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
 ```  
 
-You access an array element by referring to the index number. So, animals[0] =  "elephant", cars[1] =  "gorilla", etc.
+You access an array element by referring to the index number. So, animals[0] =  "elephant", animals[1] =  "gorilla", etc.
 
 Study this example. Notice how we use the variable 'count' to display the array elements. (Yes, there is a problem is we click on the button more than 5 times. We will fix this in the next exercise).
 
@@ -388,7 +389,7 @@ Study this example. Notice how we use the variable 'count' to display the array 
   
   <!-- Let's define a variable. Its initial value is 0 (0 clicks) -->
   let count = 0;
-  <!-- The array of car brands -->
+  <!-- The array of animals -->
   let animals = ["elephant", "gorilla", "leopard", "rhino", "turtle"];
   
   function countClicks() {
@@ -440,3 +441,4 @@ Finally, let's study this (very useful!) example. This example allows us to disp
 
 **Exercise 16**. Modify the previous example in order to display the animals in loop. That is, if you click on the image 3 times, your program has to show the pic of the elephant, 4 times the gorilla, etc.
 
+**Exercise 17**. Add two buttons 'backward' and 'forward' to the previous example in order to control the direction in which the images will be displayed.

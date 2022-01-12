@@ -1,4 +1,4 @@
-# JavaScript Basics (part 3)
+# JavaScript Basics (Optional Tasks)
 
 In this lab we will continue exploring JavaScript with examples and exercises.
 </br> 

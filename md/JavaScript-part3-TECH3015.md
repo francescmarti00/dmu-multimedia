@@ -305,7 +305,7 @@ Let's use the following code (let's call it 'Code E') to do the following exerci
 
 **Exercise 10**. Add the necessary JavaScript commands to 'Code E' so that the selected menu changes to bold if you click on it, and the non-selected menu changes to normal.
 
-**Exercise 11**. Adda a new menu (Menu 3) to 'Code E'. Modify the code so that the selected menu changes to bold if you click on it, and the other two menus change to normal.
+**Exercise 11**. Add a new menu (Menu 3) to 'Code E'. Modify the code so that the selected menu changes to bold if you click on it, and the other two menus change to normal.
 
 To do Exercise 12, we are going to use the following code (let's call it 'Code F').
 

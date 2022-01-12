@@ -442,3 +442,164 @@ Finally, let's study this (very useful!) example. This example allows us to disp
 **Exercise 16**. Modify the previous example in order to display the animals in loop. That is, if you click on the image 3 times, your program has to show the pic of the elephant, 4 times the gorilla, etc.
 
 **Exercise 17**. Add two buttons 'backward' and 'forward' to the previous example in order to control the direction in which the images will be displayed.
+</br> 
+
+## Solution Exercise 10
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<p id="myMenu1" onclick='changeMenu(1)'>Menu 1</p>
+<p id="myMenu2" onclick='changeMenu(2)'>Menu 2</p>
+  
+<script>
+  // Status
+  let status = 0;
+  function changeMenu(menuSelected) {
+    if (status == 0) {
+      document.getElementById("myMenu1").style.fontWeight="bold"
+      document.getElementById("myMenu2").style.fontWeight="normal"
+      status = 1;
+    } else {
+      document.getElementById("myMenu1").style.fontWeight="normal"
+      document.getElementById("myMenu2").style.fontWeight="bold"
+      status = 0;
+    }
+}
+</script>   
+	
+</body>
+  
+</html>
+```
+</br> 
+
+## Solution Exercise 11
+
+We can solve Exercise 11 using 'if' and 'else if'.
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<p id="myMenu1" onclick='changeMenu(1)'>Menu 1</p>
+<p id="myMenu2" onclick='changeMenu(2)'>Menu 2</p>
+<p id="myMenu3" onclick='changeMenu(3)'>Menu 3</p>  
+  
+<script>
+  function changeMenu(menuSelected) {
+    if (menuSelected == 1) {
+      document.getElementById("myMenu1").style.fontWeight="bold"
+      document.getElementById("myMenu2").style.fontWeight="normal"
+      document.getElementById("myMenu3").style.fontWeight="normal"      
+    } else if (menuSelected == 2) {
+      document.getElementById("myMenu1").style.fontWeight="normal"
+      document.getElementById("myMenu2").style.fontWeight="bold"
+      document.getElementById("myMenu3").style.fontWeight="normal"      
+    } else {
+      document.getElementById("myMenu1").style.fontWeight="normal"
+      document.getElementById("myMenu2").style.fontWeight="normal"
+      document.getElementById("myMenu3").style.fontWeight="bold"         
+    }
+}
+</script>   
+	
+</body>
+  
+</html>
+```
+
+## Another Solution Exercise 11
+
+We can also solve Exercise 11 using 'switch'.
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<p id="myMenu1" onclick='changeMenu(1)'>Menu 1</p>
+<p id="myMenu2" onclick='changeMenu(2)'>Menu 2</p>
+<p id="myMenu3" onclick='changeMenu(3)'>Menu 3</p>  
+  
+<script>
+  function changeMenu(menuSelected) {
+    switch(menuSelected) {
+      case 1:
+        document.getElementById("myMenu1").style.fontWeight="bold"
+        document.getElementById("myMenu2").style.fontWeight="normal"
+        document.getElementById("myMenu3").style.fontWeight="normal" 
+        break;
+      case 2:
+        document.getElementById("myMenu1").style.fontWeight="normal"
+        document.getElementById("myMenu2").style.fontWeight="bold"
+        document.getElementById("myMenu3").style.fontWeight="normal"  
+        break;
+      default:
+        document.getElementById("myMenu1").style.fontWeight="normal"
+        document.getElementById("myMenu2").style.fontWeight="normal"
+        document.getElementById("myMenu3").style.fontWeight="bold"
+    }
+  }
+</script>   
+	
+</body>
+  
+</html>
+```
+
+## Solution Exercise 16
+
+To solve exercise 16 we have just to replace 
+
+```JS
+cont = cont + 1;
+```
+
+by
+
+```JS
+cont = (cont + 1) % 3;
+```
+
+A more elegant solution is 
+
+```JS
+cont = (cont + 1) % imgArray.length;
+```
+
+```JS
+<!DOCTYPE html>
+<html>
+  
+<body>
+
+<img id="myImage" src="https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg" onclick="changeImage()">
+	
+<script>
+  var cont = 0;
+  var imgArray = new Array();
+  
+  imgArray[0] = new Image();
+  imgArray[0].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg';
+ 
+  imgArray[1] = new Image();
+  imgArray[1].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/gorilla.jpg';
+  
+  imgArray[2] = new Image();
+  imgArray[2].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/leopard.jpg';
+  
+  function changeImage() {
+    cont = (cont + 1) % imgArray.length;
+    document.getElementById('myImage').src=imgArray[cont].src
+  }
+</script>    
+  
+</body>
+```

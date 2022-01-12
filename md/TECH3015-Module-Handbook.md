@@ -627,7 +627,7 @@ You should add comments to your HTML, CSS and JavaScript, with explanations of w
 
 [Contents](#tableofcontents)
 
-### Content
+### Content (15%)
 
 Your website content should be fully functional and robust (valid HTML, no missing images, JavaScript errors, etc.). This includes all text, graphics, images and any audio/video. You should use the correct HTML5 code to display these and ensure you have prepared your media for the web.
 
@@ -639,7 +639,7 @@ Your website content should be fully functional and robust (valid HTML, no missi
 
 [Back to CW2 Marking Criteria](#cw2markingcriteria)
 
-### Style
+### Style (15%)
 
 Your website should appeal to your intended audience and be consistent with your mockups/designs. You should make efficient use of CSS in order to style and position elements for your site.
 
@@ -652,7 +652,7 @@ Your website should appeal to your intended audience and be consistent with your
 
 [Back to CW2 Marking Criteria](#cw2markingcriteria)
 
-### Technical Skills
+### Technical Skills (30%)
 
 Your web site should demonstrate your ability to apply the concepts you have learnt in this module.
 
@@ -675,7 +675,7 @@ Your web site should demonstrate your ability to apply the concepts you have lea
 
 Note that the for the purposes of marking, your code comments will be considered as part of your documentation, specifically under the production section. The PDF you submit through Turnitin should contain your Design Process and Evaluation. Your documentation will be marked against the following three criteria.
 
-### Design Process
+### Design Process (10%)
 
 Refer back to your mock-ups from assignment 1 and discuss:
 
@@ -687,7 +687,7 @@ This should be written in light of your own evaluation of your design from CW1, 
 
 [Back to CW2 Marking Criteria](#cw2markingcriteria)
 
-### Production
+### Production (10%)
 
 Offer some insight into the development of your website through extensive code comments. All of your code should be commented at a basic level to describe functionality and logic. Where applicable, you should also discuss:
 
@@ -698,7 +698,7 @@ Offer some insight into the development of your website through extensive code c
 
 [Back to CW2 Marking Criteria](#cw2markingcriteria)
 
-### Evaluation
+### Evaluation (20%)
 
 Address the following points:
 

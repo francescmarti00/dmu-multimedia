@@ -18,7 +18,7 @@ In this Figure, we can see how we can 'build' commands based on the getElementBy
 For example, we can create the JavaScript command 
 
 ```JS
-ondblclick='"document.getElementById("myTxt").style.fontSize="30px"'
+ondblclick='document.getElementById("myTxt").style.fontSize="30px"'
 ```
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_3.png)
@@ -26,8 +26,8 @@ ondblclick='"document.getElementById("myTxt").style.fontSize="30px"'
 Other examples could be
 
 ```JS
-onclick='"document.getElementById("myTxt").style.color="red"'
-onmouseover='"document.getElementById("myTxt").style.fontWeight="bold"'
+onclick='document.getElementById("myTxt").style.color="red"'
+onmouseover='document.getElementById("myTxt").style.fontWeight="bold"'
 ```
 
 ### 2. How to connect these JavaScript commands and HTML?

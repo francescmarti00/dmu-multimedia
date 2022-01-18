@@ -1,106 +1,96 @@
-# JavaScript Basics (part 3)
+# JavaScript Basics (part 4)
 
 In this lab we will continue exploring JavaScript with examples and exercises.
 </br> 
 </br>  
 ## Welcome back to JavaScript!
 
-### 1. The JavaScript getElementById() method
+### 1. The JavaScript addEventListener() method
 
-As we have already seen, JavaScript is straightforward and easy to learn. With the JavaScript getElementById() method we can create very simple and powerful JavaScript commands. With these commands, we can change the font of a text, change its colour, background, size, to hide or change a paragraph or image, etc:
-
-![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_1.png)
-
-In this Figure, we can see how we can 'build' commands based on the getElementById() method
-
-![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_2.png)
-
-For example, we can create the JavaScript command 
-
-```JS
-ondblclick='document.getElementById("myTxt").style.fontSize="30px"'
-```
-
-![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_3.png)
-
-Other examples could be
-
-```JS
-onclick='document.getElementById("myTxt").style.color="red"'
-onmouseover='document.getElementById("myTxt").style.fontWeight="bold"'
-```
-
-### 2. How to connect these JavaScript commands and HTML?
-
-This is also straightforward! We have just to put the JavaScript command inside the HTML tag we want to use as a 'control'. For example, we can put the JavaScript command inside the <html> tag, so if we click anywhere inside our web page, the JavaScript command will be run.
-
-The next example shows how to change the font colour by clicking anywhere on the web page.
+We have seen several examples in which we call a JavaScript function using HTML events such as 'onclick', 'ondblclick', 'onmouseover', etc.  
+For example, in this code, we change the position of a rentangle by clicking on it.
 
 ```JS
 <!DOCTYPE html>
-<html onclick='document.getElementById("myTxt").style.color="red"'>
+<html lang="en" dir="ltr">
   
-<body>
-
-<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      #square {
+        background: green;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="square" onclick='moveSquare()'></div>
+    <script>
+      let currentX = 0;
+      function moveSquare () {
+        currentX += 50;
+        document.getElementById("square").style.left = currentX + "px";
+      };  
+    </script>
+  </body>
   
 </html>
 ```
 
-This example shows how to change the content of the element "myTxt" (using the attribute innerHTML) clicking on 'Welcome...'. (Note that the JavaScript command is inside the 'p' tag.). 
-	
+Now, we are going to see how to do the same using the JavaScript method addEventListener().
+The addEventListener() method attaches an event handler to the specified element. The addEventListener() method makes it easier to control how the event reacts to bubbling.
+
+In the next example, we add an 'event listener' to the element 'square' with the code
+
+```JS
+document.getElementById("square").addEventListener("click", moveSquare);
+```
+
+This is the whole code
+
 ```JS
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   
-<body>
-
-<p id="myText" onclick='document.getElementById("myTxt").innerHTML = "This is very easy!"'>Welcome to the easiest JavaScript example ever!</p>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      #square {
+        background: green;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+      }
+    </style>
+  </head>
   
+  <body>
+    <div id="square"></div>
+    <script>
+      let currentX = 0;
+      function moveSquare () {
+        currentX += 50;
+        document.getElementById("square").style.left = currentX + "px";
+      };
+      
+      document.getElementById("square").addEventListener("click", moveSquare);
+      
+    </script>
+  </body>
 </html>
 ```
-	
-### 3. So, do I need to memorise all the HTML Events and Attributes?
-	
-No.
-	
-No one remember all HTML Events and Attributes. For example, do you want to change the font of your text? Go to the w3shools css reference <https://www.w3schools.com/cssref/pr_font_font.asp>, look for the CSS font Property "font" and check what is the JavaScript syntax you have to use.
-
-![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/byId_4.png)
-
-Do you want to use other HTML events? Check <https://www.w3schools.com/TAGS/ref_eventattributes.asp>
 </br> 
 </br>	
 ## Exercises
 
 You are going to use this code (let's call it 'Code A') to do the following exercises	
-	
-```JS
-<!DOCTYPE html>
-<html>
-  
-<body>
-
-<p id="myTxt">I am going to modify this text with JavaScript!</p>
-
-</body>
-  
-</html>
-```
-
-**Exercise 1**. Copy and paste the following JavaScript command onclick='document.getElementById("myTxt").style.color="blue"' in Code A, so that the text changes to blue if you click anywhere on the web page.
-	
-**Exercise 2**. Copy and paste the following JavaScript command onclick='"document.getElementById("myTxt").style.color="blue"' in 'Code A' ('Code A' is the original program), so that the text changes to red if you click on the text.	
-
-**Exercise 3 (Optional)**. Modify 'Code A' so that the size of the text changes to "40px" if you move the mouse.
-	
-**Exercise 4 (Optional)**. Modify the previous code so the text background changes to italic if someone double-click on the text. You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_font_font.asp>
-
-Now, you are going to use this code (let's call it 'Code B') to do the next three exercises	
 	
 ```JS
 <!DOCTYPE html>
@@ -118,9 +108,9 @@ Now, you are going to use this code (let's call it 'Code B') to do the next thre
 </html>
 ```
 
-**Exercise 5**. Modify 'Code B' so that the text of 'paragraph number 1' changes to bold if you click on 'paragraph number 2'.
+**Exercise 1**. Modify 'Code A' so that the size of the text of paragraph 1 changes to "40px" if you click on paragraph 2.
 	
-**Exercise 6 (Optional)**. Modify 'Code B' so that the text background of 'paragraph number 2' changes to blue if you click on the button. (You can check the JavaScript syntax in <https://www.w3schools.com/cssref/pr_background-color.asp>).
+**Exercise 2**. Repeat Exercise 1 using the JavaScript method addEventListener().
 </br>
 </br> 
 ## JavaScript Functions

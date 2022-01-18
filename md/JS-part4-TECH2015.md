@@ -165,7 +165,7 @@ Now, you are going to use this code (let's call it 'Code B') to do the following
 ```
 
 **Exercise 3**. Modify 'Code B' so that clicking on either square swaps their colours. (Use the JavaScript method addEventListener()).
-Note that in this example, we are using an "arrow function". Don't panic! Both ways are equivalent.
+Note that in this example, we are using an "arrow function". Don't panic! Both ways of defining a JavaScript function are equivalent.
 
 ```JS
 swapSquares = () => {

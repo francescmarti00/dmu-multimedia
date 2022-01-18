@@ -114,7 +114,7 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 **Exercise 2**. Repeat Exercise 1 using the JavaScript method addEventListener().
 </br>
 </br>
-Now, you are going to use this code (let's call it 'Code B') to do the next three exercises
+Now, you are going to use this code (let's call it 'Code B') to do the following exercise
 
 ```JS
 <!DOCTYPE html>

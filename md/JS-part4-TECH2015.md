@@ -85,7 +85,7 @@ This is the whole code
   </body>
 </html>
 ```
-</br> 
+</br>
 </br>
 ## Exercises
 

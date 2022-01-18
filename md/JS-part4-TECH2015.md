@@ -3,7 +3,7 @@
 In this lab we will continue exploring JavaScript with examples and exercises.
 </br> 
 
-### 1. The JavaScript addEventListener() method
+## The JavaScript addEventListener() method
 
 We have seen several examples in which we call a JavaScript function using HTML events such as 'onclick', 'ondblclick', 'onmouseover', etc.  
 For example, in this code, we change the position of a rentangle by clicking on it.
@@ -179,101 +179,21 @@ function swapSquares() {
 }
 ```
 
+## Adding a JavaScript Slideshow to a website
+
+In this section, we are going to implement a JavaScript Slideshow to a website. In particular, we are going to add a Slideshow to the following webpage
+
+<https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveSite/responsive/>
+
+We can find the code of this webpage here <https://github.com/francescmarti00/dmu-multimedia/tree/master/resources/ResponsiveSite/responsive>
 	
+**Exercise 4**. This example allows us to display an array of images using JavaScript and - as always - the command getElementById. Every time we click on the image, we display the next image in the array. (Yes, again, there is a problem is we click on the image more than 3 times. We will fix this in the next exercise).
 
 
 
-## JavaScript Functions
 
-### 1. A very simple example	
-	
-Ok, but how to change two or more attributes simultaneously? We can use a function!	
-	
-A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it).
-	
-Study these two programs. They do the same!	
 
-```JS
-<!DOCTYPE html>
-<html onclick='document.getElementById("myTxt").innerHTML = "This is very easy!"'>
-  
-<body>
-
-<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
-
-</body>
-  
-</html>
-```
-
-In this example, a JavaScript function is placed in the <body> section of an HTML page. The function is invoked (called) when we click on the web page.
-	
-```JS
-<!DOCTYPE html>
-<html onclick='myFirstFunction()'>
-  
-<body>
-
-<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
-  
-<script>
-  function myFirstFunction() {
-	document.getElementById("myTxt").innerHTML = "This is very easy!";
-  }
-</script>  
-
-</body>
-  
-</html>
-```
-
-### 2. Adding commands to a function	
-
-One of the advantages of using functions is that we can run several JavaScripts events simultaneously.
-Study this example. When we click on the web page we change two attributes: the text and colour of the text. 
-	
-```JS
-<!DOCTYPE html>
-<html onclick='myFirstFunction()'>
-  
-<body>
-
-<p id="myTxt">Welcome to the easiest JavaScript example ever!</p>
-  
-<script>
-  function myFirstFunction() {
-	document.getElementById("myText").innerHTML = "This is very easy!";
-	document.getElementById("myTxt").style.color="red";
-}
-</script>  
-
-</body>
-  
-</html>
-```
-</br>
-
-## Exercises
-
-Use this code (let's call it 'Code C') to do the following exercises
-
-```JS
-<!DOCTYPE html>
-<html>
-  
-<body>
-
-<p id="myTxt1">This is the paragraph number 1</p>
-<p id="myTxt2">This is the paragraph number 2</p>
-	
-<button>Click me!</button>
-
-</body>
-  
-</html>
-```
-	
-**Exercise 7**. Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
+Add a function to 'Code C' so that the text of 'paragraph number 2' changes to green and text background changes to red if someone double-click on 'paragraph number 1'.
 
 **Exercise 8 (Optional)**. Add a function to 'Code C' so that the text of 'paragraph number 1' changes to rgb(34, 56, 120) and text background changes to rgb(10, 255, 255) if someone click on the button.
 

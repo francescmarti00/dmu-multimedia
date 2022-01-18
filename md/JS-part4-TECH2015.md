@@ -103,8 +103,6 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 
 <p id="myTxt1">This is the paragraph number 1</p>
 <p id="myTxt2">This is the paragraph number 2</p>
-	
-<button>Click me!</button>
 
 </body>
   

@@ -178,7 +178,7 @@ function swapSquares() {
 
 ## Adding a JavaScript Slideshow to a website
 
-In this section, we are going to implement a JavaScript Slideshow to a website. As we have already seen, to create a JavaScript Slideshow is straightforward.
+In this section, we are going to add a JavaScript Slideshow to a website. As we have already seen, to create a JavaScript Slideshow is straightforward.
 This is the code we have seen in previous labs:
 
 ```JS

@@ -156,16 +156,14 @@ Now, you are going to use this code (let's call it 'Code B') to do the next thre
       swapSquares = () => {
         originalState = !originalState;
         if (originalState) {
-          document.getElementById("square1").style.backgroundColor = "red";
-          document.getElementById("square2").style.backgroundColor = "blue";
+          // Add you JavaScript here
         } else {
-          document.getElementById("square1").style.backgroundColor = "blue";
-          document.getElementById("square2").style.backgroundColor = "red";
+          // Add you JavaScript here
         }
       };
 
-      document.getElementById("square1").addEventListener("click", swapSquares);
-      document.getElementById("square2").addEventListener("click", swapSquares);
+      // Add the JavaScript listeners here
+      
     </script>
   </body>
 </html>
@@ -183,7 +181,6 @@ function swapSquares() {
 }
 ```
 
-functions in JavaSacript can be defined in two ways. In this example, the function 'swapSquares' has been defined 
 	
 
 

@@ -86,7 +86,7 @@ This is the whole code
 </html>
 ```
 </br>
-</br>
+
 ## Exercises
 
 You are going to use this code (let's call it 'Code A') to do the following exercises	

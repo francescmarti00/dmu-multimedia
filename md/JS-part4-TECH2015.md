@@ -118,7 +118,76 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 	
 **Exercise 2**. Repeat Exercise 1 using the JavaScript method addEventListener().
 </br>
-</br> 
+</br>
+Now, you are going to use this code (let's call it 'Code B') to do the next three exercises
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+
+      #square1 {
+        background-color: red;
+      }
+
+      #square2 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div id="square1"></div>
+    <div id="square2"></div>
+
+    <script>
+      let originalState = true;
+
+      swapSquares = () => {
+        originalState = !originalState;
+        if (originalState) {
+          document.getElementById("square1").style.backgroundColor = "red";
+          document.getElementById("square2").style.backgroundColor = "blue";
+        } else {
+          document.getElementById("square1").style.backgroundColor = "blue";
+          document.getElementById("square2").style.backgroundColor = "red";
+        }
+      };
+
+      document.getElementById("square1").addEventListener("click", swapSquares);
+      document.getElementById("square2").addEventListener("click", swapSquares);
+    </script>
+  </body>
+</html>
+```
+
+**Exercise 3**. Modify 'Code B' so that clicking on either square swaps their colours. (Use the JavaScript method addEventListener()).
+Note that in this example, we are using an "arrow function". Don't panic! Both ways are equivalent.
+
+```JS
+swapSquares = () => {
+...}
+
+function swapSquares() {
+...
+}
+```
+
+functions in JavaSacript can be defined in two ways. In this example, the function 'swapSquares' has been defined 
+	
+
+
+
 ## JavaScript Functions
 
 ### 1. A very simple example	

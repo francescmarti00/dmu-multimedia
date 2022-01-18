@@ -2,8 +2,6 @@
 
 In this lab we will continue exploring JavaScript with examples and exercises.
 </br> 
-</br>  
-## Welcome back to JavaScript!
 
 ### 1. The JavaScript addEventListener() method
 

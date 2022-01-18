@@ -253,3 +253,144 @@ In week 3, we created a similar Slideshow. You can see a completed example of th
 Use this code as a reference for creating your navigation button:
 
 <https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/SlideshowExample/index.html>
+
+**Solution Exercise 2**
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+
+<p id="myTxt1">This is the paragraph number 1</p>
+<p id="myTxt2">This is the paragraph number 2</p>
+    
+<script>
+
+    function changeSize() {
+        document.getElementById("myTxt1").style.fontSize = "40px";
+    }
+    document.getElementById("myTxt2").addEventListener("click", changeSize);
+    
+</script>
+
+</body>
+
+</html>
+```
+
+**Solution Exercise 3**
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+
+      #square1 {
+        background-color: red;
+      }
+
+      #square2 {
+        background-color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="square1"></div>
+    <div id="square2"></div>
+
+    <script>
+      let originalState = true;
+
+      function swapSquares () {
+        originalState = !originalState;
+        if (originalState) {
+          document.getElementById("square1").style.background = "red";
+          document.getElementById("square2").style.background = "blue";
+        } else {
+          document.getElementById("square1").style.background = "blue";
+          document.getElementById("square2").style.background = "red";
+        }
+      };
+
+      document.getElementById("square1").addEventListener("click", swapSquares);
+      document.getElementById("square2").addEventListener("click", swapSquares);
+
+    </script>
+  </body>
+</html>
+```
+
+**Exercise 3 'variant'**
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+      }
+
+      #square1 {
+        background-color: red;
+        position: absolute;
+        top: 0px;  
+      }
+
+      #square2 {
+        background-color: blue;
+        position: absolute;
+        top: 110px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="square1"></div>
+    <div id="square2"></div>
+
+    <script>
+      let originalState = true;
+
+      function swapSquares () {
+        originalState = !originalState;
+        if (originalState) {
+          document.getElementById("square1").style.top = "0px";
+          document.getElementById("square2").style.top = "110px";
+          document.getElementById("square2").style.left = "10px";
+        } else {
+          document.getElementById("square1").style.top = "310px";
+          document.getElementById("square2").style.left = "200px";
+        }
+      };
+
+      document.getElementById("square1").addEventListener("click", swapSquares);
+      document.getElementById("square2").addEventListener("click", swapSquares);
+
+    </script>
+  </body>
+</html>
+```

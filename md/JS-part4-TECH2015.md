@@ -216,7 +216,7 @@ This is the code we have seen in previous labs:
 </body>
 ```
 </br>
-</br>
+
 ## Exercises
 
 In these exercises we are going to add a Slideshow to a webpage. In particular, we are going to add a Slideshow to the following webpage

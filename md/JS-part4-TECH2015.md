@@ -30,6 +30,7 @@ For example, in this code, we change the position of a rentangle by clicking on 
   
   <body>
     <div id="square" onclick='moveSquare()'></div>
+    
     <script>
       let currentX = 0;
       function moveSquare () {
@@ -37,8 +38,8 @@ For example, in this code, we change the position of a rentangle by clicking on 
         document.getElementById("square").style.left = currentX + "px";
       };  
     </script>
+    
   </body>
-  
 </html>
 ```
 
@@ -73,21 +74,21 @@ This is the whole code
   
   <body>
     <div id="square"></div>
+    
     <script>
       let currentX = 0;
       function moveSquare () {
         currentX += 50;
         document.getElementById("square").style.left = currentX + "px";
-      };
-      
+      };  
       document.getElementById("square").addEventListener("click", moveSquare);
-      
     </script>
+    
   </body>
 </html>
 ```
 </br> 
-</br>	
+</br>
 ## Exercises
 
 You are going to use this code (let's call it 'Code A') to do the following exercises	

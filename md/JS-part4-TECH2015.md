@@ -94,7 +94,12 @@ You are going to use this code (let's call it 'Code A') to do the following exer
 	
 ```JS
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+</head>
   
 <body>
 

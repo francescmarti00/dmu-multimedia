@@ -246,13 +246,14 @@ In the webpage code, the photos of the group are displayed using this code
 
 **Exercise 5 (Optional)**. In this exercise, you have to add a navigation button to the Slideshow you have just implemented.
 
-In week 3, we created a similar Slideshow. You can see a completed example of the slideshow of week 3 here
+In one of the labs we created a similar Slideshow. You can see a completed example of this slideshow here
 
 <https://francescmarti00.github.io/dmu-multimedia/resources/SlideshowExample/>
 
 Use this code as a reference for creating your navigation button:
 
 <https://github.com/francescmarti00/dmu-multimedia/blob/master/resources/SlideshowExample/index.html>
+<br>
 
 **Solution Exercise 2**
 

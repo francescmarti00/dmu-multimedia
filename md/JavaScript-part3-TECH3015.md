@@ -182,7 +182,7 @@ Study this example. When we click on the web page we change two attributes: the 
   
 <script>
   function myFirstFunction() {
-	document.getElementById("myText").innerHTML = "This is very easy!";
+	document.getElementById("myTxt").innerHTML = "This is very easy!";
 	document.getElementById("myTxt").style.color="red";
 }
 </script>  

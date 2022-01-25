@@ -459,4 +459,4 @@ function closeNav() {
 </html> 
 ```
 
-**Exercise 7 (Optional)**. <https://www.w3schools.com/howto/default.asp>
+**Exercise 7 (Optional)**. As we have already mentioned, the section 'How To' of the w3schools (https://www.w3schools.com/howto/) includes very useful snippets for HTML, CSS and JavaScript. Navigate to the w3schools 'How To' section and study the examples implemented in the HowTo home.

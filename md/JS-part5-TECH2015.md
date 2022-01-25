@@ -71,15 +71,21 @@ In the webpage code, the photos of the group are displayed using this code
 />
 ```
 
-**Exercise 2 (Optional)**. Run and analyse the following slideshow from w3shools: <https://www.w3schools.com/howto/howto_js_slideshow.asp>. In particular, analyse the method getElementsByClassName(). The getElementsByClassName() method returns a collection of elements with a specified class name(s).
+**Exercise 2 (Optional)**. Run and analyse the following slideshow from w3shools: <https://www.w3schools.com/howto/howto_js_slideshow.asp>. In particular, analyse the method getElementsByClassName(). In contrast with getElementsByID (that returns a single element), the getElementsByClassName() method returns a collection of elements with a specified class name(s).
 </br> 
 
 ## Adding a JavaScript Navigation Menu to a website
 
-The section How To <https://www.w3schools.com/howto/> of the website w3schools includes very useful snippets for HTML, CSS and JavaScript.
-In this section, we are going to run and analyse some navigation menus.
+The section 'How To' of the website w3schools (<https://www.w3schools.com/howto/>) includes very useful snippets for HTML, CSS and JavaScript.
+In this section, we are going to run and analyse some of the navigation menus examples we can find in that website.
 
-**Exercise 3**. The following code creates a a full screen overlay navigation menu. Run and analyse the following code.
+To begin with, we are going to see how to create a full screen overlay navigation menu.
+
+**Exercise 3**. The following code creates a full screen overlay navigation menu. Run and analyse the following code.
+In particular, add/remove the following elements from the code, to fully understand their function:
+1) href="javascript:void(0)"
+2) &times;
+3) &#9776;
 
 ```JS
 <!DOCTYPE html>
@@ -174,6 +180,11 @@ function closeNav() {
 ```
 
 **Exercise 4**. The following code creates a top navigation menu for smartphones / tablets with CSS and JavaScript. Run and analyse the following code.
+In particular, note how the code simplifies by defining:
+
+```JS
+var x = document.getElementById("myLinks");
+```
 
 ```JS
 <!DOCTYPE html>

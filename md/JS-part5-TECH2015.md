@@ -13,8 +13,8 @@ To begin with, we are going to see how to create a full screen overlay navigatio
 **Exercise 1**. The following code creates a full screen overlay navigation menu. Run and analyse the following code.
 In particular, add/remove the following elements from the code, to fully understand their function:
 1) href="javascript:void(0)"
-2) &times;
-3) &#9776;
+2) '&times;'
+3) '&#9776;'
 
 ```JS
 <!DOCTYPE html>

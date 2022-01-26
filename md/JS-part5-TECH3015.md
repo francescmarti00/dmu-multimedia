@@ -389,75 +389,9 @@ function closeNav() {
 </html> 
 ```
 
-## Adding a JavaScript Slideshow to a website
+## The getElementsByClassName() JacaScript method
 
-In this section, we are going to add a JavaScript Slideshow to a website. As we have already seen, to create a JavaScript Slideshow is straightforward.
-This is the code we have seen in previous labs:
-
-```JS
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-</head>
-
-<body>
-
-<img id="myImage" src="https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg" onclick="changeImage()">
-
-<script>
-  var cont = 0;
-  var imgArray = new Array();
-
-  imgArray[0] = new Image();
-  imgArray[0].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/elephant.jpg';
-
-  imgArray[1] = new Image();
-  imgArray[1].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/gorilla.jpg';
-
-  imgArray[2] = new Image();
-  imgArray[2].src = 'https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/CardFlip/img/leopard.jpg';
-
-  function changeImage() {
-    cont = (cont + 1) % imgArray.length;
-    document.getElementById('myImage').src=imgArray[cont].src
-  }
-</script>    
-
-</body>
-```
-</br>
-
-## Exercises
-
-In these exercises we are going to add a Slideshow to a webpage. In particular, we are going to add a Slideshow to the following webpage
-
-<https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveSite/responsive/>
-
-You can download the code here
-
-<https://drive.google.com/file/d/1YWpQBOvnwmAZxngvEZMHJSn5aX3Yc0VE/view?usp=sharing>
-
-You can download the new photos of the group here
-
-<https://drive.google.com/file/d/1bdb8kvF79JuHDm025XnSWqopimRJ-q5k/view>
-
-
-**Exercise 5**. Add a Slideshow the the previous webpage to display several photos of the group. So every time a user click on the group image, the webpage must display a new photo of the group. The images must be displayed 'in loop'.
-
-In the webpage code, the photos of the group are displayed using this code
-
-```JS
-<img
-  class="insetImage"
-  src="img/CallaPhotoSmall.jpg"
-  alt="Photo of the band"
-/>
-```
-
-**Exercise 6**. In this exercise we are going to introduce the getElementsByClassName() method. In contrast with getElementsByID (that returns a single element), the getElementsByClassName() method returns a collection of elements with a specified class name(s). Run and analyse the following code. In particular, analyse how to access the collection of elements.
+In contrast with getElementsByID (that returns a single element), the getElementsByClassName() method returns a collection of elements with a specified class name(s). Run and analyse the following code. In particular, analyse how to access the collection of elements.
 
 ```JS
 <!DOCTYPE html>
@@ -492,164 +426,35 @@ In the webpage code, the photos of the group are displayed using this code
 </html>
 ```
 
-**Exercise 7 (Optional)**. Run and analyse the following slideshow from w3shools: <https://www.w3schools.com/howto/howto_js_slideshow.asp>. In particular, analyse the method getElementsByClassName(). 
+**Exercise 5**. Add two more paragraph to the previous code. Modify this code so that the text of paragraphs two and four changes to red if you click everywhere on the webpage. The text must change to green if you click again. (Note: you don't have to add an 'Id' to the paragraphs).
+
+
+## Display images with javascript
+
+In the next exercises we are going to add some JavaScritp commands to a website in order to display its images. As in the previus lab, we are going to use the following webpage
+
+<https://francescmarti00.github.io/dmu-multimedia/resources/ResponsiveSite/responsive/>
+
+You can download the code here
+
+<https://drive.google.com/file/d/1YWpQBOvnwmAZxngvEZMHJSn5aX3Yc0VE/view?usp=sharing>
+
+**Exercise 6**. Run and analyse the following snippet of code that allows us to create responsive Modal Images with CSS and JavaScript <https://www.w3schools.com/howto/howto_css_modal_images.asp>
+
+**Exercise 7**. Using the previous snippet, add a modal image effect in the photo of the group in the 'Her Name Is Calla' website.
+
+
+## Adding a JavaScript Slideshow to a website
+
+In this section, we are going to continue working on the Name Is Calla website. We are going to add a new Slideshow to this webpage.
+
+You can download the new photos of the group you are going to need here
+
+<https://drive.google.com/file/d/1bdb8kvF79JuHDm025XnSWqopimRJ-q5k/view>
+
+**Exercise 8**. Run and analyse the following slideshow from w3shools: <https://www.w3schools.com/howto/howto_js_slideshow.asp>.
+
+**Exercise 9**. Add the preious Slideshow the the group webpage to display several photos of the group. So every time a user click on the group image, the webpage must display a new photo of the group. The images must be displayed 'in loop'.
+
+**Exercise 10 (Optional)**. As we have already mentioned, the section 'How To' of the w3schools (https://www.w3schools.com/howto/) includes very useful snippets for HTML, CSS and JavaScript. Navigate to the w3schools 'How To' section and study the examples implemented in the HowTo home.
 </br> 
-
-**Exercise 8 (Optional)**. As we have already mentioned, the section 'How To' of the w3schools (https://www.w3schools.com/howto/) includes very useful snippets for HTML, CSS and JavaScript. Navigate to the w3schools 'How To' section and study the examples implemented in the HowTo home.
-</br> 
-
-### Exercise 5 solution
-
-```JS
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link href="css/style.css" type="text/css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/a89069ad2d.js"
-      crossorigin="anonymous"
-    ></script>
-    <title></title>
-  </head>
-  <body>
-    <header>
-      <div class="contents">
-        <img class="logo" src="img/smallLogo.png" alt="Logo" />
-        <nav id="mainMenu">
-          <i class="fas fa-bars" id="menuButton"></i>
-          <div class="menuItem"><a href="index.html">Home</a></div>
-          <div class="menuItem"><a href="tour.html">Tour</a></div>
-          <div class="menuItem"><a href="records.html">Records</a></div>
-          <div class="menuItem"><a href="contact.html">Contact</a></div>
-        </nav>
-      </div>
-    </header>
-    <article class="clearFloat">
-      <section class="highlightSection col-right">
-        <p class="centred">
-          <span class="quote">"massive, pastorally apocalyptic music"</span> -
-          NME
-        </p>
-      </section>
-      <section class="col-left clearFloat">
-        <p>
-          Her Name Is Calla are an English post-rock band based in the English
-          cities of Leicester and Leeds, England.
-        </p>
-
-        <img
-          id="slideshow"
-          class="insetImage"
-          src="img/CallaPhotoSmall.jpg"
-          alt="Photo of the band"
-        />
-        <p>
-          After playing live throughout the United Kingdom to much critical
-          acclaim, touring with iLiKETRAiNS and The Twilight Sad, Cult of luna,
-          Maybeshewill and Sólstafir, they released their debut album, The
-          Heritage, in 2008, which was also positively acclaimed, and was
-          followed by a well-received headlining tour. The album lasts over 50
-          minutes, despite only containing six tracks.
-        </p>
-
-        <p>
-          In February 2009, they announced their arrival on the German label,
-          Denovali Records. Denovali re-released The Heritage on vinyl in late
-          2009.
-        </p>
-
-        <p>
-          The band released The Quiet Lamb, containing 12 tracks and lasting
-          over 75 minutes, on 8 November 2010. NME gave it a score of 8/10,
-          describing it as "massive, pastorally apocalyptic music". The Sun
-          called it a "ten-track jewel of a record" that engages the listener
-          "in a rare and beautiful way". The Quiet Lamb is ranked the 12th best
-          Post-rock album of all time in a poll of fans and reviewers with a
-          critic's score of 83.
-        </p>
-      </section>
-      <section class="newsletterSection highlightSection col-right">
-        <h2>Newsletter</h2>
-        <p>
-          Sign up to our newsletter to keep up to date with what we're up to.
-        </p>
-        <form class="inlineForm">
-          <input placeholder="Email Address" type="email" /><button>
-            Sign Up
-          </button>
-        </form>
-      </section>
-      <section class="albumCovers">
-        <a href="https://hernameiscalla.bandcamp.com/album/animal-choir"
-          ><img src="img/albumCovers/animalChoir.jpg"
-        /></a>
-        <a
-          href="https://hernameiscalla.bandcamp.com/album/a-wave-of-endorphins-ost-2"
-          ><img src="img/albumCovers/endorphins.jpg"
-        /></a>
-        <a href="https://hernameiscalla.bandcamp.com/album/the-heritage"
-          ><img src="img/albumCovers/heritage.jpg"
-        /></a>
-        <a href="https://hernameiscalla.bandcamp.com/album/navigator-2"
-          ><img src="img/albumCovers/navigator.jpg"
-        /></a>
-        <a href="https://hernameiscalla.bandcamp.com/album/the-quiet-lamb"
-          ><img src="img/albumCovers/quietlamb.jpg"
-        /></a>
-        <a href="https://hernameiscalla.bandcamp.com/album/swan"
-          ><img src="img/albumCovers/swan.jpg"
-        /></a>
-      </section>
-    </article>
-
-    <footer>
-      <div class="contents">
-        <p>
-          &copy; Her Name Is Calla 2020
-        </p>
-        <div class="socialFollow">
-          <a href="https://twitter.com/hernameiscalla"
-            ><i class="fab fa-twitter"></i
-          ></a>
-          <a href="https://www.facebook.com/hernameiscalla"
-            ><i class="fab fa-facebook-f"></i></a
-          ><a href="https://www.instagram.com/hernameiscalla/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </div>
-      </div>
-    </footer>
-
-    <script src="js/calla.js"></script>
-    <script>
-      var cont = 0;
-      var imgArray = new Array();
-
-      imgArray[0] = new Image();
-      imgArray[0].src = 'img/CallaPhotoSmall.jpg';
-
-      imgArray[1] = new Image();
-      imgArray[1].src = 'img/CallaPhotoSmall_filter1.jpg';
-
-      imgArray[2] = new Image();
-      imgArray[2].src = 'img/CallaPhotoSmall_filter2.jpg';
-
-      imgArray[3] = new Image();
-      imgArray[3].src = 'img/CallaPhotoSmall_filter3.jpg';
-      
-      function mySlideshow() {
-        cont = (cont + 1) % imgArray.length;
-        document.getElementById('slideshow').src=imgArray[cont].src;
-      }
-    
-      document.getElementById("slideshow").addEventListener("click", mySlideshow);
-    </script>
-  </body>
-</html>
-```

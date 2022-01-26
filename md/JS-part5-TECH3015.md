@@ -6,14 +6,13 @@ In this lab we will continue exploring JavaScript with examples and exercises.
 ## Adding a JavaScript Navigation Menu to a website
 
 The section 'How To' of the website w3schools (<https://www.w3schools.com/howto/>) includes very useful snippets for HTML, CSS and JavaScript.
-In this section, we are going to run and analyse some of the navigation menus examples we can find in that website.
+In this section, we are going to run and analyse some of the navigation menus examples we can find in this website.
 
 To begin with, we are going to see how to create a full screen overlay navigation menu.
 
 **Exercise 1**. The following code creates a full screen overlay navigation menu. Run and analyse the following code.
 In particular, add/remove the following elements from the code, to fully understand their function:
-</br>
-</br> 1) href="javascript:void(0)" (although it would be better to avoid this. See, for example, <https://www.30secondsofcode.org/articles/s/javascript-void-links>
+</br> 1) href="javascript:void(0)" (although it would be better to avoid this. See, for example, <https://www.30secondsofcode.org/articles/s/javascript-void-links>).
 </br> 2) &times
 </br> 3) &#9776
 
@@ -389,7 +388,7 @@ function closeNav() {
 </html> 
 ```
 
-## The getElementsByClassName() JacaScript method
+## The getElementsByClassName() JavaScript method
 
 In contrast with getElementsByID (that returns a single element), the getElementsByClassName() method returns a collection of elements with a specified class name(s). Run and analyse the following code. In particular, analyse how to access the collection of elements.
 
@@ -426,7 +425,7 @@ In contrast with getElementsByID (that returns a single element), the getElement
 </html>
 ```
 
-**Exercise 5**. Add two more paragraph to the previous code. Modify this code so that the text of paragraphs two and four changes to red if you click everywhere on the webpage. The text must change to green if you click again. (Note: you don't have to add an 'Id' to the paragraphs).
+**Exercise 5**. Add two more paragraph to the previous code. Modify this code so that the text of paragraphs two and four changes to red if you click everywhere on the webpage. The text must change to green if you click again. Hint: It is possible to solve this exercise just changing the 'for' line: 'for (let i = 0; i < collection.length; i++)'.
 
 
 ## Display images with javascript

@@ -111,7 +111,13 @@ That’ll do for the UI for now. Let’s take a look at how to do something with
 
 ## Installing PouchDB
 
-PouchDB is a fully JavaScript database manager, so installing it is just a case of including its single JavaScript file. You can either download this and host it locally, or link to the version on their CDN. You can find details of both options, and all about PouchDB on their website
+PouchDB is a fully JavaScript database manager, so installing it is just a case of including its single JavaScript file. You can either download this and host it locally, or link to the version on their CDN.
+
+```JS
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+```
+
+You can find details of both options, and all about PouchDB on their website
 
 <https://pouchdb.com>
 

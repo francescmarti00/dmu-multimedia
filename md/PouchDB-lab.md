@@ -287,7 +287,7 @@ function showPizzas (err, doc) {
 This is simple example of saving and viewing documents. You could however go further in a number of ways. For example:
 
 1. In the form, in the input fileds, create drop-down lists so you do not have to type the name of the pizza, price and toppings.
-2. Add a button to remove pizzas from your list.
+2. Add a button to remove all the list of pizzas (check `db.destroy()`).
 3. Add a 'Checkout' button. This button should open a new page with the list of pizzas and total price.
 4. Add an button what allows you to edit an existing pizza.
 5. And of course, you could just make the whole thing look a lot better :)

@@ -78,10 +78,6 @@ We will also need a button on our form. We can achieve this with the `<button>` 
 </form>
 ```
 
-Resulting in a webpage something like this:
-
-![Screenshot of the pizza store](https://francescmarti00.github.io/dmu-mutlimedia/resources/img/pizzaStore1.png)
-
 We also need somewhere to list the pizzas. For this, we'll use a `<table>` element underneath the form. You could put a heading in if you like.
 
 `<table>` elements are used for displaying a table of data. The can contain quite a range of other elements to describe that data. We want a single header row, and then a body to contain a row for each pizza.

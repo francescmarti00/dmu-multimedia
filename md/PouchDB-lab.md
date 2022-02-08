@@ -277,6 +277,8 @@ You could allow the user to search for a particular pizza by name or topping. Or
 
 And of course, you could just make the whole thing look a lot better :)
 
+For more info, visit: <https://pouchdb.com/getting-started.html>
+
 ## Conclusion
 
 What we’ve seen here really only scratches the surface of databases, but it’s useful to get a handle on the issues to do with client-side and server-side data storage. There are pros and cons to each and being able to quickly spin up a database in either situation can be rather useful.

@@ -131,7 +131,15 @@ let db = new PouchDB("pizzas");
 
 Now that you’ve got your form set up, and PouchDB installed and ready to use, it’s time to bring the two together.
 
-The first thing you’ll need to do is to be able to react to a click on that button, so add an event listener to it. That should be fine by now.
+The first thing you’ll need to do is to be able to react to a click on that button, so add an event listener to it.
+
+```HTML
+<button id="addPizzaButton">Add Pizza!</button>
+```
+
+```JS
+document.getElementById("addPizzaButton").addEventListener("click", addPizza);
+```
 
 Within the function that gets run as a result of that event listener, we need to put together a new document based on the contents of the form, and then put this into the database. We create a document as a JavaScript object, and we’re not limited to just strings as the values. We can include arrays, numbers, even other documents.
 

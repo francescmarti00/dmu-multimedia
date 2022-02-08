@@ -172,24 +172,16 @@ And that’s it. You can use the web inspector to check that this has worked and
 
 ## Getting Data Out
 
-We also want to be able to retrieve data from our database. PouchDB provides us with a method to get everything out of a database:
+We also want to be able to retrieve data from our database. PouchDB provides us with the method `db.allDocs()` to get everything out of a database.
 
-```JS
-db.allDocs();
+```Js
+db.allDocs({ include_docs: true, descending: true }, showPizzas);
 ```
 
 This method takes two parameters:
 
 1. An options object.
 2. A function to run when it's got results
-
-By default, PouchDB will give us a list of all the documents in the database, but won't give us the objects themselves. We can use an option to get the documents along with the listing for each. We can also get them in descending order so that we get the newest pizza first.
-
-For the second parameter, we'll provide the name of a function we're yet to write.
-
-```Js
-db.allDocs({ include_docs: true, descending: true }, showPizzas);
-```
 
 But when do we want to run this? Well, ideally any time the contents of the database changes. To do this, we need to do two things:
 
@@ -199,7 +191,7 @@ But when do we want to run this? Well, ideally any time the contents of the data
 This first is easy.
 
 ```JS
-loadPizzas = () => {
+functionloadPizzas () {
   db.allDocs({ include_docs: true, descending: true }, showPizzas);
 };
 ```
@@ -216,17 +208,38 @@ db.changes({
 Now it's time to write that `showPizzas()` function. This function will be given two things by PouchDB - details of any error, and the results if successful.
 
 ```JS
-showPizzas = (err, doc) => {
-
+function showPizzas (err, doc) {
+  console.log(doc.rows);
 }
 ```
 
 That `doc` object will have the results in if there wasn't an error. If you log the object the console and dig in, you'll see that the actual records are in a `rows` property, so it's `doc.rows` that we're interested in.
 
+So, summarising, in order to display the database in the console, we have to add the following JavaScript code to our program
+
+```JS
+function showPizzas (err, doc) {
+  console.log(doc.rows);
+};
+
+function loadPizzas() {
+  db.allDocs({ include_docs: true, descending: true }, showPizzas);
+};
+
+db.changes({
+  since: "now",
+  live: true,
+}).on("change", loadPizzas);
+
+loadPizzas();
+```
+
+Finally, 
+
 So, we want to loop over each entry in that `rows` array:
 
 ```JS
-showPizzas = (err, doc) => {
+function showPizzas (err, doc) {
   doc.rows.forEach( row => {
     // we get each row here
   })
@@ -236,7 +249,7 @@ showPizzas = (err, doc) => {
 Within each row, the actual document is contained within a `doc` property.
 
 ```JS
-showPizzas = (err, doc) => {
+function showPizzas (err, doc) {
   doc.rows.forEach( row => {
     let thisPizza = row.doc;
   })
@@ -248,7 +261,7 @@ Now we can do something with it. What we're going to do is build up a HTML strin
 Once we've finished looping, we can insert the string into the `<tbody>` element by setting its `innerHTML` property.
 
 ```JS
-showPizzas = (err, doc) => {
+function showPizzas (err, doc) {
   let tableRows = "";
   doc.rows.forEach((row) => {
     let thisPizza = row.doc;
@@ -271,11 +284,13 @@ showPizzas = (err, doc) => {
 
 ## Going Further
 
-This is simple example of saving and viewing documents. You could however go further in a number of ways.
+This is simple example of saving and viewing documents. You could however go further in a number of ways. For example:
 
-You could allow the user to search for a particular pizza by name or topping. Or delete a pizza, or edit an existing pizza.
-
-And of course, you could just make the whole thing look a lot better :)
+1. In the form, in the input fileds, create drop-down lists so you do not have to type the name of the pizza, price and toppings.
+2. Add a button to remove pizzas from your list.
+3. Add a 'Checkout' button. This button should open a new page with the list of pizzas and total price.
+4. Add an button what allows you to edit an existing pizza.
+5. And of course, you could just make the whole thing look a lot better :)
 
 For more info, visit: <https://pouchdb.com/getting-started.html>
 

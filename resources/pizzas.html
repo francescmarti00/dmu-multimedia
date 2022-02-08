@@ -42,8 +42,7 @@
     <script>
       let db = new PouchDB("pizzas");
 
-      addPizza = (evt) => {
-        evt.preventDefault();
+      function addPizza () {
         let newPizza = {
           _id: new Date().toISOString(),
           name: document.getElementById("name").value,
@@ -58,7 +57,7 @@
         db.put(newPizza);
       };
 
-      showPizzas = (err, doc) => {
+      function showPizzas (err, doc) {
         console.log(doc.rows);
         let tableRows = "";
         doc.rows.forEach((row) => {
@@ -79,7 +78,7 @@
         document.querySelector("#listOfPizzas tbody").innerHTML = tableRows;
       };
 
-      loadPizzas = () => {
+      function loadPizzas () {
         console.log("loadingpizzas");
         db.allDocs({ include_docs: true, descending: true }, showPizzas);
       };

@@ -2,7 +2,21 @@
 
 This task will have you creating a simple system to save data between sessions. To create and manage that data store we’re going to use PouchDB, an open source JavaScript database manager. PouchDB saves its data to local storage for persistence between sessions, and can optionally sync to a server-based database. This means that it saves its data in the browser. If you load the same site on a different computer, or even a different browser on the same computer, it will have its own instance of the database. This is quite limiting, but makes it simpler to explore the basics of using a database.
 
-Using this we’re going to create a system for saving details of pizzas. Each pizza will have a name, a price, and a list of toppings. You might think of each document therefore as having the following structure:
+Using this we’re going to create a system for saving details of pizzas.
+
+We have already learned that JavaScript variables are containers for data values. For example, this code assigns a simple value (Margherita) to a variable named 'name' (the name of the pizza):
+
+```JS
+let name = "Margherita";
+```
+
+But, in our practical example, we would to have a name, a price, and a list of toppings for each pizza. To do this, we can use a JavaScript object. Objects are variables too. But objects can contain many values. For example, 
+
+```JS
+pizza = {name:"Margherita", price: 9, toppings: ["Pepperoni", "Mushroom", "Onion"]};
+```
+
+ So, you might think of each document therefore as having the following structure:
 
 ```JS
 {

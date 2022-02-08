@@ -12,7 +12,7 @@ Using this we’re going to create a system for saving details of pizzas. Each p
 }
 ```
 
-You can see a finished example of this here: <https://thomcorah.github.io/dmu-multimedia/resources/pizzas.html>
+You can see a finished example of this here: <https://francescmarti00.github.io/dmu-multimedia/resources/pizzas.html>
 
 Be sure to inspect the code if you get stuck.
 
@@ -66,7 +66,7 @@ We will also need a button on our form. We can achieve this with the `<button>` 
 
 Resulting in a webpage something like this:
 
-![Screenshot of the pizza store](https://thomcorah.github.io/dmu-mutlimedia/resources/img/pizzaStore1.png)
+![Screenshot of the pizza store](https://francescmarti00.github.io/dmu-mutlimedia/resources/img/pizzaStore1.png)
 
 We also need somewhere to list the pizzas. For this, we'll use a `<table>` element underneath the form. You could put a heading in if you like.
 

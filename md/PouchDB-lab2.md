@@ -163,8 +163,9 @@ So, you have to end up with something like this:
       let db = new PouchDB("usersData");
       
       function addUserFeedback() {
+        let theDate = new Date().toISOString();
         let user = {
-          _id: new Date().toISOString(),
+          _id: theDate,
           name: document.getElementById("name").value,
           email: document.getElementById("email").value,
           score: document.getElementById("score").value
@@ -196,16 +197,16 @@ To add a new element to the HTML DOM, you must create the element (element node)
 <body>
 
 <div id="div1">
-<p id="p1">This is a paragraph.</p>
+  <p id="p1">This is a paragraph.</p>
 </div>
 
 <script>
-let para = document.createElement("p");
-let node = document.createTextNode("This text is in a new paragraph generated with javascript.");
-para.appendChild(node);
+  let para = document.createElement("p");
+  let node = document.createTextNode("This text is in a new paragraph generated with javascript.");
+  para.appendChild(node);
 
-let element = document.getElementById("div1");
-element.appendChild(para);
+  let element = document.getElementById("div1");
+  element.appendChild(para);
 </script>
 
 </body>

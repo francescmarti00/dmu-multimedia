@@ -57,9 +57,9 @@ xxx Let's suppose that we just want to save email addresses in our database. To 
 
 ```JS
 let user = {
-          _id: new Date().toISOString(),
-          email: 'john@gmail.com'
-        }
+   _id: new Date().toISOString(),
+   email: 'john@gmail.com'
+}
 ```
 
 In PouchDB each register, each 'email' in this case, is called a document. And each document is required to have a unique `_id`. Any subsequent writes to a document with the same `_id` will be considered updates. Here we are using a date string as an `_id`. For our use case, it will be unique, and it can also be used to sort items in the database. 
@@ -180,11 +180,41 @@ So, you have to end up with something like this:
 And that’s it. You can use the web inspector to check that this has worked and the user feedback has in fact been saved.
 
 ### Exercise 2:
-Modify the form input 'score' so the users must select a numerical values (0-5) from a drop down selector.
+Modify the form input 'score' so users must select a numerical values (0-5) from a drop down selector.
 
 ## Getting Data Out
 
-Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will list all the feedbacks in the database. You don’t need to worry about styling if you don’t want, we’re more concerned about the mechanics.
+Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will display a message saying "Thank you Mr. XXXX for your score XXX!".
+
+The first thing we need to see is how to create new HTML elements using JavaScript. In the previous lab, we saw how to insert new rows in a table. Let's see now how to creaate new paragraph using javascript.
+
+To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element. (See <https://www.w3schools.com/js/js_htmldom_nodes.asp> for a detailed explanation).
+
+```JS
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="div1">
+<p id="p1">This is a paragraph.</p>
+</div>
+
+<script>
+let para = document.createElement("p");
+let node = document.createTextNode("This text is in a new paragraph generated with javascript.");
+para.appendChild(node);
+
+let element = document.getElementById("div1");
+element.appendChild(para);
+</script>
+
+</body>
+</html>
+```
+
+
+
+will list all the feedbacks in the database. You don’t need to worry about styling if you don’t want, we’re more concerned about the mechanics.
 
 Now we can do something with it. What we're going to do is build up a HTML string of table rows, and then insert that into the `<tbody>` element. We need to create the empty string before the loop starts, and then add to it with the appropriate HTML and data from the pizza object with each loop.
 

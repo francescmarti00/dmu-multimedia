@@ -102,9 +102,13 @@ So, the following code creates a PouchDB database (or instance) and save a docum
 </html>
 ```
 
-Now, you can use the web inspector to check that this has worked and the email has in fact been saved.
+Now, you can use the web inspector (Application tab) to check that this has worked and the email has in fact been saved.
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Application.jpg)
+
+Note that we can also use the web inspector to delete the database or their documents.
+
+### Exercise 1:### Modify the variable `user` so the page also save the name of the user and its 'rating score' for your website (a numberical value).
 
 
 We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.

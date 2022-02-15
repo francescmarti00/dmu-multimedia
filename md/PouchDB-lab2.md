@@ -108,7 +108,82 @@ Now, you can use the web inspector (Application tab) to check that this has work
 
 Note that we can also use the web inspector to delete the database or their documents.
 
-### Exercise 1:### Modify the variable `user` so the page also save the name of the user and its 'rating score' for your website (a numberical value).
+### Exercise 1:
+Modify the variable `user` so the page also saves the name of the user and its 'rating score' for your website (a numberical value). So, the database saves the name, email and the rating score.
+
+## Creating a form
+
+We have seen that add data to the database is straightforward. But it would be better to create a form to do this.
+
+So, we need a form. We can create a form easily enough with HTML using the `<form>` element. We then populate the element with inputs. The kind of things you can put in a form include single line text input boxes, drop down selectors, multi-line text input, checkboxes and radio buttons. We just need the first one, single line text input boxes.
+
+To create many of these types of input, we use the `<input>` element. We can then use its 'type' attribute to determine what kind of input it is. For a single line text box, we want the 'text' type. You can find a list of all the different types on the w3schools website -> <http://www.w3schools.com/html/html_form_input_types.asp>
+
+```HTML
+<input type="text" id="name" />
+```
+
+We also want to provide text labels for these boxes so the user knows what to enter in each one. We could just use `<p>` elements, but the `<label>` element provides a bit more context and meaning to robots and screen-readers.
+
+We need to make sure each of those `<input>` elements has an id so that we can reference each with JavaScript in order to pull out the value.
+
+We will also need a button on our form. We can achieve this with the `<button>` element. So, we have to add the folowing code to our webpage:
+
+```html
+<form>
+  <label for="name">
+    Name
+    <input type="text" id="name" />
+  </label>
+  <label for="email">
+    Email
+    <input type="text" id="email" />
+  </label>
+  <label for="score">
+    Score
+    <input type="number" id="score" />
+  </label>
+
+  <button id="addUserFeedback">Send your score!</button>
+</form>
+```
+
+The first thing you’ll need to do is to be able to react to a click on that button, so add an event listener to it.
+
+```JS
+document.getElementById("addUserFeedbackButton").addEventListener("click", addPizza);
+```
+
+
+
+Within the function that gets run as a result of that event listener, we need to put together a new document based on the contents of the form, and then put this into the database. We create a document as a JavaScript object, and we’re not limited to just strings as the values. We can include arrays, numbers, even other documents.
+
+The one rule here is that you need to include a unique \_id field. It might make sense to use the current date and time at the point the record is created, to ensure that they are both unique, and ordered by creation time.
+
+You’ll end up with something like this:
+
+```JS
+let newPizza = {
+  _id: new Date().toISOString(),
+  name: document.getElementById("name").value,
+  price: document.getElementById("price").value,
+  toppings: [
+    document.getElementById("topping1").value,
+    document.getElementById("topping2").value,
+    document.getElementById("topping3").value,
+  ],
+};
+```
+
+We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.
+
+```JS
+db.put(newPizza);
+```
+
+Note here that `db` is what we called the variable that holds reference to the database earlier on.
+
+And that’s it. You can use the web inspector to check that this has worked and your pizza has in fact been saved.
 
 
 We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.
@@ -231,44 +306,7 @@ That’ll do for the UI for now. Let’s take a look at how to do something with
 
 Now that you’ve got your form set up, and PouchDB installed and ready to use, it’s time to bring the two together.
 
-The first thing you’ll need to do is to be able to react to a click on that button, so add an event listener to it.
 
-```HTML
-<button id="addPizzaButton">Add Pizza!</button>
-```
-
-```JS
-document.getElementById("addPizzaButton").addEventListener("click", addPizza);
-```
-
-Within the function that gets run as a result of that event listener, we need to put together a new document based on the contents of the form, and then put this into the database. We create a document as a JavaScript object, and we’re not limited to just strings as the values. We can include arrays, numbers, even other documents.
-
-The one rule here is that you need to include a unique \_id field. It might make sense to use the current date and time at the point the record is created, to ensure that they are both unique, and ordered by creation time.
-
-You’ll end up with something like this:
-
-```JS
-let newPizza = {
-  _id: new Date().toISOString(),
-  name: document.getElementById("name").value,
-  price: document.getElementById("price").value,
-  toppings: [
-    document.getElementById("topping1").value,
-    document.getElementById("topping2").value,
-    document.getElementById("topping3").value,
-  ],
-};
-```
-
-We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.
-
-```JS
-db.put(newPizza);
-```
-
-Note here that `db` is what we called the variable that holds reference to the database earlier on.
-
-And that’s it. You can use the web inspector to check that this has worked and your pizza has in fact been saved.
 
 ## Getting Data Out
 

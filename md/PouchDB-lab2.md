@@ -253,13 +253,9 @@ function showFeedbacks (err, doc) {
       "<tr><td>" +
       thisFeedback.name +
       "</td><td>" +
-      thisFeedback.price +
+      thisFeedback.email +
       "</td><td>" +
-      thisFeedback.toppings[0] +
-      "</td><td>" +
-      thisFeedback.toppings[1] +
-      "</td><td>" +
-      thisFeedback.toppings[2] +
+      thisFeedback.score +
       "</td></tr>";
   });
   document.querySelector("#listOfFeedbacks tbody").innerHTML = tableRows;

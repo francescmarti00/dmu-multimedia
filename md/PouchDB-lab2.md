@@ -248,24 +248,24 @@ So, summarising, in order to display the database in the console, we have to add
 function showFeedbacks (err, doc) {
   let tableRows = "";
   doc.rows.forEach((row) => {
-    let thisPizza = row.doc;
+    let thisFeedback = row.doc;
     tableRows +=
       "<tr><td>" +
-      thisPizza.name +
+      thisFeedback.name +
       "</td><td>" +
-      thisPizza.price +
+      thisFeedback.price +
       "</td><td>" +
-      thisPizza.toppings[0] +
+      thisFeedback.toppings[0] +
       "</td><td>" +
-      thisPizza.toppings[1] +
+      thisFeedback.toppings[1] +
       "</td><td>" +
-      thisPizza.toppings[2] +
+      thisFeedback.toppings[2] +
       "</td></tr>";
   });
   document.querySelector("#listOfFeedbacks tbody").innerHTML = tableRows;
 };
 
-function loadPizzas() {
+function loadFeedbacks() {
   db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
 };
 

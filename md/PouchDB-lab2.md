@@ -183,6 +183,9 @@ And that’s it. You can use the web inspector to check that this has worked and
 ### Exercise 2:
 Modify the form input 'score', so users must select a numerical values (0-5) from a drop down selector.
 
+### Exercise 3 (Optional):
+Add a 'Thank you for your feedback!' messages after submission.
+
 ## Getting Data Out
 
 We also need somewhere to list the users feedback. For this, we are going to create a new page (you have to create a new page!) with a table.
@@ -274,8 +277,7 @@ db.changes({
 loadFeedbacks();
 ```
 
-
-## Getting Data Out: JavaScript HTML DOM Elements (Nodes)
+## Optional. Getting Data Out: JavaScript HTML DOM Elements (Nodes)
 
 Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will display a message saying "Thank you Mr. XXXX for your score XXX!".
 
@@ -305,5 +307,5 @@ To add a new element to the HTML DOM, you must create the element (element node)
 </html>
 ```
 
-### Exercise 3 (Optional):
+### Exercise (Optional):
 Modify the previous code so you create a new paragraph ("Paragprah 1",  "Paragprah 2", etc.) everytime you click anywhere in the page.

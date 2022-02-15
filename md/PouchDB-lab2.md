@@ -279,9 +279,7 @@ loadFeedbacks();
 
 ## Optional. Getting Data Out: JavaScript HTML DOM Elements (Nodes)
 
-Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will display a message saying "Thank you Mr. XXXX for your score XXX!".
-
-The first thing we need to see is how to create new HTML elements using JavaScript. In the previous lab, we saw how to insert new rows in a table. Let's see now how to creaate new paragraph using javascript.
+As we have seen, we can create new HTML elements using JavaScript. In the previous lab, we saw how to insert new rows in a table. Let's see now how to creaate new paragraph using javascript.
 
 To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element. (See <https://www.w3schools.com/js/js_htmldom_nodes.asp> for a detailed explanation).
 

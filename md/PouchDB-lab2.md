@@ -2,7 +2,7 @@
 
 This task will have you creating a simple system to save data between sessions. To create and manage that data store we’re going to use PouchDB, an open source JavaScript database manager. PouchDB saves its data to local storage for persistence between sessions, and can optionally sync to a server-based database. This means that it saves its data in the browser. If you load the same site on a different computer, or even a different browser on the same computer, it will have its own instance of the database. This is quite limiting, but makes it simpler to explore the basics of using a database.
 
-Using this we’re going to create a system for saving data xxxx.
+Using this we’re going to create a system to add the details and feedback of a user to the database using a form.
 
 ## Installing PouchDB
 
@@ -70,7 +70,7 @@ So, the data is ready, let's save it in the database with the `put()` method.
 db.put(user);
 ```
 
-So, the following code creates a PouchDB database (or instance) and save a document (an email) in it.
+So, the following code creates a PouchDB database (or instance) and save a document (an 'email' in this example) in it.
 
 ```JS
 <!DOCTYPE html>
@@ -109,7 +109,7 @@ Now, you can use the web inspector (Application tab) to check that this has work
 Note that we can also use the web inspector to delete the database or their documents.
 
 ### Exercise 1:
-Modify the variable `user` so the page also saves the name of the user and its 'rating score' for your website (a numberical value). So, the database saves the name, email and the rating score.
+Modify the variable `user` so the page also saves the name of the user and its 'rating score' for your website (a numberical value). So, the database saves the name, email and the rating score of an user.
 
 ## Creating a form
 
@@ -125,7 +125,7 @@ To create many of these types of input, we use the `<input>` element. We can the
 
 We also want to provide text labels for these boxes so the user knows what to enter in each one. We could just use `<p>` elements, but the `<label>` element provides a bit more context and meaning to robots and screen-readers.
 
-We need to make sure each of those `<input>` elements has an id so that we can reference each with JavaScript in order to pull out the value.
+We need to make sure each of those `<input>` elements has an `id` so that we can reference each with JavaScript in order to pull out the value.
 
 We will also need a button on our form. We can achieve this with the `<button>` element. So, we have to add the folowing code to our webpage:
 
@@ -144,131 +144,72 @@ We will also need a button on our form. We can achieve this with the `<button>` 
     <input type="number" id="score" />
   </label>
 
-  <button id="addUserFeedback">Send your score!</button>
+  <button id="addUserFeedbackButton">Send your score!</button>
 </form>
 ```
 
-The first thing you’ll need to do is to be able to react to a click on that button, so add an event listener to it.
+So, let's save the data of the form in the database. The first thing you’ll need to do is to be able to react to a click on that button, so add an event listener to it.
 
 ```JS
-document.getElementById("addUserFeedbackButton").addEventListener("click", addPizza);
+document.getElementById("addUserFeedbackButton").addEventListener("click", addUserFeedback);
 ```
 
+The second thing, to create the addUserFeedback function, the function that gets run as a result of that event listener. This function will capture the form data and will save it in the database.
 
-
-Within the function that gets run as a result of that event listener, we need to put together a new document based on the contents of the form, and then put this into the database. We create a document as a JavaScript object, and we’re not limited to just strings as the values. We can include arrays, numbers, even other documents.
-
-The one rule here is that you need to include a unique \_id field. It might make sense to use the current date and time at the point the record is created, to ensure that they are both unique, and ordered by creation time.
-
-You’ll end up with something like this:
+So, you have to end up with something like this:
 
 ```JS
-let newPizza = {
-  _id: new Date().toISOString(),
-  name: document.getElementById("name").value,
-  price: document.getElementById("price").value,
-  toppings: [
-    document.getElementById("topping1").value,
-    document.getElementById("topping2").value,
-    document.getElementById("topping3").value,
-  ],
+    <script>
+      let db = new PouchDB("usersData");
+      
+      function addUserFeedback() {
+        let user = {
+          _id: new Date().toISOString(),
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          score: document.getElementById("score").value
+        };
+        
+        db.put(user); 
+      }
+      
+      document.getElementById("addUserFeedbackButton").addEventListener("click", addUserFeedback);
+    </script>
+```
+
+And that’s it. You can use the web inspector to check that this has worked and the user feedback has in fact been saved.
+
+### Exercise 2:
+Modify the form input 'score' so the users must select a numerical values (0-5) from a drop down selector.
+
+## Getting Data Out
+
+Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will list all the feedbacks in the database. You don’t need to worry about styling if you don’t want, we’re more concerned about the mechanics.
+
+Now we can do something with it. What we're going to do is build up a HTML string of table rows, and then insert that into the `<tbody>` element. We need to create the empty string before the loop starts, and then add to it with the appropriate HTML and data from the pizza object with each loop.
+
+Once we've finished looping, we can insert the string into the `<tbody>` element by setting its `innerHTML` property.
+
+```JS
+function showPizzas (err, doc) {
+  let tableRows = "";
+  doc.rows.forEach((row) => {
+    let thisPizza = row.doc;
+    tableRows +=
+      "<tr><td>" +
+      thisPizza.name +
+      "</td><td>" +
+      thisPizza.price +
+      "</td><td>" +
+      thisPizza.toppings[0] +
+      "</td><td>" +
+      thisPizza.toppings[1] +
+      "</td><td>" +
+      thisPizza.toppings[2] +
+      "</td></tr>";
+  });
+  document.querySelector("#listOfPizzas tbody").innerHTML = tableRows;
 };
-```
-
-We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.
-
-```JS
-db.put(newPizza);
-```
-
-Note here that `db` is what we called the variable that holds reference to the database earlier on.
-
-And that’s it. You can use the web inspector to check that this has worked and your pizza has in fact been saved.
-
-
-We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.
-
-```JS
-db.put(newPizza);
-```
-
-Note here that `db` is what we called the variable that holds reference to the database earlier on.
-
-And that’s it. You can use the web inspector to check that this has worked and your pizza has in fact been saved.
-
-
-We have already learned that JavaScript variables are containers for data values. For example, this code assigns a simple value (Margherita) to a variable named 'name' (the name of the pizza):
-
-```JS
-let name = "Margherita";
-```
-
-But, in our practical example, we would to have a name, a price, and a list of toppings for each pizza. To do this, we can use a JavaScript object. Objects are variables too. But objects can contain many values. For example, 
-
-```JS
-pizza = {name:"Margherita", price: 9, toppings: ["Pepperoni", "Mushroom", "Onion"]};
-```
-
- So, you might think of each document therefore as having the following structure:
-
-```JS
-{
-  name: 'string',
-  price: float,
-  toppings: ['string', 'string', 'string']
-}
-```
-
-You can see a finished example of this here: <https://francescmarti00.github.io/dmu-multimedia/resources/pizzas.html>
-
-Be sure to inspect the code if you get stuck.
-
-## Functionality
-
-Our system should allow the user to add the details of a pizza to the database using a form. For the purposes of simplicity we’ll assume that any pizza can have a maximum of three toppings. That’ll just make the form easier.
-
-It should then also list the details of all pizzas.
-
-We could go further than this, as we’ll discuss at the end.
-
-## Creating your UI
-
-The first thing to do is to get your project folder created and an HTML page made. Straightforward enough.
-
-The UI needs to have two parts. One will be the form for adding a new pizza. The other will list all the pizzas in the database. You don’t need to worry about styling if you don’t want, we’re more concerned about the mechanics.
-
-We need a form. We can create a form easily enough with HTML using the `<form>` element. We then populate the element with inputs. The kind of things you can put in a form include single line text input boxes, drop down selectors, multi-line text input, checkboxes and radio buttons. We just need the first one, single line text input boxes.
-
-To create many of these types of input, we use the `<input>` element. We can then use its 'type' attribute to determine what kind of input it is. For a single line text box, we want the 'text' type. You can find a list of all the different types on the w3schools website -> <http://www.w3schools.com/html/html_form_input_types.asp>
-
-```HTML
-<input type="text" id="name" />
-```
-
-We also want to provide text labels for these boxes so the user knows what to enter in each one. We could just use `<p>` elements, but the `<label>` element provides a bit more context and meaning to robots and screen-readers.
-
-We need to make sure each of those `<input>` elements has an id so that we can reference each with JavaScript in order to pull out the value.
-
-We will also need a button on our form. We can achieve this with the `<button>` element. What you’ll end up with is something like this:
-
-```html
-<form>
-  <label for="name">
-    Name
-    <input type="text" id="name" />
-  </label>
-  <label for="price">
-    Price
-    <input type="number" id="price" />
-  </label>
-  <label for="toppings">
-    Toppings
-    <input type="text" id="topping1" />
-    <input type="text" id="topping2" />
-    <input type="text" id="topping3" />
-  </label>
-  <button id="addPizzaButton">Add Pizza!</button>
-</form>
 ```
 
 We also need somewhere to list the pizzas. For this, we'll use a `<table>` element underneath the form. You could put a heading in if you like.
@@ -394,31 +335,7 @@ function showPizzas (err, doc) {
 }
 ```
 
-Now we can do something with it. What we're going to do is build up a HTML string of table rows, and then insert that into the `<tbody>` element. We need to create the empty string before the loop starts, and then add to it with the appropriate HTML and data from the pizza object with each loop.
 
-Once we've finished looping, we can insert the string into the `<tbody>` element by setting its `innerHTML` property.
-
-```JS
-function showPizzas (err, doc) {
-  let tableRows = "";
-  doc.rows.forEach((row) => {
-    let thisPizza = row.doc;
-    tableRows +=
-      "<tr><td>" +
-      thisPizza.name +
-      "</td><td>" +
-      thisPizza.price +
-      "</td><td>" +
-      thisPizza.toppings[0] +
-      "</td><td>" +
-      thisPizza.toppings[1] +
-      "</td><td>" +
-      thisPizza.toppings[2] +
-      "</td></tr>";
-  });
-  document.querySelector("#listOfPizzas tbody").innerHTML = tableRows;
-};
-```
 
 ## Going Further
 

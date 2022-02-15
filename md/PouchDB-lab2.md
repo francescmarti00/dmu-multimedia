@@ -181,7 +181,99 @@ So, you have to end up with something like this:
 And that’s it. You can use the web inspector to check that this has worked and the user feedback has in fact been saved.
 
 ### Exercise 2:
-Modify the form input 'score' so users must select a numerical values (0-5) from a drop down selector.
+Modify the form input 'score', so users must select a numerical values (0-5) from a drop down selector.
+
+## Getting Data Out
+
+We also need somewhere to list the users feedback. For this, we are going to create a new page (you have to create a new page!) with a table.
+
+We'll use a `<table>` element. You could put a heading in if you like.
+
+`<table>` elements are used for displaying a table of data. The can contain quite a range of other elements to describe that data. We want a single header row, and then a body to contain a row for each feedback.
+
+So, inside the `<table>` element, create a `<thead>` element. This will contain each of the header cells. You should then use a `<th>` element for each heading:
+
+| Name | Email | Score |
+| ---- | ----- | ------|
+
+We also want to be able to retrieve data from our database. PouchDB provides us with the method `db.allDocs()` to get everything out of a database.
+
+```Js
+db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
+```
+
+This method takes two parameters:
+
+1. An options object.
+2. A function to run when it's got results
+
+But when do we want to run this? Well, ideally any time the contents of the database changes. To do this, we need to do two things:
+
+1. Pop it in a function
+2. Use PouchDB's `changes` method.
+
+This first is easy.
+
+```JS
+functionloadFeedbacks () {
+  db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
+};
+```
+
+For the second bit, just include the following JS underneath all your functions:
+
+```JS
+db.changes({
+  since: "now",
+  live: true,
+}).on("change", loadFeedbacks);
+```
+
+Now it's time to write that `showFeedbacks()` function. This function will be given two things by PouchDB - details of any error, and the results if successful.
+
+```JS
+function showFeedbacks (err, doc) {
+  console.log(doc.rows);
+}
+```
+
+That `doc` object will have the results in if there wasn't an error. If you log the object the console and dig in, you'll see that the actual records are in a `rows` property, so it's `doc.rows` that we're interested in.
+
+So, summarising, in order to display the database in the console, we have to add the following JavaScript code to our program
+
+```JS
+function showFeedbacks (err, doc) {
+  let tableRows = "";
+  doc.rows.forEach((row) => {
+    let thisPizza = row.doc;
+    tableRows +=
+      "<tr><td>" +
+      thisPizza.name +
+      "</td><td>" +
+      thisPizza.price +
+      "</td><td>" +
+      thisPizza.toppings[0] +
+      "</td><td>" +
+      thisPizza.toppings[1] +
+      "</td><td>" +
+      thisPizza.toppings[2] +
+      "</td></tr>";
+  });
+  document.querySelector("#listOfFeedbacks tbody").innerHTML = tableRows;
+};
+
+function loadPizzas() {
+  db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
+};
+
+db.changes({
+  since: "now",
+  live: true,
+}).on("change", loadFeedbacks);
+
+loadFeedbacks();
+```
+
 
 ## Getting Data Out: JavaScript HTML DOM Elements (Nodes)
 
@@ -215,111 +307,3 @@ To add a new element to the HTML DOM, you must create the element (element node)
 
 ### Exercise 3 (Optional):
 Modify the previous code so you create a new paragraph ("Paragprah 1",  "Paragprah 2", etc.) everytime you click anywhere in the page.
-
-## Getting Data Out
-
-
-
-## Getting Data Out
-
-We also want to be able to retrieve data from our database. PouchDB provides us with the method `db.allDocs()` to get everything out of a database.
-
-```Js
-db.allDocs({ include_docs: true, descending: true }, showPizzas);
-```
-
-This method takes two parameters:
-
-1. An options object.
-2. A function to run when it's got results
-
-But when do we want to run this? Well, ideally any time the contents of the database changes. To do this, we need to do two things:
-
-1. Pop it in a function
-2. Use PouchDB's `changes` method.
-
-This first is easy.
-
-```JS
-functionloadPizzas () {
-  db.allDocs({ include_docs: true, descending: true }, showPizzas);
-};
-```
-
-For the second bit, just include the following JS underneath all your functions:
-
-```JS
-db.changes({
-  since: "now",
-  live: true,
-}).on("change", loadPizzas);
-```
-
-Now it's time to write that `showPizzas()` function. This function will be given two things by PouchDB - details of any error, and the results if successful.
-
-```JS
-function showPizzas (err, doc) {
-  console.log(doc.rows);
-}
-```
-
-That `doc` object will have the results in if there wasn't an error. If you log the object the console and dig in, you'll see that the actual records are in a `rows` property, so it's `doc.rows` that we're interested in.
-
-So, summarising, in order to display the database in the console, we have to add the following JavaScript code to our program
-
-```JS
-function showPizzas (err, doc) {
-  console.log(doc.rows);
-};
-
-function loadPizzas() {
-  db.allDocs({ include_docs: true, descending: true }, showPizzas);
-};
-
-db.changes({
-  since: "now",
-  live: true,
-}).on("change", loadPizzas);
-
-loadPizzas();
-```
-
-Finally, 
-
-So, we want to loop over each entry in that `rows` array:
-
-```JS
-function showPizzas (err, doc) {
-  doc.rows.forEach( row => {
-    // we get each row here
-  })
-}
-```
-
-Within each row, the actual document is contained within a `doc` property.
-
-```JS
-function showPizzas (err, doc) {
-  doc.rows.forEach( row => {
-    let thisPizza = row.doc;
-  })
-}
-```
-
-
-
-## Going Further
-
-This is simple example of saving and viewing documents. You could however go further in a number of ways. For example:
-
-1. In the form, in the input fileds, create drop-down lists so you do not have to type the name of the pizza, price and toppings.
-2. Add a button to remove all the list of pizzas (check `db.destroy()`).
-3. Add a 'Checkout' button. This button should open a new page with the list of pizzas and total price.
-4. Add an button what allows you to edit an existing pizza.
-5. And of course, you could just make the whole thing look a lot better :)
-
-For more info, visit: <https://pouchdb.com/getting-started.html>
-
-## Conclusion
-
-What we’ve seen here really only scratches the surface of databases, but it’s useful to get a handle on the issues to do with client-side and server-side data storage. There are pros and cons to each and being able to quickly spin up a database in either situation can be rather useful.

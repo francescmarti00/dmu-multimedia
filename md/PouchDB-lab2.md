@@ -1,8 +1,121 @@
-## Storing Data With Pouch DB
+## Working with Databases (2)
 
 This task will have you creating a simple system to save data between sessions. To create and manage that data store we’re going to use PouchDB, an open source JavaScript database manager. PouchDB saves its data to local storage for persistence between sessions, and can optionally sync to a server-based database. This means that it saves its data in the browser. If you load the same site on a different computer, or even a different browser on the same computer, it will have its own instance of the database. This is quite limiting, but makes it simpler to explore the basics of using a database.
 
-Using this we’re going to create a system for saving details of pizzas.
+Using this we’re going to create a system for saving data xxxx.
+
+## Installing PouchDB
+
+PouchDB is a fully JavaScript database manager, so installing it is just a case of including its single JavaScript file. You can either download this and host it locally, or link to the version on their CDN.
+
+```JS
+<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+```
+
+You can find details of both options, and all about PouchDB on their website
+
+<https://pouchdb.com>
+
+## Creating an instance of PouchDB (an empty 'excel')
+
+Once you’ve included the code, you need to create an instance of PouchDB to work with in JavaScript. So, either in a separate .js file or in a `<script>` element, create a new PouchDB instance and assign it to a variable. When you do this, you need to give PouchDB the name of the database. If the database already exists, it’ll just return that one to you.
+
+```JS
+let db = new PouchDB("usersData");
+```
+
+And... that is it! Our database is ready to use.
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+    
+    <script>
+      let db = new PouchDB("usersData");     
+    </script>
+    
+  </body>
+  
+</html>
+```
+
+## Adding data to the Database
+
+To add data to the database is straightforward. We just use the `put()` method that PouchDB provides, passing in the data.
+
+xxx Let's suppose that we just want to save email addresses in our database. To do this we have to create an object. Let's call it `user`. This object includes two variables, the `_id` and the user email
+
+```JS
+let user = {
+          _id: new Date().toISOString(),
+          email: 'john@gmail.com'
+        }
+```
+
+In PouchDB each register, each 'email' in this case, is called a document. And each document is required to have a unique `_id`. Any subsequent writes to a document with the same `_id` will be considered updates. Here we are using a date string as an `_id`. For our use case, it will be unique, and it can also be used to sort items in the database. 
+
+So, the data is ready, let's save it in the database with the `put()` method.
+
+```JS
+db.put(user);
+```
+
+So, the following code creates a PouchDB database (or instance) and save a document (an email) in it.
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+    
+    <script>
+      let db = new PouchDB("usersData");
+      
+      let user = {
+          _id: new Date().toISOString(),
+          email: 'john@gmail.com'
+      };
+      
+      db.put(user);    
+    </script>
+    
+  </body>
+  
+</html>
+```
+
+Now, you can use the web inspector to check that this has worked and the email has in fact been saved.
+
+
+
+We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.
+
+```JS
+db.put(newPizza);
+```
+
+Note here that `db` is what we called the variable that holds reference to the database earlier on.
+
+And that’s it. You can use the web inspector to check that this has worked and your pizza has in fact been saved.
+
 
 We have already learned that JavaScript variables are containers for data values. For example, this code assigns a simple value (Margherita) to a variable named 'name' (the name of the pizza):
 
@@ -108,24 +221,6 @@ Your `<table>` should look something like this:
 ```
 
 That’ll do for the UI for now. Let’s take a look at how to do something with this.
-
-## Installing PouchDB
-
-PouchDB is a fully JavaScript database manager, so installing it is just a case of including its single JavaScript file. You can either download this and host it locally, or link to the version on their CDN.
-
-```JS
-<script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
-```
-
-You can find details of both options, and all about PouchDB on their website
-
-<https://pouchdb.com>
-
-Once you’ve included the code, you need to create an instance of PouchDB to work with in JavaScript. So, either in a separate .js file or in a `<script>` element, create a new PouchDB instance and assign it to a variable. When you do this, you need to give PouchDB the name of the database. If the database already exists, it’ll just return that one to you.
-
-```JS
-let db = new PouchDB("pizzas");
-```
 
 ## Saving the Pizza
 

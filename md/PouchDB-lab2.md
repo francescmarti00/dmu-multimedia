@@ -104,6 +104,7 @@ So, the following code creates a PouchDB database (or instance) and save a docum
 
 Now, you can use the web inspector to check that this has worked and the email has in fact been saved.
 
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Application.jpg)
 
 
 We then need to add this to our database. This is really straightforward. We just use the `put()` method that PouchDB provides, passing in this new object.

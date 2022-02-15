@@ -182,7 +182,7 @@ And that’s it. You can use the web inspector to check that this has worked and
 ### Exercise 2:
 Modify the form input 'score' so users must select a numerical values (0-5) from a drop down selector.
 
-## Getting Data Out
+## Getting Data Out: JavaScript HTML DOM Elements (Nodes)
 
 Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will display a message saying "Thank you Mr. XXXX for your score XXX!".
 
@@ -212,70 +212,10 @@ element.appendChild(para);
 </html>
 ```
 
+### Exercise 3 (Optional):
+Modify the previous code so you create a new paragraph ("Paragprah 1",  "Paragprah 2", etc.) everytime you click anywhere in the page.
 
-
-will list all the feedbacks in the database. You don’t need to worry about styling if you don’t want, we’re more concerned about the mechanics.
-
-Now we can do something with it. What we're going to do is build up a HTML string of table rows, and then insert that into the `<tbody>` element. We need to create the empty string before the loop starts, and then add to it with the appropriate HTML and data from the pizza object with each loop.
-
-Once we've finished looping, we can insert the string into the `<tbody>` element by setting its `innerHTML` property.
-
-```JS
-function showPizzas (err, doc) {
-  let tableRows = "";
-  doc.rows.forEach((row) => {
-    let thisPizza = row.doc;
-    tableRows +=
-      "<tr><td>" +
-      thisPizza.name +
-      "</td><td>" +
-      thisPizza.price +
-      "</td><td>" +
-      thisPizza.toppings[0] +
-      "</td><td>" +
-      thisPizza.toppings[1] +
-      "</td><td>" +
-      thisPizza.toppings[2] +
-      "</td></tr>";
-  });
-  document.querySelector("#listOfPizzas tbody").innerHTML = tableRows;
-};
-```
-
-We also need somewhere to list the pizzas. For this, we'll use a `<table>` element underneath the form. You could put a heading in if you like.
-
-`<table>` elements are used for displaying a table of data. The can contain quite a range of other elements to describe that data. We want a single header row, and then a body to contain a row for each pizza.
-
-So, inside the `<table>` element, create a `<thead>` element. This will contain each of the header cells. You should then use a `<th>` element for each heading:
-
-| Name | Price | Topping 1 | Topping 2 | Topping 3 |
-| ---- | ----- | --------- | --------- | --------- |
-
-
-You'll also need a `<tbody>` element that we'll stuff with rows of pizzas using JavaScript.
-
-Oh, and give the `<table>` an id so you can refer to it from your JS later.
-
-Your `<table>` should look something like this:
-
-```html
-<table id="listOfPizzas">
-  <thead>
-    <th>Name</th>
-    <th>Price</th>
-    <th>Topping 1</th>
-    <th>Topping 2</th>
-    <th>Topping 3</th>
-  </thead>
-  <tbody></tbody>
-</table>
-```
-
-That’ll do for the UI for now. Let’s take a look at how to do something with this.
-
-## Saving the Pizza
-
-Now that you’ve got your form set up, and PouchDB installed and ready to use, it’s time to bring the two together.
+## Getting Data Out
 
 
 

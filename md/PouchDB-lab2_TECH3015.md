@@ -236,6 +236,19 @@ So, inside the `<table>` element, create a `<thead>` element. This will contain 
 | Name | Email | Score |
 | ---- | ----- | ------|
 
+So, your `<table>` should look something like this:
+
+```html
+<table id="listOfFeedbacks">
+  <thead>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Score</th>
+  </thead>
+  <tbody></tbody>
+</table>
+```
+
 We also want to be able to retrieve data from our database. PouchDB provides us with the method `db.allDocs()` to get everything out of a database.
 
 ```Js

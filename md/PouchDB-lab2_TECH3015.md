@@ -273,15 +273,6 @@ functionloadFeedbacks () {
 };
 ```
 
-For the second bit, just include the following JS underneath all your functions:
-
-```JS
-db.changes({
-  since: "now",
-  live: true,
-}).on("change", loadFeedbacks);
-```
-
 Now it's time to write that `showFeedbacks()` function. This function will be given two things by PouchDB - details of any error, and the results if successful.
 
 ```JS
@@ -291,6 +282,10 @@ function showFeedbacks (err, doc) {
 ```
 
 That `doc` object will have the results in if there wasn't an error. If you log the object the console and dig in, you'll see that the actual records are in a `rows` property, so it's `doc.rows` that we're interested in.
+
+Now we can do something with it. What we're going to do is build up a HTML string of table rows, and then insert that into the `<tbody>` element. We need to create the empty string before the loop starts, and then add to it with the appropriate HTML and data from the pizza object with each loop.
+
+Once we've finished looping, we can insert the string into the `<tbody>` element by setting its `innerHTML` property.
 
 So, summarising, in order to display the database in the console, we have to add the following JavaScript code to our program
 
@@ -314,11 +309,6 @@ function showFeedbacks (err, doc) {
 function loadFeedbacks() {
   db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
 };
-
-db.changes({
-  since: "now",
-  live: true,
-}).on("change", loadFeedbacks);
 
 loadFeedbacks();
 ```

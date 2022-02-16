@@ -162,7 +162,8 @@ So, you have to end up with something like this:
     <script>
       let db = new PouchDB("usersData");
       
-      function addUserFeedback() {
+      function addUserFeedback(event) {
+        event.preventDefault();
         let theDate = new Date().toISOString();
         let user = {
           _id: theDate,
@@ -183,11 +184,11 @@ And that’s it. You can use the web inspector to check that this has worked and
 ### Exercise 2:
 Modify the form input 'score' so users must select a numerical values (0-5) from a drop down selector.
 
-## Getting Data Out: JavaScript HTML DOM Elements (Nodes)
+## JavaScript HTML DOM Elements (Nodes)
 
-Our UI will have two parts. One will be the form for adding the user feedback (we have already done this). The other will display a message saying "Thank you Mr. XXXX for your score XXX!".
+Our UI will have two parts or 'views'. One will be the form for adding the user feedback (we have already done this). The other will display a message after submitting the form with the message "Thank you for your feedback!".
 
-The first thing we need to see is how to create new HTML elements using JavaScript. In the previous lab, we saw how to insert new rows in a table. Let's see now how to creaate new paragraph using javascript.
+The first thing we are going to see is how to create new HTML elements using JavaScript. In the previous lab, we saw how to insert new rows in a table. Let's see now how to creaate new paragraph using javascript.
 
 To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element. (See <https://www.w3schools.com/js/js_htmldom_nodes.asp> for a detailed explanation).
 
@@ -213,19 +214,32 @@ To add a new element to the HTML DOM, you must create the element (element node)
 </html>
 ```
 
-### Exercise 3 (Optional):
+### Exercise 3
 Modify the previous code so you create a new paragraph ("Paragprah 1",  "Paragprah 2", etc.) everytime you click anywhere in the page.
 
+### Exercise 4
+Modify the UI of our application so, the form disappears after submitting it (you can use `style.display = "none"`) and the application displays the message "Thank you for your feedback!".
+
+### Exercise 5
+Remove from your code the line `event.preventDefault()` to understand its function.
+
 ## Getting Data Out
 
+We also need somewhere to list the users feedback. For this, we are going to create a new page (you have to create a new page!) with a table.
 
+We'll use a `<table>` element. You could put a heading in if you like.
 
-## Getting Data Out
+`<table>` elements are used for displaying a table of data. The can contain quite a range of other elements to describe that data. We want a single header row, and then a body to contain a row for each feedback.
+
+So, inside the `<table>` element, create a `<thead>` element. This will contain each of the header cells. You should then use a `<th>` element for each heading:
+
+| Name | Email | Score |
+| ---- | ----- | ------|
 
 We also want to be able to retrieve data from our database. PouchDB provides us with the method `db.allDocs()` to get everything out of a database.
 
 ```Js
-db.allDocs({ include_docs: true, descending: true }, showPizzas);
+db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
 ```
 
 This method takes two parameters:
@@ -241,8 +255,8 @@ But when do we want to run this? Well, ideally any time the contents of the data
 This first is easy.
 
 ```JS
-functionloadPizzas () {
-  db.allDocs({ include_docs: true, descending: true }, showPizzas);
+functionloadFeedbacks () {
+  db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
 };
 ```
 
@@ -252,13 +266,13 @@ For the second bit, just include the following JS underneath all your functions:
 db.changes({
   since: "now",
   live: true,
-}).on("change", loadPizzas);
+}).on("change", loadFeedbacks);
 ```
 
-Now it's time to write that `showPizzas()` function. This function will be given two things by PouchDB - details of any error, and the results if successful.
+Now it's time to write that `showFeedbacks()` function. This function will be given two things by PouchDB - details of any error, and the results if successful.
 
 ```JS
-function showPizzas (err, doc) {
+function showFeedbacks (err, doc) {
   console.log(doc.rows);
 }
 ```
@@ -268,45 +282,33 @@ That `doc` object will have the results in if there wasn't an error. If you log 
 So, summarising, in order to display the database in the console, we have to add the following JavaScript code to our program
 
 ```JS
-function showPizzas (err, doc) {
-  console.log(doc.rows);
+function showFeedbacks (err, doc) {
+  let tableRows = "";
+  doc.rows.forEach((row) => {
+    let thisFeedback = row.doc;
+    tableRows +=
+      "<tr><td>" +
+      thisFeedback.name +
+      "</td><td>" +
+      thisFeedback.email +
+      "</td><td>" +
+      thisFeedback.score +
+      "</td></tr>";
+  });
+  document.querySelector("#listOfFeedbacks tbody").innerHTML = tableRows;
 };
 
-function loadPizzas() {
-  db.allDocs({ include_docs: true, descending: true }, showPizzas);
+function loadFeedbacks() {
+  db.allDocs({ include_docs: true, descending: true }, showFeedbacks);
 };
 
 db.changes({
   since: "now",
   live: true,
-}).on("change", loadPizzas);
+}).on("change", loadFeedbacks);
 
-loadPizzas();
+loadFeedbacks();
 ```
-
-Finally, 
-
-So, we want to loop over each entry in that `rows` array:
-
-```JS
-function showPizzas (err, doc) {
-  doc.rows.forEach( row => {
-    // we get each row here
-  })
-}
-```
-
-Within each row, the actual document is contained within a `doc` property.
-
-```JS
-function showPizzas (err, doc) {
-  doc.rows.forEach( row => {
-    let thisPizza = row.doc;
-  })
-}
-```
-
-
 
 ## Going Further
 

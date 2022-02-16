@@ -215,7 +215,7 @@ To add a new element to the HTML DOM, you must create the element (element node)
 ```
 
 ### Exercise 3
-Modify the previous code so you create a new paragraph ("Paragprah 1",  "Paragprah 2", etc.) everytime you click anywhere in the page.
+Modify the previous code so you create a new paragraph ("Paragraph 1",  "Paragraph 2", etc.) everytime you click anywhere in the page.
 
 ### Exercise 4
 Modify the UI of our application so, the form disappears after submitting it (you can use `style.display = "none"`) and the application displays the message "Thank you for your feedback!".

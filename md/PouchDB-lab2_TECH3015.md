@@ -323,6 +323,15 @@ db.changes({
 loadFeedbacks();
 ```
 
+### Exercise 6
+Add a filter (a form) that allows you to filter the result on base its score value. 
+
+### Exercise 7
+We have seen how to retrieve documents using the allDocs() method. You might wish to retrieve documents based on data in fields other than the _id property. To do this  <https://pouchdb.com/guides/mango-queries.html>
+
+
+Remove from your code the line `event.preventDefault()` to understand its function.
+
 ## Going Further
 
 This is simple example of saving and viewing documents. You could however go further in a number of ways. For example:

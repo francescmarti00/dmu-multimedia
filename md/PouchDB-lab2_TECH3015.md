@@ -324,26 +324,15 @@ loadFeedbacks();
 ```
 
 ### Exercise 6
-Add a filter (a form) that allows you to filter the result on base its score value. 
+Add a filter (a form) that allows you to filter the results based on their score value. To do this, you will use the allDocs() method to retrieve documents and javaScript to filter them. 
 
-### Exercise 7
-We have seen how to retrieve documents using the allDocs() method. You might wish to retrieve documents based on data in fields other than the _id property. To do this  <https://pouchdb.com/guides/mango-queries.html>
+### Exercise 7 (Optional)
+We have seen how to retrieve documents using the allDocs() method. You might wish to retrieve documents based on data in fields other than the _id property. Donwload and investigate how works the plugin the find() plug-in to perform queries on any property in your documents: <https://pouchdb.com/guides/mango-queries.html> <https://www.codeproject.com/Articles/1275005/Getting-Started-with-PouchDB-Part-3>
 
-
-Remove from your code the line `event.preventDefault()` to understand its function.
 
 ## Going Further
 
-This is simple example of saving and viewing documents. You could however go further in a number of ways. For example:
+For more info, visit:
 
-1. In the form, in the input fileds, create drop-down lists so you do not have to type the name of the pizza, price and toppings.
-2. Add a button to remove all the list of pizzas (check `db.destroy()`).
-3. Add a 'Checkout' button. This button should open a new page with the list of pizzas and total price.
-4. Add an button what allows you to edit an existing pizza.
-5. And of course, you could just make the whole thing look a lot better :)
-
-For more info, visit: <https://pouchdb.com/getting-started.html>
-
-## Conclusion
-
-What we’ve seen here really only scratches the surface of databases, but it’s useful to get a handle on the issues to do with client-side and server-side data storage. There are pros and cons to each and being able to quickly spin up a database in either situation can be rather useful.
+<https://pouchdb.com/getting-started.html>
+https://pouchdb.com/api.html

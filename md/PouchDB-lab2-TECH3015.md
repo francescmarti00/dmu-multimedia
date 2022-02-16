@@ -53,7 +53,7 @@ And... that is it! Our database is ready to use.
 
 To add data to the database is straightforward. We just use the `put()` method that PouchDB provides, passing in the data.
 
-xxx Let's suppose that we just want to save email addresses in our database. To do this we have to create an object. Let's call it `user`. This object includes two variables, the `_id` and the user email
+Let's suppose that we just want to save email addresses in our database. To do this we have to create an object. Let's call it `user`. This object includes two variables, the `_id` and the user email
 
 ```JS
 let user = {

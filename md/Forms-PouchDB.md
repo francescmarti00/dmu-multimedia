@@ -1,6 +1,44 @@
-## Working with Databases (2)
+## Working with Forms
 
-This task will have you creating a simple system to save data between sessions. To create and manage that data store we’re going to use PouchDB, an open source JavaScript database manager. PouchDB saves its data to local storage for persistence between sessions, and can optionally sync to a server-based database. This means that it saves its data in the browser. If you load the same site on a different computer, or even a different browser on the same computer, it will have its own instance of the database. This is quite limiting, but makes it simpler to explore the basics of using a database.
+This task will have you creating a simple HTML form. An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+We can create a form easily enough with HTML using the <form> element. We then populate the element with inputs. The kind of things you can put in a form include single line text input boxes, drop down selectors, multi-line text input, checkboxes and radio buttons. We just need the first one, single line text input boxes.
+
+To create many of these types of input, we use the <input> element. We can then use its 'type' attribute to determine what kind of input it is. For a single line text box, we want the 'text' type. This is an example of form with input fields for text:
+ 
+```HTML
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+```  
+
+Note that we also want to provide text labels for these boxes so the user knows what to enter in each one. We could just use <p> elements, but the <label> element provides a bit more context and meaning to robots and screen-readers.
+
+We need to make sure each of those <input> elements has an id so that we can reference each with JavaScript in order to pull out the value.  
+
+But, how will a user submit this form? 
+
+The <input type="submit"> defines a button for submitting the form data to a form-handler. The form-handler is typically a file on the server with a script for processing input data. The form-handler is specified in the form's action attribute.
+  
+So, this is the code of a simple HTML form:
+
+```HTML  
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```  
+
+Notice that each input field must have a name attribute to be submitted. If the name attribute is omitted, the value of the input field will not be sent at all.
+  
+  
+system to save data between sessions. To create and manage that data store we’re going to use PouchDB, an open source JavaScript database manager. PouchDB saves its data to local storage for persistence between sessions, and can optionally sync to a server-based database. This means that it saves its data in the browser. If you load the same site on a different computer, or even a different browser on the same computer, it will have its own instance of the database. This is quite limiting, but makes it simpler to explore the basics of using a database.
 
 Using this we’re going to create a system to add the details and feedback of a user to the database using a form.
 

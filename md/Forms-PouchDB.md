@@ -106,7 +106,7 @@ In this exercise you are going to create a registration form for a website. The 
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/registration-form.webp)
 
-The form does not have to process the input data. However, a 'Submission received' message should be displayed after registration is completed (you could use `<form action="/thanks_message.html">').
+The form does not have to process the input data. However, a 'Submission received' message should be displayed after registration is completed (you could use `<form action="/thanks_message.html">`).
 
 ### Exercise 2 (Optional)
 

@@ -112,7 +112,7 @@ The form does not have to process the input data. However, a 'Submission receive
 
 In the previous lab we saw how to save the data of a form into a PouchDB database.
 
-Modify the code of Exercise 1 so your form display a 'Submission received' and save the data in a PouchDB database.
+Modify the code of Exercise 1 so your form display a 'Submission received' message, and save the data in a PouchDB database.
 
 ## Reminder: forms and PouchDB
 Study the following code. This code allows us to save the data of a form into a PouchDB database.

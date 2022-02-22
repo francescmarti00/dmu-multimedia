@@ -40,7 +40,7 @@ Notice that each input field must have a `name` attribute to be submitted. If th
  
 In this lab (and module) we won't discuss programming languages such as PHP or ASP, which allow us to create a file on the server with a script for processing input data. However, we can create an automatic message in our website by submitting the form to an HTML page (although, the data of the form won't be processed). (Optional: If you are very interested in knowing how to process form input data, please check <https://www.w3schools.com/php/php_forms.asp>. But this topic is not part of the module!).
 
-```HTML 
+```HTML
  <form action="/thanks_message.html">
 ```  
 
@@ -54,7 +54,7 @@ The most used form element is the `<input>` element. There are different input t
 
 For example, `<input type="password">` defines a password field:
 
-```HTML 
+```HTML
  <input type="password" id="pwd" name="pwd">
 ```  
 
@@ -68,7 +68,7 @@ As we have already seen, the `<label>` element defines a label for several form 
 
 The `<select>` element, in combination with the `<option>` element, defines a drop-down list:
 
-```HTML 
+```HTML
 <label for="cars">Choose a car:</label>
 <select id="cars" name="cars">
   <option value="volvo">Volvo</option>
@@ -80,13 +80,13 @@ The `<select>` element, in combination with the `<option>` element, defines a dr
 
 To define a pre-selected option, add the `selected` attribute to the option:
 
-```HTML 
+```HTML
   <option value="audi" selected>Audi</option>
 ```  
 
 Use the `multiple` attribute to allow the user to select more than one value
 
-```HTML 
+```HTML
 <select id="cars" name="cars" size="4" multiple>
 ```  
 
@@ -94,7 +94,7 @@ Use the `multiple` attribute to allow the user to select more than one value
 
 The `<textarea>` element defines a multi-line input field (a text area). The `rows` attribute specifies the visible number of lines in a text are, and the `cols` attribute specifies the visible width of a text area.
 
-```HTML 
+```HTML
 <textarea name="message" rows="10" cols="30">
 Enter your message here!
 </textarea>

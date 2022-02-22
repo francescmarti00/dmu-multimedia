@@ -26,7 +26,7 @@ The `<input type="submit">` defines a button for submitting the form data to a f
   
 So, this is the code of a simple HTML form:
 
-```HTML  
+```HTML
 <form action="/action_page.php">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
@@ -34,7 +34,7 @@ So, this is the code of a simple HTML form:
   <input type="text" id="lname" name="lname" value="Doe"><br><br>
   <input type="submit" value="Submit">
 </form>
-```  
+```
 
 Notice that each input field must have a `name` attribute to be submitted. If the `name` attribute is omitted, the value of the input field will not be sent at all.
  

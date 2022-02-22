@@ -3,9 +3,9 @@
 ### HTML Forms
 This task will have you creating a simple HTML form. An HTML form is used to collect user input. The user input is most often sent to a server for processing.
 
-We can create a form easily enough with HTML using the <form> element. We then populate the element with inputs. The kind of things you can put in a form include single line text input boxes, drop down selectors, multi-line text input, checkboxes and radio buttons. We just need the first one, single line text input boxes.
+We can create a form easily enough with HTML using the `<form>` element. We then populate the element with inputs. The kind of things you can put in a form include single line text input boxes, drop down selectors, multi-line text input, checkboxes and radio buttons. We just need the first one, single line text input boxes.
 
-To create many of these types of input, we use the <input> element. We can then use its 'type' attribute to determine what kind of input it is. For a single line text box, we want the 'text' type. This is an example of form with input fields for text:
+To create many of these types of input, we use the `<input>` element. We can then use its 'type' attribute to determine what kind of input it is. For a single line text box, we want the 'text' type. This is an example of form with input fields for text:
  
 ```HTML
 <form>
@@ -16,7 +16,7 @@ To create many of these types of input, we use the <input> element. We can then 
 </form>
 ```  
 
-Note that we also want to provide text labels for these boxes so the user knows what to enter in each one. We could just use <p> elements, but the <label> element provides a bit more context and meaning to robots and screen-readers.
+Note that we also want to provide text labels for these boxes so the user knows what to enter in each one. We could just use `<p>` elements, but the `<label>` element provides a bit more context and meaning to robots and screen-readers.
 
 We need to make sure each of those `<input>` elements has an id so that we can reference each with JavaScript in order to pull out the value.  
 
@@ -44,11 +44,11 @@ In this lab (and module) we won't discuss programming languages such as PHP or A
  <form action="/thanks_message.html">
 ```  
 
-### The HTML <form> Elements
+### The HTML `<form>` Elements
 
 The HTML `<form>` element can contain several form elements. Let's discuss the most important ones:
   
-
+#### The `<input>` Element
   
 The form-handler is typically a file on the server with a script for processing input data.
 

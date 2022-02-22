@@ -44,7 +44,11 @@ In this lab (and module) we won't discuss programming languages such as PHP or A
  <form action="/thanks_message.html">
 ```  
 
-### HTML Forms  
+### The HTML <form> Elements
+
+The HTML `<form>` element can contain several form elements. Let's discuss the most important ones:
+  
+
   
 The form-handler is typically a file on the server with a script for processing input data.
 

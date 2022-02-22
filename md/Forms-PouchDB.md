@@ -102,7 +102,7 @@ Enter your message here!
 
 ### Exercise 1
 
-In this exercise you are going to create a registration form for a website. The following image shows you the information this form must include (image from <https://www.tutorialstonight.com/html-code-for-registration-form-with-validation.php>):
+In this exercise you are going to create a registration form for a website. The following image shows you the information this form must include:
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/registration-form.webp)
 

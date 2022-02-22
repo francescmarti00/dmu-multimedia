@@ -102,7 +102,7 @@ Enter your message here!
 
 ### Exercise 1
 
-In this exercise you are going to create a registration form for a website. The following image shows you the information this form must include:
+In this exercise you are going to create a registration form for a website. The following image shows you the information this form must include (image from <https://www.tutorialstonight.com/html-code-for-registration-form-with-validation.php>):
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/registration-form.webp)
 
@@ -121,7 +121,6 @@ Important things to check:
 - Remember that if the `action` attribute is omitted, the action is set to the current page.
 - Why did we include the `event.preventDefault()` method in this code?
 - Note that in the form of this code the form is submitted by using a `<button>` elements, instead of a 'submit button' (`<input type="submit" value="Submit">`). Both approaches are correct.
-
 
 ```JS
 <!DOCTYPE html>

@@ -326,3 +326,75 @@ For more info, visit:
 
 <https://pouchdb.com/getting-started.html>
 https://pouchdb.com/api.html
+
+## Solution Exercise 4
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  
+  <body>
+        
+    <form id="form1">
+      <label for="name">
+        Name
+        <input type="text" id="name" />
+      </label>
+      <label for="email">
+        Email
+        <input type="text" id="email" />
+      </label>
+      <label for="score">
+        Score
+        <select type="number" id="score">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+      
+      <button id="addUserFeedbackButton">Send your score!</button>
+    </form>
+    
+    <p id="thanksMessage"></p>
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+    
+    <script>
+      let db = new PouchDB("usersData");
+      
+      function addUserFeedback(event) {
+        event.preventDefault();
+        let theDate = new Date().toISOString();
+        let user = {
+          _id: theDate,
+          name: document.getElementById("name").value,
+          email: document.getElementById("email").value,
+          score: document.getElementById("score").value
+        };
+        
+        db.put(user);
+        document.getElementById("form1").style.display = "none";        
+        thankYouText();
+      }
+            
+      function thankYouText() {
+        document.getElementById("thanksMessage").innerHTML= "Thank you for your feedback";
+      }
+      
+      document.getElementById("addUserFeedbackButton").addEventListener("click", addUserFeedback);
+    </script>
+    
+  </body>
+  
+</html>
+```

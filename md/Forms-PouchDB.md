@@ -50,7 +50,64 @@ The HTML `<form>` element can contain several form elements. Let's discuss the m
   
 #### The `<input>` Element
   
-The form-handler is typically a file on the server with a script for processing input data.
+The most used form element is the `<input>` element. There are different input types you can use in HTML, including 'text', 'number', 'date', 'email', etc. 
+
+For example, `<input type="password">` defines a password field:
+
+```HTML 
+ <input type="password" id="pwd" name="pwd">
+```  
+
+For a detailed list of input elements, check <https://www.w3schools.com/html/html_form_input_types.asp>
+
+#### The `<label>` Element
+
+As we have already seen, the `<label>` element defines a label for several form elements. 
+
+#### The `<select>` Element
+
+The `<select>` element, in combination with the `<option>` element, defines a drop-down list:
+
+```HTML 
+<label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+```  
+
+To define a pre-selected option, add the `selected` attribute to the option:
+
+```HTML 
+  <option value="audi" selected>Audi</option>
+```  
+
+Use the `multiple` attribute to allow the user to select more than one value
+
+```HTML 
+<select id="cars" name="cars" size="4" multiple>
+```  
+
+#### The `<textarea>` Element
+
+The `<textarea>` element defines a multi-line input field (a text area). The `rows` attribute specifies the visible number of lines in a text are, and the `cols` attribute specifies the visible width of a text area.
+
+```HTML 
+<textarea name="message" rows="10" cols="30">
+Enter your message here!
+</textarea>
+```
+
+### Exercise
+
+In this exercise you are going to create 
+
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/registration-form.webp)
+
+
+
 
 The form-handler is specified in the form's action attribute.
   

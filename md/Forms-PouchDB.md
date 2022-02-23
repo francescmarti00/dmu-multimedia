@@ -41,7 +41,7 @@ Notice that each input field must have a `name` attribute to be submitted. If th
 In this lab (and module) we won't discuss programming languages such as PHP or ASP, which allow us to create a file on the server with a script for processing input data. However, we can create an automatic message in our website by submitting the form to an HTML page (although, the data of the form won't be processed). (Optional: If you are very interested in knowing how to process form input data, please check <https://www.w3schools.com/php/php_forms.asp>. But this topic is not part of the module!).
 
 ```HTML
- <form action="/thanks_message.html">
+ <form action="thanks_message.html">
 ```  
 
 ### The HTML `<form>` Elements
@@ -136,7 +136,7 @@ In this exercise you are going to create a registration form for a website. The 
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/registration-form.webp)
 
-The form does not have to process the input data. However, a 'Submission received' message should be displayed after registration is completed (you could use `<form action="/thanks_message.html">`).
+The form does not have to process the input data. However, a 'Submission received' message should be displayed after registration is completed (you could use `<form action="thanks_message.html">`).
 
 The fields Name, Email, Password and Phone Number are required input fields. (Don't forget to add a red '*').
 

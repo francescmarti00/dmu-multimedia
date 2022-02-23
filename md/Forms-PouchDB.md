@@ -68,6 +68,26 @@ We can use the `require` attribute for forms with a required input fields.
 
 When present, it specifies that an input field must be filled out before submitting the form. The `required` attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
 
+The pattern `attribute` of the `input` element allows you to add basic data validation without resorting to JavaScript. For example, you can use the pattern `attribute` to the length of the password input, as well as the character set.
+
+For example, with the following code, the password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters.
+
+````HTML
+<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+````
+
+This is another example. An `input` element with `type="url"` that must start with http:// or https:// followed by at least one character:
+
+````HTML
+<input type="url" id="website" name="website" pattern="https?://.+" title="Include http://">
+````
+
+Some useful links:
+HTML <input> pattern Attribute: <https://www.w3schools.com/tags/att_input_pattern.asp>
+Input Pattern: Use It To Add Basic Data Validation In HTML5: <https://html.com/attributes/input-pattern/>
+We can also use Javascript to validate a form: <https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/>
+
+
 #### The `<label>` Element
 
 As we have already seen, the `<label>` element defines a label for several form elements. 

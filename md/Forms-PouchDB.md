@@ -116,6 +116,8 @@ In this exercise you are going to create a registration form for a website. The 
 
 The form does not have to process the input data. However, a 'Submission received' message should be displayed after registration is completed (you could use `<form action="/thanks_message.html">`).
 
+The fields Name, Email, Password and Phone Number are required input fields. (Don't forget to add a red '*').
+
 ### Exercise 2 (Optional)
 
 In the previous lab we saw how to save the data of a form into a PouchDB database.

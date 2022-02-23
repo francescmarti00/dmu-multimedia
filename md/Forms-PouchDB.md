@@ -85,7 +85,7 @@ This is another example. An `input` element with `type="url"` that must start wi
 Some useful links:
 HTML <input> pattern Attribute: <https://www.w3schools.com/tags/att_input_pattern.asp>
 Input Pattern: Use It To Add Basic Data Validation In HTML5: <https://html.com/attributes/input-pattern/>
-We can also use Javascript to validate a form: <https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/>
+We can also use Javascript to validate a form: <https://www.w3schools.com/howto/howto_js_password_validation.asp>, <https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/>
 
 
 #### The `<label>` Element
@@ -138,7 +138,14 @@ The form does not have to process the input data. However, a 'Submission receive
 
 The fields Name, Email, Password and Phone Number are required input fields. (Don't forget to add a red '*').
 
-### Exercise 2 (Optional)
+### Exercise 2
+
+Configure the following form validations:
+
+- The password must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters.
+- The file Name must contain only letters (upper case or lower case).
+
+### Exercise 3 (Optional)
 
 In the previous lab we saw how to save the data of a form into a PouchDB database.
 

@@ -60,6 +60,14 @@ For example, `<input type="password">` defines a password field:
 
 For a detailed list of input elements, check <https://www.w3schools.com/html/html_form_input_types.asp>
 
+We can use the `require` attribute for forms with a required input fields. 
+
+````HTML
+<input type="text" id="username" name="username" required>
+````
+
+When present, it specifies that an input field must be filled out before submitting the form. The `required` attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
 #### The `<label>` Element
 
 As we have already seen, the `<label>` element defines a label for several form elements. 

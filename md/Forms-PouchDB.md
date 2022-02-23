@@ -83,8 +83,10 @@ This is another example. An `input` element with `type="url"` that must start wi
 ````
 
 Some useful links:
-HTML <input> pattern Attribute: <https://www.w3schools.com/tags/att_input_pattern.asp>
+HTML `<input>` pattern Attribute: <https://www.w3schools.com/tags/att_input_pattern.asp>
+
 Input Pattern: Use It To Add Basic Data Validation In HTML5: <https://html.com/attributes/input-pattern/>
+
 We can also use Javascript to validate a form: <https://www.w3schools.com/howto/howto_js_password_validation.asp>, <https://www.javascripttutorial.net/javascript-dom/javascript-form-validation/>
 
 

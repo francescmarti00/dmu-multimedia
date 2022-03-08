@@ -230,5 +230,5 @@ The 'thanks' webpage
 </html>
 ```
 
-**Exercise 4**. Modify your code so the 'thanks.html' webpage also displays the name of the user.
+**Exercise 4**. Modify your code so the 'thanks.html' webpage also displays the name of the user.<br>
 **Exercise 5**. Add a radio button for users' gender with the fields 'Male', 'Female', and 'Other'. Save these fiels in the database and display them in 'thanks.html'.

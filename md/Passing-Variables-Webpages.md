@@ -86,7 +86,6 @@ Let's study the following example:
       let paramaters = (new URL(url)).searchParams;
       
       let name = paramaters.get("fname");
-      console.log(name);
       
       // let's display the name!
       document.getElementById("thanks").innerHTML= "Thanks for the feedback " + name + "!";

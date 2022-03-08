@@ -6,7 +6,6 @@ There are several ways of doing this. Using URL parameters is probably the easie
 ## Welcome to the easiest JavaScript program ever!
 
 
-
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Passing_Var.png)
 
 ```JS

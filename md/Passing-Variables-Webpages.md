@@ -105,7 +105,7 @@ Let's study the following example:
 
 As we have already seen, it is straightforward to save values of a form in a PouchDB database. For example, we can use a single webpage for the form, display a 'thanks' message and save the data into a database.  
 
-The problem is that attributes  such as 'required' or 'pattern' don't work on this approach (we need to define a form 'action'). 
+The problem is that attributes  such as 'required' or 'pattern' may not work on this approach (we need to define a form 'action'). 
 
 ```JS
 <!DOCTYPE html>

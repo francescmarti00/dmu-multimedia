@@ -239,3 +239,5 @@ The 'thanks' webpage
 **Exercise 7**. Add the following fields to the form: surname, email and a radio button for Gender with the fields 'Male', 'Female', and 'Other'. Save these fields in the database and display them in 'thanks.html'.
 
 **Exercise 8**. Add the following fields to the form: Upload Image, drop down selector for Nationality, and Email. You must save these fields in the database and display them in the 'thanks.html' webpage.
+
+**exercise 9 (Optional)**. Add a 'pattern' attribute to the fields name and surname so they just contain uppercase and lowercase letters.

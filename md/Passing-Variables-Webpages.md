@@ -1,12 +1,46 @@
-# Passing variables from one webpage to other
+# Passing variables from one webpage to another webpage
 
 In some occasions, we need to pass variables from one webpage to other. For example, it is very common to pass the values of a form from a webpage to another.
 There are several ways of doing this. Using URL parameters is probably the easiest way. In this lab we are going to see how to get a URL parameter with JavaScript.
 
-## Welcome to the easiest JavaScript program ever!
+## Submitting values through URL
 
+Using URL parameters is probably the easiest way of passing variables from one webpage to another webpage. To submit values through URL is called GET method. There is also another method called POST. POST method needs PHP in order to get variables' values, so, we won't discuss this method in this lab.
+
+The following image presents how variables are passed in webpage URL. Variables start after a question mark at the start, then the variable name – value pairs follow, separated by ampersands (&).
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Passing_Var.png)
+
+So, how to pass, how to submit the values of a form through URL? In fact, we don't have to do 'anything', since, the form submit these values by default.
+
+Let's see the folling example. This is the form:
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  
+  <body>
+
+    <form id="form1" action="thanks.html">
+
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" required><br><br>
+      
+      <button id="addUserFeedbackButton">Register</button>
+
+    </form>
+  </body>
+</html>
+```
+
+And this is the 'thanks.html' webpage. For the moment, it could be an empty webpage.
+
 
 ```JS
 <!DOCTYPE html>
@@ -48,7 +82,7 @@ There are several ways of doing this. Using URL parameters is probably the easie
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Thanks</title>
   </head>
   
   <body>

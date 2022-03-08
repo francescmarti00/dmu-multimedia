@@ -234,6 +234,8 @@ The 'thanks' webpage
 </html>
 ```
 
-**Exercise 6**. Modify your code so the 'thanks.html' webpage also displays the name of the user.<br>
+**Exercise 6**. Modify your code so the 'thanks.html' webpage also displays the name of the user.
+
 **Exercise 7**. Add a radio button for users' gender with the fields 'Male', 'Female', and 'Other'. Save these fields in the database and display them in 'thanks.html'.
+
 **Exercise 8 (Optional)**. Add the following fields in the form: Upload image, drop down selector for the user nationality, and email. You must save these fields in the database and display them in the 'thanks.html' webpage.

@@ -76,7 +76,7 @@ Let's study the following example:
   
   <body>
     
-    <p id="thanks"></p>
+    <p>Thanks for the feedback <span id="thanks"></span>!</p>
     
     <script>
       // This is the URL of the page, which contains the form parameters
@@ -88,7 +88,7 @@ Let's study the following example:
       let name = paramaters.get("fname");
       
       // let's display the name!
-      document.getElementById("thanks").innerHTML= "Thanks for the feedback " + name + "!";
+      document.getElementById("thanks").innerHTML= name;
       
     </script>
   </body>

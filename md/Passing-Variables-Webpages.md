@@ -1,6 +1,6 @@
 # Passing variables from one webpage to another webpage
 
-In some occasions, we need to pass variables from one webpage to other. For example, it is very common to pass the values of a form from a webpage to another.
+On some occasions, we need to pass variables from one webpage to other. For example, it is very common to pass the values of a form from a webpage to another.
 There are several ways of doing this. Using URL parameters is probably the easiest way. In this lab we are going to see how to get a URL parameter with JavaScript.
 
 ## Submitting values through URL
@@ -11,9 +11,9 @@ The following image presents how variables are passed in webpage URL. Variables 
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Passing_Var.png)
 
-So, how to pass, how to submit the values of a form through URL? In fact, we don't have to do 'anything': the form submit these values by default.
+So, how to pass, how to submit the values of a form through URL? In fact, we don't have to do 'anything': the form submits these values by default.
 
-Let's see the folling example. This is the form:
+Let's see the following example. This is the form:
 
 ```JS
 <!DOCTYPE html>
@@ -105,7 +105,7 @@ Let's study the following example:
 
 As we have already seen, it is straightforward to save values of a form in a PouchDB database. For example, we can use a single webpage for the form, display a 'thanks' message and save the data into a database.  
 
-The problem is that atrributes such as 'required' or 'pattern' don't work on this appoach (we need to define a form 'action'). 
+The problem is that attributes  such as 'required' or 'pattern' don't work on this approach (we need to define a form 'action'). 
 
 ```JS
 <!DOCTYPE html>

@@ -39,7 +39,65 @@ Let's see the folling example. This is the form:
 </html>
 ```
 
-And this is the 'thanks.html' webpage. For the moment, it could be an empty webpage.
+And this is the 'thanks.html' webpage.
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks</title>
+  </head>
+  
+  <body>
+    
+    <p>Thanks for your feedback!</p>
+
+  </body>
+</html>
+```
+
+## How to get URL parameters with JavaScript?
+
+Probably, the easiest way of getting URL parameters with JavaScript is by using the method searchParams.
+Let's study the following example:
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanks</title>
+  </head>
+  
+  <body>
+    
+    <p id="thanks"></p>
+    
+    <script>
+      // This is the URL of the page, which contains the form parameters
+      let url = document.URL;
+      
+      // searchParams allows us to identily all the parameters in the URL
+      let paramaters = (new URL(url)).searchParams;
+      
+      let name = paramaters.get("fname");
+      console.log(name);
+      
+      // let's display the name!
+      document.getElementById("thanks").innerHTML= "Thanks for the feedback " + name + "!";
+      
+    </script>
+  </body>
+</html>
+```
+
+
+
 
 
 ```JS

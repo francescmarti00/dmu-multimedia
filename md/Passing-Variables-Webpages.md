@@ -11,7 +11,7 @@ The following image presents how variables are passed in webpage URL. Variables 
 
 ![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Passing_Var.png)
 
-So, how to pass, how to submit the values of a form through URL? In fact, we don't have to do 'anything', since, the form submit these values by default.
+So, how to pass, how to submit the values of a form through URL? In fact, we don't have to do 'anything': the form submit these values by default.
 
 Let's see the folling example. This is the form:
 

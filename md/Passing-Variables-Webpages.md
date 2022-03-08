@@ -62,7 +62,7 @@ And this is the 'thanks.html' webpage.
 ## How to get URL parameters with JavaScript?
 
 Probably, the easiest way of getting URL parameters with JavaScript is by using the method searchParams.
-Let's study the following example:
+Let's study the following example, the 'thanks.html':
 
 ```JS
 <!DOCTYPE html>

@@ -95,10 +95,74 @@ Let's study the following example:
 </html>
 ```
 
+**Exercise 1**. Modify the previous example, so that the form includes the fields name, surname and email. All fields must be 'required'. The 'thanks.html' webpage must display the name, surname and email of the user.
 
+**Exercise 2**. Add a radio button for users' gender with the fields 'Male', 'Female', and 'Other'. Display the users' gender in the 'thanks.html' webpage, along with the name, surname and email.
 
+# Passing variables from one webpage to another webpage and saving them in a PouchDB
 
+As we have already seen, it is straightforward to save values of a form in a PouchDB database. For example, we can use a single webpage for the form, display a 'thanks' message and save the data into a database.  
 
+The problem is that atrributes such as 'required' or 'pattern' don't work on this appoach (we need to define a form 'action'). 
+
+```JS
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  
+  <body>
+
+    <form id="form1">
+
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <button id="addUserFeedbackButton">Register</button>
+
+    </form>
+    
+    <p id="Submission Received"></p>
+
+    <!---database--->
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+
+    <script>
+      let db = new PouchDB("usersData");
+      
+      function addUserFeedback(event) {
+        event.preventDefault();
+        let theDate = new Date().toISOString();
+                      
+        // let's save in the database   
+        let user = {
+          _id: theDate,
+          name: document.getElementById("fname").value
+        };
+
+        db.put(user);
+        document.getElementById("form1").style.display = "none";
+        thankYouText();
+        }
+
+        function thankYouText() {
+          document.getElementById("Submission Received").innerHTML= "Submission Received";
+        }
+      document.getElementById("addUserFeedbackButton").addEventListener("click", addUserFeedback);
+    </script>
+  </body>
+</html>
+```
+
+We can validate the form using Javascrip (see, for example, <https://www.w3schools.com/js/js_validation.asp>). However, the easiest ways of validating and saving the form data into a database is by using passing the variables to another webpage.
+
+**Exercise 3**. Study the following example. In this example, the name of the user is submitted from the form to the webpage 'thanks.html'. In 'thanks.html' we save the name in the database.
+
+The form:
 
 ```JS
 <!DOCTYPE html>
@@ -117,21 +181,14 @@ Let's study the following example:
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" required><br>
 
-      <label for="lname">Last name:</label><br>
-      <input type="text" id="lname" name="lname" required><br><br>
-
-      <!----gender---->
-      <label for="gname">Gender</label><br>
-      <input type="radio" id = "radMale" name="gender" value="male"> Male<br>
-      <input type="radio" id = "radFemale" name="gender" value="female"> Female<br>
-      <input type="radio" id = "radOther" name="gender" value="other"> Other<br><br>
-
       <button id="addUserFeedbackButton">Register</button>
 
     </form>
   </body>
 </html>
 ```
+
+The 'thanks' webpage
 
 ```JS
 <!DOCTYPE html>
@@ -163,9 +220,7 @@ Let's study the following example:
       let theDate = new Date().toISOString();      
       let user = {
         _id: theDate,
-        name: paramaters.get("fname"),
-        email: paramaters.get("lname"),
-        gender: paramaters.get("gender")
+        name: paramaters.get("fname")
       };
       
       db.put(user);

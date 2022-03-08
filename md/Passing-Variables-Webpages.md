@@ -99,7 +99,7 @@ Let's study the following example, the 'thanks.html':
 
 **Exercise 2**. Add a radio button for users' gender with the fields 'Male', 'Female', and 'Other'. Display the users' gender in the 'thanks.html' webpage, along with the name, surname and email.
 
-**Exercise 3 (Optional)**. Investigate how to add an 'Upload' button, so the user can upload his image using the form.
+**Exercise 3**. Investigate how to add an 'Upload' button, so the user can upload his image using the form.
 
 **Exercise 4 (Optional. Try to solve it at the end of the lab!)**. Investigate how to check with a Javascript function if the submitted file is an image (PNG or JPG).
 

@@ -1,3 +1,14 @@
+# Passing variables from one webpage to other
+
+In some occasions, we need to pass variables from one webpage to other. For example, it is very common to pass the values of a form from a webpage to another.
+There are several ways of doing this. Using URL parameters is probably the easiest way. In this lab we are going to see how to get a URL parameter with JavaScript.
+
+## Welcome to the easiest JavaScript program ever!
+
+
+
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/Passing_Var.png)
+
 ```JS
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

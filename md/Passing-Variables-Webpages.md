@@ -1,4 +1,4 @@
-´´´´JS
+```JS
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   
@@ -29,9 +29,9 @@
     </form>
   </body>
 </html>
-´´´´
+```
 
-´´´´JS
+```JS
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   
@@ -71,4 +71,4 @@
     </script>
   </body>
 </html>
-´´´´
+```

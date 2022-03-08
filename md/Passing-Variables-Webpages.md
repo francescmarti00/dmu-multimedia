@@ -99,6 +99,7 @@ Let's study the following example:
 
 
 
+
 ```JS
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

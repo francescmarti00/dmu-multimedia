@@ -101,7 +101,7 @@ Let's study the following example. This the 'thanks.html':
 
 **Exercise 3**. Investigate how to add an 'Upload' button, so the user can upload his image using the form.
 
-**Exercise 4 (Optional. Try to solve it at the end of the lab!)**. Investigate how to check with a Javascript function if the submitted file is an image (PNG or JPG).
+**Exercise 4 (Optional. Try to solve it at the end of the lab!)**. Investigate how to check with a Javascript function if the submitted file is an image (PNG or JPG). Note: you can also use the attribute 'accept' <https://www.w3schools.com/tags/att_input_accept.asp>.
 
 # Passing variables from one webpage to another webpage and saving them in a PouchDB database
 

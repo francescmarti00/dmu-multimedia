@@ -101,7 +101,9 @@ Let's study the following example. This the 'thanks.html':
 
 **Exercise 3**. Investigate how to add an 'Upload' button, so the user can upload his image using the form.
 
-**Exercise 4 (Optional. Try to solve it at the end of the lab!)**. Investigate how to check with a Javascript function if the submitted file is an image (PNG or JPG).
+**Exercise 4**. Modify 'thanks.html', so the displayed message says something such as "Thanks for the feedback [First Name] [Last Name]. Your email is [email] and you are a [gender]."
+
+**Exercise 5 (Optional. Try to solve it at the end of the lab!)**. Investigate how to check with a Javascript function if the submitted file is an image (PNG or JPG).
 
 # Passing variables from one webpage to another webpage and saving them in a PouchDB database
 
@@ -164,7 +166,7 @@ The problem is that attributes  such as 'required' or 'pattern' may not work on 
 
 We can validate the form using Javascrip (see, for example, <https://www.w3schools.com/js/js_validation.asp>). However, the easiest way of validating and saving the form data into a database is by passing the variables to another webpage.
 
-**Exercise 5**. Study the following example. In this example, the name of the user is submitted from the form to the webpage 'thanks.html'. In 'thanks.html' we save the name in the database.
+**Exercise 6**. Study the following example. In this example, the name of the user is submitted from the form to the webpage 'thanks.html'. In 'thanks.html' we save the name in the database.
 
 The form:
 
@@ -234,10 +236,10 @@ The 'thanks' webpage
 </html>
 ```
 
-**Exercise 6**. Modify your code so the 'thanks.html' webpage also displays the name of the user.
+**Exercise 7**. Modify your code so the 'thanks.html' webpage also displays the name of the user.
 
-**Exercise 7**. Add the following fields to the form: surname, email and a radio button for Gender with the fields 'Male', 'Female', and 'Other'. Save these fields in the database and display them in 'thanks.html'.
+**Exercise 8**. Add the following fields to the form: surname, email and a radio button for Gender with the fields 'Male', 'Female', and 'Other'. Save these fields in the database and display them in 'thanks.html'.
 
-**Exercise 8**. Add the following fields to the form: Upload Image, drop down selector for Nationality, and Email. You must save these fields in the database and display them in the 'thanks.html' webpage.
+**Exercise 9**. Add the following fields to the form: Upload Image, drop down selector for Nationality, and Email. You must save these fields in the database and display them in the 'thanks.html' webpage.
 
-**Exercise 9 (Optional)**. Add a 'pattern' attribute to the fields 'name' and 'surname' so they just contain uppercase and lowercase letters.
+**Exercise 10**. Add a 'pattern' attribute to the fields 'name' and 'surname' so they just contain uppercase and lowercase letters.

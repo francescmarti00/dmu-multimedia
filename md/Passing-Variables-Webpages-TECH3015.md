@@ -103,7 +103,7 @@ Let's study the following example. This the 'thanks.html':
 
 **Exercise 4**. Modify 'thanks.html', so the displayed message says something such as "Thanks for the feedback [First Name] [Last Name]. Your email is [email] and you are a [gender]."
 
-**Exercise 5 (Optional. Try to solve it at the end of the lab!)**. Investigate how to check with a Javascript function if the submitted file is an image (PNG or JPG).
+**Exercise 5** Investigate how to validate the user is uploading a valid image with the attribute 'accept' (<https://www.w3schools.com/tags/att_input_accept.asp>). (Optional. Try to solve it at the end of the lab!: Investigate how to check with a Javascript function if the submitted file is an image).
 
 # Passing variables from one webpage to another webpage and saving them in a PouchDB database
 

@@ -12,6 +12,42 @@ Here's an example: <https://francescmarti00.github.io/dmu-multimedia/resources/a
 
 You should use the GSAP method to() to animate it. 
 
+You can use the following code as a starter:
+
+````JS
+<!DOCTYPE html>
+<html>
+  
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+  }
+  
+  .menuItem {
+    padding: 5px;
+    width: 100px;
+    background-color: rgb(143, 207, 168);
+    font-family: sans-serif;
+    border-radius: 0 4px 4px 0;
+    margin: 1px;
+  }
+</style>
+</head>
+  
+<body>
+  <nav>
+    <div class="menuItem">Home</div>
+    <div class="menuItem">About</div>  
+    <div class="menuItem">Prints</div>
+    <div class="menuItem">Contact</div>    
+  </nav>  
+</body>
+  
+</html>
+````
+
 ## 2. Staggered Menu
 
 Your task here is to create a menu where each menu item is animated onto the page in a staggered fashion - that is, one after the other.

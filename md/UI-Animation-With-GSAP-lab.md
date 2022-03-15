@@ -25,7 +25,7 @@ Without animation, the menu should sit in the top left of the page. You should u
 
 Your third and final task is to create an image that's introduced the page with a spin from the left.
 
-Have a look at this: <https://thomcorah.github.io/dmu-multimedia/resources/animation/photo.html>
+Have a look at this: <https://francescmarti00.github.io/dmu-multimedia/resources/animation/photo.html>
 
 There's a little styling on the image and its container, but mostly this is about using GSAP to animate several properties at once. As with the menu, have the image styled to be on the page by default, and then animate it **from** off the page. This means that if somebody is viewing your page without JavaScript, they'll still see the image.
 
@@ -33,7 +33,7 @@ There's a little styling on the image and its container, but mostly this is abou
 
 Create a ball that falls and bounces to a stop in a fairly realistic way.
 
-Here's an example: <https://thomcorah.github.io/dmu-multimedia/resources/animation/ball.html>
+Here's an example: <https://francescmarti.github.io/dmu-multimedia/resources/animation/ball.html>
 
 There are two things to get right here. First is the use of border radius, radial gradient, and background position offset on a `<div>` to make it look like a ball. Use W3Schools for reference on the using a radial gradient for the background image (not the colour) and background position to offset it.
 

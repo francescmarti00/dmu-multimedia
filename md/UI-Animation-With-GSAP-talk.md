@@ -68,8 +68,10 @@ They can be css properties to change as well as some special properties such as 
 This example will select all members of the `menu` class, and change the value of their `x` properties to 100 over 1 second.
 
 ```js
-gsap.to(".menu", { x: 100, duration: 1 });
+gsap.to(".menu", { x: 200, duration: 1 });
 ```
+
+Other 2D and 3D properties: <https://greensock.com/get-started/#2d-and-3d-transforms>
 
 **Animate From**
 
@@ -80,7 +82,7 @@ This can be useful if you want to animate an element onto the screen.
 This snippet will have the elements start with their `x` properties at 100 and then animate to their normal `x` value over 1 second.
 
 ```js
-gsap.from(".menu", { x: 100, duration: 1 });
+gsap.from(".menu", { x: -200, duration: 1 });
 ```
 
 ## Easing

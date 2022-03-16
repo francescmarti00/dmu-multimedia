@@ -17,7 +17,7 @@ Let's see an example of how to load and play a sound file using p5.sound.
 
 This is the HTML template we are going to use
 
-````HTML
+````JS
 <!DOCTYPE html>
 <html lang="">
 
@@ -85,6 +85,54 @@ function playStopSound() {
 }
 ````
 
+Let's add a slider to control the volume
+
+This should be the new Javascript file
+
+````JS
+let mySound;
+var playStopButton;
+var sliderVolume;
+
+function preload() {
+  soundFormats('wav', 'mp3');
+  mySound = loadSound('/sounds/war-of-worlds2');
+}
+
+function setup() {
+  createCanvas(400, 200);
+  background(180);
+    
+  playStopButton = createButton('play');
+  playStopButton.position(200, 20);
+  playStopButton.mousePressed(playStopSound);
+
+  sliderVolume = createSlider(0, 1.5, 1, 0.01);
+  sliderVolume.position(20,25);
+  text('volume', 80,20);
+}
+
+function draw() { 
+  mySound.setVolume(sliderVolume.value());
+}
+
+function playStopSound() {
+  if (mySound.isPlaying())
+    {
+      mySound.stop();
+      //mySound.pause();
+      playStopButton.html('play');
+    } else {
+      //mySound.play();
+      mySound.loop()            
+      playStopButton.html('stop');
+    }  
+}
+````
+
+## Exercise 1: Explore how to improve the previous program by adding a 'rate' and 'pan' sliders. 
+
+## Exercise 2 (Optional): Explore how to add a 'jump' button to your program. 
 
 
 

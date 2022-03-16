@@ -49,10 +49,6 @@ And this is the Javascript file
 ````JS
 let mySound;
 var playStopButton;
-var jumpButton;
-var sliderVolume;
-var sliderRate;
-var sliderPan;
 
 function preload() {
   soundFormats('wav', 'mp3');
@@ -130,87 +126,167 @@ function playStopSound() {
 }
 ````
 
-## Exercise 1: Explore how to improve the previous program by adding a 'rate' and 'pan' sliders. 
+## Exercise 1: Explore how to improve the previous program by adding a 'rate' and 'pan' sliders.
 
-## Exercise 2 (Optional): Explore how to add a 'jump' button to your program. 
+## Exercise 2: Explore how to add one or several effects to your program. For example, a delay (<https://p5js.org/reference/#/p5.Delay>) or a filter (<https://p5js.org/reference/#/p5.Filter>)
 
+## Exercise 3 (Optional): Explore how to add a 'jump' button to your program. 
 
+## Interaction
 
-Animated Menu
-
-The first task is to create a simple animated menu.
-
-Here's an example: <https://francescmarti00.github.io/dmu-multimedia/resources/animation/menu2.html>
-
-You should use the GSAP method to() to animate it. 
-
-You can use the following code as a starter:
+p5.js provides several tools for interaction. Let's study the following code. In this example, the size of a circle changes with the sound amplitude.
 
 ````JS
-<!DOCTYPE html>
-<html>
+var mySound;
+var playStopButton;
+var jumpButton;
+var sliderVolume;
+var sliderRate;
+var sliderPan;
+
+var amplitude;
+
+function preload() {
+  soundFormats('wav', 'mp3');
+  mySound = loadSound('/sounds/233709__x86cam__130bpm-32-beat-loop');
+}
+
+function setup() {
+  createCanvas(400, 400);
+  background(180);
+    
+  playStopButton = createButton('play');
+  playStopButton.position(200, 20);
+  playStopButton.mousePressed(playStopSound);
+  jumpButton = createButton('jump');
+  jumpButton.position(250, 20);
+  jumpButton.mousePressed(jumpSong);
+
+  sliderVolume = createSlider(0, 1, 1, 0.01);
+  sliderVolume.position(20,25);
+  text('volume', 80,20);
+  sliderRate = createSlider(-2, 2, 1, 0.01);
+  sliderRate.position(20,70);
+  text('rate', 80,65);
+  sliderPan = createSlider(-1, 1, 0, 0.01);
+  sliderPan.position(20,115);
+  text('pan', 80,110);
   
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  body {
-    margin: 0;
-  }
+  amplitude = new p5.Amplitude(0);
+}
+
+function draw() {
+  background(180);
+  text('volume', 80,20);
+  text('rate', 80,65);
+  text('pan', 80,110); 
   
-  .menuItem {
-    padding: 5px;
-    width: 100px;
-    background-color: rgb(143, 207, 168);
-    font-family: sans-serif;
-    border-radius: 0 4px 4px 0;
-    margin: 1px;
-  }
-</style>
-</head>
+  let vol = Math.pow(sliderVolume.value(), 3); 
+  mySound.setVolume(vol);
+  mySound.rate(sliderRate.value());
+  mySound.pan(sliderPan.value());
   
-<body>
-  <nav>
-    <div class="menuItem">Home</div>
-    <div class="menuItem">About</div>  
-    <div class="menuItem">Prints</div>
-    <div class="menuItem">Contact</div>    
-  </nav>  
-</body>
+  let level = amplitude.getLevel();
+  let diameter = map(level, 0, 1, 0, 200);
+  console.log(level);
   
-</html>
+  fill(0);
+  circle(250, 250, diameter);
+}
+
+function jumpSong() {
+  var dur = mySound.duration();
+  var t = random(dur);
+  mySound.jump(t);
+}
+
+function playStopSound() {
+  if (mySound.isPlaying())
+    {
+      mySound.stop();
+      //mySound.pause();
+      playStopButton.html('play');
+    } else {
+      //mySound.play();
+      mySound.loop()            
+      playStopButton.html('stop');
+    }  
+}
 ````
 
-## 2. Staggered Menu
+## Exercise 4: Improve the previous program, so the colour of the circle also changes with the sound amplitude
 
-Your task here is to create a menu where each menu item is animated onto the page in a staggered fashion - that is, one after the other.
+## Capturing and recording audio with p5.js
 
-Here's an example: <https://francescmarti00.github.io/dmu-multimedia/resources/animation/menu.html>
+To capture and record audio using p5.js is also straightforward. Let's study the following example.
 
-Without animation, the menu should sit in the top left of the page. You should use GSAP to animate it in **from** off the page. Use GSAP's stagger function to stagger each item's introduction.
+````JS
+let mic;
+let recorder;
+let soundFile;
+let state = 0;
 
-## 3. Flipping Elephants
+function setup() {
+  createCanvas(400, 400);
+  background(200);
+  text('Click to record', 40, 40);
+  
+  // Create an Audio input
+  mic = new p5.AudioIn();
+    
+  // start the Audio Input.
+  // By default, it does not .connect() (to the computer speakers)
+  mic.start();
+  
+  // create a sound recorder
+  recorder = new p5.SoundRecorder();
+  // connect the mic to the recorder
+  recorder.setInput(mic);
+  // this sound file will be used to playback & save the recording
+  soundFile = new p5.SoundFile();
+}
 
-Your third task is to create an image that's introduced the page with a spin from the left.
+function draw() {  
+  // Get the overall volume (between 0 and 1.0)
+  let vol = mic.getLevel();
+}
 
-Have a look at this: <https://francescmarti00.github.io/dmu-multimedia/resources/animation/photo.html>
+function mouseClicked(){
+  // ensure audio is enabled
+  if (getAudioContext().state !== 'running') {
+     getAudioContext().resume();
+  }
+  
+  // make sure user enabled the mic
+  if (state === 0 && mic.enabled) {
+    background(255,0,0);
+    text('Recording', 40, 40);    
+    
+    // record to our p5.SoundFile
+    recorder.record(soundFile);
+    state++;
+  }
+  else if (state === 1) {  
+    background(0,255,0);
+    text('Click to play and download!', 40, 40);
+    
+    // stop recorder
+    recorder.stop();
+    state++;
+  }
+  else if (state === 2) {
+    background(200);
+    text('Click to record', 40, 40);
+    
+    // play the result
+    soundFile.play();
+    
+    // save the soundFile
+    save(soundFile, 'output.wav');
+    state = 0;
+  }
+}
+````
 
-There's a little styling on the image and its container, but mostly this is about using GSAP to animate several properties at once. As with the menu, have the image styled to be on the page by default, and then animate it **from** off the page. This means that if somebody is viewing your page without JavaScript, they'll still see the image.
-
-## 4. Flipping Elephants (more complex!)
-
-Based on the previous example, make a more complex animation using the parameters scale and opacity. 
-
-## 5. Some examples (Optional)
-
-Study and experiment with some examples you can find in <https://greensock.com/get-started>. You can get some ideas for your project from these examples!
-
-## 6. Bouncing Ball (Optional)
-
-Create a ball that falls and bounces to a stop in a fairly realistic way.
-
-Here's an example: <https://francescmarti.github.io/dmu-multimedia/resources/animation/ball.html>
-
-There are two things to get right here. First is the use of border radius, radial gradient, and background position offset on a `<div>` to make it look like a ball. Use W3Schools for reference on the using a radial gradient for the background image (not the colour) and background position to offset it.
-
-The second part is then using GSAP to give the ball a bounce.
+## Exercise 5: Modify the following code, so that the program also draws an ellipse with height based on volume.
 

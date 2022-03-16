@@ -5,7 +5,7 @@ In this lab we are going to introduce p5.js. p5.js is a JavaScript library for c
 <https://p5js.org/>
 <https://p5js.org/get-started/>
 
-## 1. p5.sound, a p5.js library for working with audio in the browser
+## p5.sound, a p5.js library for working with audio in the browser
 
 p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.
 

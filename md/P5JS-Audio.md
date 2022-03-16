@@ -81,9 +81,7 @@ function playStopSound() {
 }
 ````
 
-Let's add a slider to control the volume
-
-This should be the new Javascript file
+Let's add a slider to control the volume of the audio. This is the new Javascript file.
 
 ````JS
 let mySound;

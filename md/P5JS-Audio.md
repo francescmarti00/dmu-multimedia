@@ -1,6 +1,6 @@
 # Audio in the browser with p5.js
 
-In this lab we are going to introduce p5.js. p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners,
+In this lab we are going to introduce p5.js. p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, etc.
 
 <https://p5js.org/>
 <https://p5js.org/get-started/>
@@ -126,11 +126,14 @@ function playStopSound() {
 }
 ````
 
-## Exercise 1: Explore how to improve the previous program by adding a 'rate' and 'pan' sliders.
+## Exercise 1
+Explore how to improve the previous program by adding a 'rate' and 'pan' sliders.
 
-## Exercise 2: Explore how to add one or several effects to your program. For example, a delay (<https://p5js.org/reference/#/p5.Delay>) or a filter (<https://p5js.org/reference/#/p5.Filter>)
+## Exercise 2
+Explore how to add one or several effects to your program. For example, a delay (<https://p5js.org/reference/#/p5.Delay>) or a filter (<https://p5js.org/reference/#/p5.Filter>)
 
-## Exercise 3 (Optional): Explore how to add a 'jump' button to your program. 
+## Exercise 3 (Optional)
+Explore how to add a 'jump' button to your program. 
 
 ## Interaction
 
@@ -288,5 +291,8 @@ function mouseClicked(){
 }
 ````
 
-## Exercise 5: Modify the following code, so that the program also draws an ellipse with height based on volume.
+## Exercise 5
+Make a recording, download the file and open it in an audio editor (Audition, for example).
 
+## Exercise 6
+Modify the following code, so that the program also draws an ellipse with height based on volume.

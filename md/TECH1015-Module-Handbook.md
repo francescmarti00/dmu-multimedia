@@ -523,10 +523,10 @@ A good evaluation will demonstrate an ability to stand back from your work and c
 	<td><b>This coursework is:</b></td><td> Individual / <del>Group</del></td>
 </tr>
 <tr>
-	<td><b>Date set:</b></td><td> 11th January 2021 </td>
+	<td><b>Date set:</b></td><td> 11th January 2022 </td>
 </tr>
 <tr>
-	<td><b>Date and time due:</b></td><td> 12pm (midday) on Tuesday 4th May 2021 </td>
+	<td><b>Date and time due:</b></td><td> 12pm (midday) on Monday 9th May 2022</td>
 </tr>
 <tr>
 	<td><b>Your marked coursework and feedback will be available to you on:</b></td><td>Wednesday 2nd June 2021 </td>

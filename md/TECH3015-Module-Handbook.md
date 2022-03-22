@@ -220,7 +220,7 @@ Worth **40%** of the module total, your first coursework will see you produce an
 
 ### Coursework 2
 
-**Date and time due: 12pm (midday) on Wednesday 4th May 2022**
+**Date and time due: 12pm (midday) on Monday 9th May 2022**
 
 Worth **60%** of the module total, this coursework will tackle HTML5, CSS3 and JavaScript ES6 to have you produce the website or web application you designed for coursework 1.
 
@@ -531,7 +531,7 @@ This coursework constitutes **60% of the overall module mark**.
 | :--------------------------------------- |   -------------------------------------: |
 | This coursework is:                      |                           **Individual** |
 | Date set:                                |                    **11th January 2022** |
-| Date and time due:                       | **12pm (midday) Wednesday 4th May 2022** |
+| Date and time due:                       | **12pm (midday) on Monday 9th May 2022** |
 | Your marked coursework and feedback due: |               **Thursday 2nd June 2022** |
 
 ---

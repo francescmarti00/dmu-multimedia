@@ -5,8 +5,8 @@ p5.js is a JavaScript library for creative coding, with a focus on making coding
 
 Here are some useful links:
 
-p5.js webpage: <https://p5js.org/>
-p5.js get started webpage: <https://p5js.org/get-started/>
+p5.js webpage: <https://p5js.org/><br>
+p5.js get started webpage: <https://p5js.org/get-started/><br>
 Some p5.js exemples: <https://openprocessing.org/browse/>
 
 ## p5.sound, a p5.js library for working with audio in the browser

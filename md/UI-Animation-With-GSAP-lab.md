@@ -76,7 +76,7 @@ Study and experiment with some examples you can find in <https://greensock.com/g
 
 Create a ball that falls and bounces to a stop in a fairly realistic way.
 
-Here's an example: <https://francescmarti.github.io/dmu-multimedia/resources/animation/ball.html>
+Here's an example: <https://francescmarti00.github.io/dmu-multimedia/resources/animation/ball.html>
 
 There are two things to get right here. First is the use of border radius, radial gradient, and background position offset on a `<div>` to make it look like a ball. Use W3Schools for reference on the using a radial gradient for the background image (not the colour) and background position to offset it.
 

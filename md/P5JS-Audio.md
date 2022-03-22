@@ -9,9 +9,21 @@ p5.js webpage: <https://p5js.org/><br>
 Get started: <https://p5js.org/get-started/><br>
 Some (amazing) exemples: <https://openprocessing.org/browse/>
 
-## Installing p5.js. Configuring a local server
+## Installing p5.js.
 
 You can download p5.js from <https://p5js.org/download/>.
+
+Alternatively, you can link to a p5.js file hosted online. You can find a history of these versions in the p5.js CDN. In this case you can change the link to:
+
+````JS
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.js"></script>
+````
+
+**Very important:** In order to avoid unexpected problems, we will need to run our web pages on localhost. There are several ways of configuring a local web server. See, <https://github.com/processing/p5.js/wiki/Local-server>. 
+
+If you use the Brackets editor to write your code, a local server comes built in. With your HTML file open, select File > Live Preview (or click the "lightning bolt" icon). Brackets will launch Chrome and open your file in a new tab.
+
 
 ## p5.sound, a p5.js library for working with audio in the browser
 

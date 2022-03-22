@@ -120,7 +120,7 @@ Use a `<filter>` element to composite a number of filter effects.
 </filter>
 ```
 
-Filters include blur, lighting, drop shadow, distortion and more.
+Filters include blur, lighting, drop shadow, distortion and more (<https://www.w3schools.com/graphics/svg_filters_intro.asp>).
 
 This `<filter>` element is then applied to an object using its `filter` attribute.
 

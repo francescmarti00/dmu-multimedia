@@ -44,11 +44,11 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG c
 
 Code explanation:
 
-- An SVG image begins with an <svg> element.
+- An SVG image begins with an `<svg>` element.
 
-- The width and height attributes of the <svg> element define the width and height of the SVG image.
+- The width and height attributes of the `<svg>` element define the width and height of the SVG image.
 
-- The <circle> element is used to draw a circle.
+- The `<circle>` element is used to draw a circle.
 
 - The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are not set, the circle's center is set to (0, 0).
 
@@ -58,7 +58,7 @@ Code explanation:
 
 - The fill attribute refers to the color inside the circle. We set the fill color to yellow.
 
-- The closing </svg> tag closes the SVG image.
+- The closing `</svg>` tag closes the SVG image.
 
 You can see a list of redefined shape elements in <https://www.w3schools.com/graphics/svg_rect.asp>  
   

@@ -40,7 +40,7 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG c
 
 </body>
 </html>
-````
+```
 
 Code explanation:
 
@@ -94,19 +94,19 @@ To move the circle 100px to the right we should write
 
 ```html  
 <svg width="200" height="200" viewBox="-100 0 200 200">
-````
+```
 
 To move the circle 100px down, we should write  
 
 ```html  
 <svg width="200" height="200" viewBox="0 -100 200 200">
-````
+```
   
 This code decreases the size of the circle
 
-```html  
+```html
 <svg width="200" height="200" viewBox="0 0 400 400">
-````
+```
   
 Here is an example of a simple SVG circle into an HTML page:
 
@@ -143,7 +143,7 @@ We can define a gradient using either the `<linearGradient>` or `<radialGradient
 
 We then apply a gradient to a shape using the shape's `fill` attribute.
 
-```HTML
+```html
 <circle cx="5" cy="5" r="4" fill="url('#linGradient')" />
 ```
 
@@ -161,7 +161,7 @@ Filters include blur, lighting, drop shadow, distortion and more (<https://www.w
 
 This `<filter>` element is then applied to an object using its `filter` attribute.
 
-```HTML
+```html
 <circle cx="170" cy="60" r="50" fill="green"
           filter="url(#blurFilter)" />
 ```

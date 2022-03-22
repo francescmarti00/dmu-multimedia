@@ -1,6 +1,6 @@
 # Audio in the browser with p5.js
 
-In this lab we are going to introduce p5.js.
+In this lab we are going to introduce p5.js.<br>
 p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, etc.
 
 Here are some useful links:
@@ -8,6 +8,10 @@ Here are some useful links:
 p5.js webpage: <https://p5js.org/><br>
 Get started: <https://p5js.org/get-started/><br>
 Some (amazing) exemples: <https://openprocessing.org/browse/>
+
+## Installing p5.js. Configuring a local server
+
+You can download p5.js from <https://p5js.org/download/>.
 
 ## p5.sound, a p5.js library for working with audio in the browser
 

@@ -167,6 +167,7 @@ You can nest an `<animate>` element inside the shape you want to animate.
 ```
 
 You can animate attributes of filters and gradients too.
+  <https://www.w3schools.com/css/css3_animations.asp>
 
 ## Some SVG Help
 

@@ -41,6 +41,7 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG g
 </body>
 </html>
 ```
+
 Code explanation:
 
 An SVG image begins with an <svg> element.

@@ -235,7 +235,8 @@ function playStopSound() {
 }
 ````
 
-## Exercise 4: Improve the previous program, so the colour of the circle also changes with the sound amplitude
+## Exercise 4
+Improve the previous program, so the colour of the circle also changes with the sound amplitude
 
 ## Capturing and recording audio with p5.js
 

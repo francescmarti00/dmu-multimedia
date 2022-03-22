@@ -32,7 +32,7 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG c
 <html>
 <body>
 
-<h1>My is a SVG circle</h1>
+<h1>This is a SVG circle</h1>
 
 <svg width="100" height="100">
   <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />

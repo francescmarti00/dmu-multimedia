@@ -92,13 +92,13 @@ As we can see, in this example, viewBox doesn't change the result. If we remove 
   
 To move the circle 100px to the right we should write
 
-```html  
+```html
 <svg width="200" height="200" viewBox="-100 0 200 200">
 ```
 
 To move the circle 100px down, we should write  
 
-```html  
+```html
 <svg width="200" height="200" viewBox="0 -100 200 200">
 ```
   

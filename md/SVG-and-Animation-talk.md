@@ -187,7 +187,7 @@ Note: Greensock can also animate object properties, which can be useful for anim
 You can nest an `<animate>` element inside the shape you want to animate.
 
 ```html
-<ellipse cx="100" cy="300" rx="90" ry="50" fill="green">
+<ellipse cx="100" cy="100" rx="90" ry="50" fill="green">
   <animate
     attributeName="rx"
     values="90;50;90"

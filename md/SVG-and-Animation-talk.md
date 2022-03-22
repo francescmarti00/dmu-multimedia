@@ -40,7 +40,7 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG c
 
 </body>
 </html>
-```
+````
 
 Code explanation:
 

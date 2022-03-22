@@ -72,6 +72,43 @@ This is like the viewport of SVG element, defining its internal geometry.
 It is the window through which we view the SVG.  
 The four numbers represent the top left x and y, and the width and height.  
 The viewbox can then be scaled using the width and height attributes of the svg object.
+  
+As we can see, in this example, viewBox doesn't change the result. If we remove the viewBox attribute we get the same image
+  
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My is a SVG circle</h1>
+
+<svg width="200" height="200" viewBox="0 0 200 200">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+
+</body>
+</html>
+```
+  
+To move the circle 100px to the right we should write
+
+```html  
+<svg width="200" height="200" viewBox="-100 0 200 200">
+````
+
+To move the circle 100px down, we should write  
+
+```html  
+<svg width="200" height="200" viewBox="0 -100 200 200">
+````  
+
+This code decreases the size of the circle
+
+```html  
+<svg width="200" height="200" viewBox="0 0 400 400">
+````
+  
+Here is an example of a simple SVG circle into an HTML page:
 
 ## Some SVG Elements
 

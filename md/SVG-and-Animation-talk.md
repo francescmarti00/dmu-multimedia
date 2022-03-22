@@ -74,7 +74,7 @@ The four numbers represent the top left x and y, and the width and height.
 The viewbox can then be scaled using the width and height attributes of the svg object.
   
 As we can see, in this example, viewBox doesn't change the result. If we remove the viewBox attribute we get the same image
-  
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -100,8 +100,8 @@ To move the circle 100px down, we should write
 
 ```html  
 <svg width="200" height="200" viewBox="0 -100 200 200">
-````  
-
+````
+  
 This code decreases the size of the circle
 
 ```html  

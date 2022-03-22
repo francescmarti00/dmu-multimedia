@@ -80,7 +80,7 @@ As we can see, in this example, viewBox doesn't change the result. If we remove 
 <html>
 <body>
 
-<h1>My is a SVG circle</h1>
+<h1>This is a SVG circle</h1>
 
 <svg width="200" height="200" viewBox="0 0 200 200">
   <circle cx="50" cy="50" r="40" fill="blue" />

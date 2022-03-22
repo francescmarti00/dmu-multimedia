@@ -25,7 +25,7 @@ It means elements are made of tags
 
 ## Creating an SVG
 
-To create an SVG we use the `<svg>` object. Here is an example of a simple SVG graphic into an HTML page:
+To create an SVG we use the `<svg>` object. Here is an example of a simple SVG circle into an HTML page:
 
 ```html
 <!DOCTYPE html>
@@ -60,6 +60,8 @@ The fill attribute refers to the color inside the circle. We set the fill color 
 
 The closing </svg> tag closes the SVG image.
 
+You can see a list of redefined shape elements in <https://www.w3schools.com/graphics/svg_rect.asp>  
+  
 ## ViewBox?
 
 ```html
@@ -133,7 +135,7 @@ There are several methods available.
 
 ### Using CSS
 
-You can use CSS transitions and @keyframe animations.
+You can use CSS transitions and @keyframe animations (see, for example, <https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp>).
 
 Just give your SVG shapes class names or ids to select them with CSS and animate them as you would any other element.
 

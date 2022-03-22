@@ -44,7 +44,9 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG g
 
 Code explanation:
 
-An SVG image begins with an <svg> element.<br>The width and height attributes of the <svg> element define the width and height of the SVG image.
+An SVG image begins with an <svg> element.
+
+The width and height attributes of the <svg> element define the width and height of the SVG image.
 
 The <circle> element is used to draw a circle.
 
@@ -61,7 +63,7 @@ The closing </svg> tag closes the SVG image.
 ## ViewBox?
 
 ```html
-<svg width="200" viewBox="0 0 200 200"></svg>
+<svg width="200" height="200" viewBox="0 0 200 200"></svg>
 ```
 
 This is like the viewport of SVG element, defining its internal geometry.  

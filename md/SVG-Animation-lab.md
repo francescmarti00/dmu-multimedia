@@ -32,6 +32,24 @@ You see where this is going? Use the `<ellipse>` element to place an ellipse in 
 
 The `<polygon>` object allows you to provide a set of x,y coordinates for points, which are then connected and filled in. Use this to draw something in the bottom right corner.
 
+## Explore viewBox
+
+### 1. Draw a circle
+
+In the top right corner, place a circle. Use the `<circle>` element for this. Make it 300 pixels wide.
+
+### 2. Place the circle
+
+Place the circle at coordinates (50, 50) using viewBox.
+
+### 3. Reduce the size of the circle
+
+Reduce the size of the circle (half) using viewBox.
+
+### 4. Increase the size of the circle
+
+Increase the size of the circle (double) using viewBox.
+
 ## Explore Gradients
 
 ### 1. Create a Linear Gradient

@@ -44,7 +44,7 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG g
 
 Code explanation:
 
-An SVG image begins with an <svg> element.
+An SVG image begins with an <svg> element.<br>
 The width and height attributes of the <svg> element define the width and height of the SVG image.
 
 The <circle> element is used to draw a circle.

@@ -8,7 +8,7 @@ You might find the MDN SVG reference useful: <https://developer.mozilla.org/en-U
 
 ## Get Setup
 
-Create a new html document with the usual start point: <https://thomcorah.github.io/dmu-multimedia/lab-reader.html?starting-a-project-short.md>
+Create a new html document with the usual start point: <https://francescmarti00.github.io/dmu-multimedia/lab-reader.html?starting-a-project-short.md>
 
 ## Draw Some Shapes
 

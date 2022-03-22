@@ -43,14 +43,14 @@ To create an SVG we use the `<svg>` object. Here is an example of a simple SVG g
 ```
 Code explanation:
 
-An SVG image begins with an <svg> element
-The width and height attributes of the <svg> element define the width and height of the SVG image
-The <circle> element is used to draw a circle
-The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are not set, the circle's center is set to (0, 0)
-The r attribute defines the radius of the circle
-The stroke and stroke-width attributes control how the outline of a shape appears. We set the outline of the circle to a 4px green "border"
-The fill attribute refers to the color inside the circle. We set the fill color to yellow
-The closing </svg> tag closes the SVG image
+An SVG image begins with an <svg> element.
+The width and height attributes of the <svg> element define the width and height of the SVG image.
+The <circle> element is used to draw a circle.
+The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are not set, the circle's center is set to (0, 0).
+The r attribute defines the radius of the circle.
+The stroke and stroke-width attributes control how the outline of a shape appears. We set the outline of the circle to a 4px green "border".
+The fill attribute refers to the color inside the circle. We set the fill color to yellow.
+The closing </svg> tag closes the SVG image.
 
 ## ViewBox?
 

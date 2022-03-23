@@ -76,15 +76,52 @@ function draw() {
 ````
 
 **Exercise 1**
-Add a circle, a line, a square and a triangle to the previous program so the different shapes don't overlap each other. See <https://p5js.org/reference/#group-Shape>.
+Experiment with the size, position and colour of the sketch's canvas.
 
 **Exercise 2**
+Add a circle, a line, a square and a triangle to the previous program so the different shapes don't overlap each other. See <https://p5js.org/reference/#group-Shape>.
+
+**Exercise 3**
 Investigate the functions fill() (<https://p5js.org/reference/#/p5/fill>) and stroke() (<https://p5js.org/reference/#/p5/stroke>) so each shape has a different colour and border colour.
 
 
-## Load and Play audio wigh p5.js
+## Interactivity
 
+Next, we'll skip ahead to a sketch that's a little more exciting. Modify the last example to try this:
 
+````JS
+function setup() {
+  // The createCanvas() function creates an HTML canvas on the web page
+  let cnv = createCanvas(800, 400);
+  // The canvas position
+  cnv.position(10, 60);
+}
+
+// The draw() function is automatically called after the setup() function.
+// The draw() loop infinitely runs the code block inside the function from top to bottom.
+function draw() {
+  // The background() function sets the background color of the p5.js canvas.
+  background(60, 60, 140);
+  
+  if (mouseIsPressed) {
+    // This draws an ellipse, with its center 50 pixels over from the left and 50 pixels down from the top, with a width and height of 80 pixels.
+    ellipse(mouseX,mouseY,80,80);
+  }
+}
+````
+
+As you can see, it is straightforward to use mouse data in p5.js.
+
+The variables `mouseX` and `mouseY` (note the capital X and Y) store the x-coordinate and y-coordinate of the cursor relative to the origin in the upper-left corner of the display window. `mouseIsPressed` detects if the mouse has been pressed.
+
+**Exercise 4**
+Move the function `background(60, 60, 140)` from draw() to setup() and study the differences.
+
+**Exercise 5**
+Investigate how to use the function random() (<https://p5js.org/reference/#/p5/random>) to change the width and height of each circle between 20 and 80.
+
+**Exercise 6**
+Investigate how to use the function random() (<https://p5js.org/reference/#/p5/random>) to change the colour of each circle.
 
 
 p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.

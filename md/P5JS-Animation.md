@@ -66,6 +66,8 @@ function setup() {
   background(60, 60, 140);
 }
 
+// The draw() function is automatically called after the setup() function.
+// The draw() loop infinitely runs the code block inside the function from top to bottom.
 function draw() { 
 }
 ````

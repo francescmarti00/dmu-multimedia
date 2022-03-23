@@ -157,7 +157,40 @@ function draw() {
 Change the number of frames per second to 80.
 
 **Exercise 8**
-Investigate how to 'reset' the position of the circle when it reaches the end of the canvas.
+Investigate how to 'reset' the position of the circle when it reaches the end of the canvas. (Save this exercise, you will need it in Exercise 9).
+
+## Adding 'noise' to animations
+
+There may be times when you want to create random movements that are more natural. p5.js has a noise() (<https://p5js.org/reference/#/p5/noise>) function that does exactly this!
+
+Let's see in this example, how to animate a circle using the `noise()` function.
+
+````JS
+let xoff = 0.0;
+
+function setup() {
+  let cnv = createCanvas(800, 400);
+  cnv.position(10, 60);
+  
+  // frameRate() changes the number of frames shown per second
+  frameRate(10);
+}
+
+// The draw() loop infinitely runs the code block inside the function from top to bottom.
+function draw() {
+  background(60, 60, 140);
+  xoff = xoff + 0.01;
+  let n = noise(xoff) * width;
+  
+  circle(n,40,50);
+}
+````
+
+**Exercise 9**
+Use 'noise()' to create a shaking movement to the Exercise 8 circle.  
+
+**Exercise 10 (more difficult!)**
+Use a 'for loop' command to create 10 circles without overlap.
 
 
 # Review: audio with p5.js

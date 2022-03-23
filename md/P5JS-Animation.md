@@ -57,9 +57,13 @@ And this is the Javascript file
 
 ````JS
 function setup() {
+  // The createCanvas() function creates an HTML canvas on the web page
   let cnv = createCanvas(800, 400);
+  // The canvas position
   cnv.position(10, 60);
-  background(180);
+  
+  // The background() function sets the background color of the p5.js canvas.
+  background(60, 60, 140);
 }
 
 function draw() { 

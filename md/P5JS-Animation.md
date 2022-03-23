@@ -1,7 +1,7 @@
-# Audio in the browser with p5.js
+# Animation with p5.js
 
-In this lab we are going to introduce p5.js.<br>
-p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, etc.
+In this lab we are going to see how to animate the browswer using p5.js.<br>
+As we already know, p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, etc.
 
 Here are some useful links:
 
@@ -25,7 +25,50 @@ Alternatively, you can link to a p5.js file hosted online. You can find a histor
 If you use the Brackets editor to write your code, a local server comes built in. With your HTML file open, select File > Live Preview (or click the "lightning bolt" icon). Brackets will launch Chrome and open your file in a new tab.
 
 
-## p5.sound, a p5.js library for working with audio in the browser
+## My first sketch
+
+Let's see a very simple example. We are going to use two files, an HTML file and a Javascript file. 
+
+This is the HTML file
+
+````JS
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+    <p>My first p5.js program. This is HTML. The p5.js application is placed in a 'canvas' HTML element.</p>
+  </main>
+</body>
+
+</html>
+````
+
+And this is the Javascript file
+
+````JS
+function setup() {
+  let cnv = createCanvas(800, 400);
+  cnv.position(10, 60);
+  background(180);
+}
+
+function draw() { 
+}
+````
+
+
+
+
 
 p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.
 

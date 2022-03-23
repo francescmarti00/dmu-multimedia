@@ -124,11 +124,48 @@ Investigate how to use the function random() (<https://p5js.org/reference/#/p5/r
 Investigate how to use the function random() (<https://p5js.org/reference/#/p5/random>) to change the colour of each circle.
 
 
+## The draw() function
+
+The draw() function is automatically called after the setup() function, which runs once at the program’s start. The draw() loop infinitely runs the code block inside the function from top to bottom.
+
+p5.js automatically runs the program at 60 frames per second. This means that the draw() function runs repeatedly 60 times per second. You can change the number of frames shown per second by using the `frameRate()` function.
+
+To keep track of the number of frames rendered, p5.js provides a built-in variable called `frameCount`.
+
+Let's see in this example how to animate a circle using these concepts.
+
+````JS
+let x = 0;
+
+function setup() {
+  let cnv = createCanvas(800, 400);
+  cnv.position(10, 60);
+  
+  // frameRate() changes the number of frames shown per second
+  frameRate(10);
+}
+
+// The draw() loop infinitely runs the code block inside the function from top to bottom.
+function draw() {
+  background(60, 60, 140);
+  circle(x,40,50);
+  x = x + 1;
+}
+````
+
+**Exercise 7**
+Change the number of frames per second to 80.
+
+**Exercise 8**
+Investigate how to 
+
+
+
+## Load and Play audio wigh p5.js
+
 p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.
 
 <https://p5js.org/reference/#/libraries/p5.sound>
-
-## Load and Play audio wigh p5.js
 
 Let's see an example of how to load and play a sound file using p5.sound.
 

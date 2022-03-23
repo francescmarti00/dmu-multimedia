@@ -1,4 +1,4 @@
-# Animation with p5.js
+# Animation and interaction with p5.js
 
 In this lab we are going to see how to animate the browswer using p5.js.<br>
 As we already know, p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, etc.

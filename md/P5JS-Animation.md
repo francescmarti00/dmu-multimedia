@@ -61,14 +61,16 @@ function setup() {
   let cnv = createCanvas(800, 400);
   // The canvas position
   cnv.position(10, 60);
-  
-  // The background() function sets the background color of the p5.js canvas.
-  background(60, 60, 140);
 }
 
 // The draw() function is automatically called after the setup() function.
 // The draw() loop infinitely runs the code block inside the function from top to bottom.
-function draw() { 
+function draw() {
+  // The background() function sets the background color of the p5.js canvas.
+  background(60, 60, 140);
+  
+  // This draws an ellipse, with its center 50 pixels over from the left and 50 pixels down from the top, with a width and height of 80 pixels.
+  ellipse(50,50,80,80);
 }
 ````
 

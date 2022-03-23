@@ -157,11 +157,12 @@ function draw() {
 Change the number of frames per second to 80.
 
 **Exercise 8**
-Investigate how to 
+Investigate how to 'reset' the position of the circle when it reaches the end of the canvas.
 
 
+# Review: audio with p5.js
 
-## Load and Play audio wigh p5.js
+## Load and Play audio with p5.js
 
 p5.sound extends p5 with Web Audio functionality including audio input, playback, analysis and synthesis.
 

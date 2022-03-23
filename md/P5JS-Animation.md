@@ -192,11 +192,10 @@ Use 'noise()' to create a 'shaking movement' to the circle of Exercise 8 .
 **Exercise 10 (more difficult!)**
 Use a 'for loop' command to create 10 animated circles without overlap. You program must include the following:
 
-- Each circle must have a random colour (bad the same colour during the animation).
+- Each circle must have a random colour (same colour during all the animation).
 - Each circle has to move at different velocities from left to right.
 - Each circle must include a 'shaking movement'.
 - Each circle must 'restart' its possition when it reaches the end of the canvas.
-
 
 <br><br>
 # Review: audio with p5.js

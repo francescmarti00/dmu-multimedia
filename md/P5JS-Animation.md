@@ -7,6 +7,7 @@ Here are some useful links:
 
 p5.js webpage: <https://p5js.org/><br>
 Get started: <https://p5js.org/get-started/><br>
+Reference: <https://p5js.org/reference/><br>
 Some (amazing) exemples: <https://openprocessing.org/browse/>
 
 ## Installing p5.js.
@@ -74,6 +75,14 @@ function draw() {
 }
 ````
 
+**Exercise 1**
+Add a circle, a line, a square and a triangle to the previous program so the different shapes don't overlap each other. See <https://p5js.org/reference/#group-Shape>.
+
+**Exercise 2**
+Investigate the functions fill() (<https://p5js.org/reference/#/p5/fill>) and stroke() (<https://p5js.org/reference/#/p5/stroke>) so each shape has a different colour and border colour.
+
+
+## Load and Play audio wigh p5.js
 
 
 

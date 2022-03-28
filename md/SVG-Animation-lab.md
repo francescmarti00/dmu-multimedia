@@ -40,7 +40,7 @@ In the top right corner, place a circle. Use the `<circle>` element for this. Ma
 
 ### 2. Place the circle
 
-Place the circle at coordinates (50, 50) using viewBox.
+Place the center of the circle at coordinates (200, 200) using viewBox.
 
 ### 3. Reduce the size of the circle
 

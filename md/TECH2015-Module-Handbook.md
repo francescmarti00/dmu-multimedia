@@ -487,7 +487,7 @@ The user enters their name and other details on page 1, before being presented w
 	<td colspan='2'>
 		<ol>
 			<li>The report should be submitted through the Turnitin link in the Assessments section of the TECH2015 Blackboard page</li>
-			<li> The website should be on your public server</li>
+			<li> The website should be on your public server. You must include the link to your GitHub public repository in your report</li>
 			</ol>
 			<b>If you need any support or advice on completing this coursework please visit the Student Matters tab on the Faculty of Technology Blackboard page.</b>
 			</td>

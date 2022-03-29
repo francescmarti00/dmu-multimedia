@@ -595,7 +595,7 @@ Your site should be accessible via your public server.
 
 **Important:** You do not have to submit your Web Site files by email. You have to include your GitHub link in your report. The link should have the following structure
 
-http://github.com/Name_or_P_Number/TECH2015_CW2
+http://github.com/username/TECH2015_CW2
 
 and all your site files must be uploaded here. Files send by email or uploaded to other sites or directories won't be marked.
 

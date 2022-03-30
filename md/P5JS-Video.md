@@ -101,7 +101,10 @@ function draw() {
 Investigate the function filter() (<https://p5js.org/reference/#/p5/filter>) and add the following filters to the captured image: THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE and DILATE.
 
 ## Working with video pixels
-  
+
+In Javascript the canvas’ pixel data is stored in an one-dimensional array of numbers. In this array, each pixel in the canvas is represented by four array elements – one for red, one for blue, one for green, and one for alpha.<br>
+![image](https://raw.githubusercontent.com/francescmarti00/dmu-multimedia/master/resources/imagedata.png)
+
 ```JS
 let capture;
 

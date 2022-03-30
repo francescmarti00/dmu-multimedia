@@ -1,45 +1,21 @@
-# Animation and interaction with p5.js
+# Working with video with p5.js
 
-In this lab we are going to see how to animate the browswer using p5.js.<br>
-As we already know, p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, etc.
+## Loading and displaying video with p5.js.
 
-Here are some useful links:
+The p5.js library makes it easy to load, display and control video playback from your sketch. Let’s see an example.
 
-p5.js webpage: <https://p5js.org/><br>
-Get started: <https://p5js.org/get-started/><br>
-Reference: <https://p5js.org/reference/><br>
-Some (amazing) exemples: <https://openprocessing.org/browse/>
+As always, we are going to use two files, an HTML file and a Javascript file. Remember to run the examples on localhost, to avoid problems. 
 
-## Installing p5.js.
+This is the 'empty' HTML file
 
-You can download p5.js from <https://p5js.org/download/>.
-
-Alternatively, you can link to a p5.js file hosted online. You can find a history of these versions in the p5.js CDN. In this case you can change the link to:
-
-````JS
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.js"></script>
-````
-
-**Very important:** In order to avoid unexpected problems, we will need to run our web pages on localhost. There are several ways of configuring a local web server. See, <https://github.com/processing/p5.js/wiki/Local-server>. 
-
-If you use the Brackets editor to write your code, a local server comes built in. With your HTML file open, select File > Live Preview (or click the "lightning bolt" icon). Brackets will launch Chrome and open your file in a new tab.
-
-
-## My first sketch
-
-Let's see a very simple example. We are going to use two files, an HTML file and a Javascript file. 
-
-This is the HTML file
-
-````JS
+```HTML
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>p5.js example</title>
+  <title>p5.js video</title>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/addons/p5.sound.js"></script>
   <script src="sketch.js"></script>
@@ -47,46 +23,119 @@ This is the HTML file
 
 <body>
   <main>
-    <p>My first p5.js program. This is HTML. The p5.js application is placed in a 'canvas' HTML element.</p>
   </main>
 </body>
 
 </html>
-````
+```
 
 And this is the Javascript file
 
-````JS
+```JS
+let vid;
+let playing = false;
+
 function setup() {
-  // The createCanvas() function creates an HTML canvas on the web page
-  let cnv = createCanvas(800, 400);
-  // The canvas position
-  cnv.position(10, 60);
+  createCanvas(0, 0);
+  vid = createVideo("Commercial_1958.mp4");
 }
 
-// The draw() function is automatically called after the setup() function.
-// The draw() loop infinitely runs the code block inside the function from top to bottom.
 function draw() {
-  // The background() function sets the background color of the p5.js canvas.
-  background(60, 60, 140);
-  
-  // This draws an ellipse, with its center 50 pixels over from the left and 50 pixels down from the top, with a width and height of 80 pixels.
-  ellipse(50,50,80,80);
 }
-````
+
+function mousePressed() {
+  if (!playing) {
+    vid.play();
+    // vid.loop();
+    playing = true;
+  }
+  else {
+    vid.pause();
+    playing = false;
+  }
+}
+```
+
+## Video Capture
+
+Capture video from the webcam and display on the canvas is also straightforward with p5.js.
+
+Let's study this code
+
+```JS
+let capture;
+
+function setup() {
+  createCanvas(0, 0);
+  capture = createCapture(VIDEO);
+  capture.size(320, 240);
+}
+
+function draw() {
+  background(255);
+}
+```
+
+## Video filters
+
+p5.js inclludes some filters, ready to use, such as INVERT.
+
+```JS
+let capture;
+
+function setup() {
+  createCanvas(320, 240);
+  capture = createCapture(VIDEO);
+  capture.size(320, 240);
+  //capture.hide();
+}
+
+function draw() {
+  background(255);
+  image(capture, 0, 0, 320, 240);
+  filter(INVERT);
+}
+```
 
 **Exercise 1**
-Experiment with the size, position and colour of the sketch's canvas.
+Investigate the function filter() (<https://p5js.org/reference/#/p5/filter>) and add the following filters to the captured image: THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE and DILATE.
 
-**Exercise 2**
-Add a circle, a line, a square and a triangle to the previous program so the different shapes don't overlap each other. See <https://p5js.org/reference/#group-Shape>.
+## Working with video pixels
+  
+```JS
+let capture;
 
-**Exercise 3**
-Investigate the functions fill() (<https://p5js.org/reference/#/p5/fill>) and stroke() (<https://p5js.org/reference/#/p5/stroke>) so each shape has a different colour and border colour.
+function setup() {
+  createCanvas(320, 240);
+  capture = createCapture(VIDEO);
+  capture.size(320, 240);
+  capture.hide();
+}
 
+function draw() {
+  background(255);
 
-## Interactivity
+  capture.loadPixels();
+  for (let y=0; y<capture.height; y++) {
+    for (let x=0; x<capture.width; x++) {
+      let position = ((capture.width * y + x)*4);
+      let r = capture.pixels[position];
+      let g = capture.pixels[position+1];
+      let b = capture.pixels[position+2];
+    }
+  }
+  capture.updatePixels();
+  
+  image(capture, 0, 0, 320, 240);
+}
+```
+  
+## Pixel-to-pixel operations
+  
+The simplest image processing operations are those that transform each pixel in isolation, i.e. the transformation of a pixel does not depend on the surrounding pixels, it depends only on the value of the image f at the pixel (x,y). These operations are called pixel-to-pixel operations.
 
+  For example, 
+  
 Next, we'll skip ahead to a sketch that's a little more exciting. Modify the last example to try this:
 
 ````JS

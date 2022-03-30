@@ -195,6 +195,9 @@ Make a filter to transform an RGB image to a grayscale image using the luminosit
 **Exercise 6**<br>
 Make a 'custom filter' combining pixel-to-pixel operations and the function filter().
 
+**Exercise 7**<br>
+Make an 'invert' filter using pixel-to-pixel operations.
+
 ## More advanced filters 
 
 Study the following example.
@@ -252,8 +255,8 @@ function draw() {
 }
 ```
 
-**Exercise 7**<br>
+**Exercise 8**<br>
 Investigate how the values of the gridSize (15, 50) afectts the result.
 
-**Exercise 8**<br>
+**Exercise 9**<br>
 Modify the previous code and fill the circles with the pixel color instead of black.

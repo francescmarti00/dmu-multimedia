@@ -97,7 +97,7 @@ function draw() {
 }
 ```
 
-**Exercise 1**
+**Exercise 1**<br>
 Investigate the function filter() (<https://p5js.org/reference/#/p5/filter>) and add the following filters to the captured image: THRESHOLD, GRAY, OPAQUE, INVERT, POSTERIZE, BLUR, ERODE and DILATE.
 
 ## Working with video pixels
@@ -166,16 +166,16 @@ function draw() {
 }
 ```
 
-**Exercise 2**
+**Exercise 2**<br>
 Repeat the previous program but removing the blue component of the pixels.
 
-**Exercise 3**
+**Exercise 3**<br>
 Make a filter to brighten your webcam image.
   
-**Exercise 4**
+**Exercise 4**<br>
 Make a filter to darken your webcam image.
 
-**Exercise 5**
+**Exercise 5**<br>
 There are several methods to transform an RGB image to a grayscale image. For example:
 
 The luminosity method: this is the method used in the aforementioned example. If you check the code, you can see that the formula that defines this transformation is
@@ -192,7 +192,7 @@ Grayscale = r/3 + g/3 + b/3
 
 Make a filter to transform an RGB image to a grayscale image using the luminosity method.
 
-**Exercise 6**
+**Exercise 6**<br>
 Make a 'custom filter' combining pixel-to-pixel operations and the function filter().
 
 ## More advanced filters 
@@ -252,5 +252,8 @@ function draw() {
 }
 ```
 
-**Exercise 7**
+**Exercise 7**<br>
+Investigate how the values of the gridSize (15, 50) afectts the result.
+
+**Exercise 8**<br>
 Modify the previous code and fill the circles with the pixel color instead of black.

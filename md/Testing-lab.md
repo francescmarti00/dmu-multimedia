@@ -25,6 +25,12 @@ Will run a test on your site and give you a report on its speed for both mobile 
 
 Google's Lighthouse is a free tool that comes as part of the Dev Tools. It can perform a detailed technical analysis of any web page, and provide you with actionable recommendations for improving both the user experience and the search ranking of your site. Just open the Dev Tools in Chrome and go to the Lighthouse tab.
 
+Lighthouse separates its audits into three sections:
+
+**Opportunities** provide suggestions how to improve the page’s performance metrics. Each suggestion in this section estimates how much faster the page will load if the improvement is implemented.
+**Diagnostics** provide additional information about how a page adheres to best practices for web development.
+**Passed Audits** indicates the audits that have been passed by the page.
+
 ## Browserstack
 
 <https://www.browserstack.com>  

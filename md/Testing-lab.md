@@ -27,9 +27,9 @@ Google's Lighthouse is a free tool that comes as part of the Dev Tools. It can p
 
 Lighthouse separates its audits into three sections:
 
-**Opportunities** provide suggestions how to improve the page’s performance metrics. Each suggestion in this section estimates how much faster the page will load if the improvement is implemented.
-**Diagnostics** provide additional information about how a page adheres to best practices for web development.
-**Passed Audits** indicates the audits that have been passed by the page.
+**Opportunities** provide suggestions how to improve the page’s performance metrics. Each suggestion in this section estimates how much faster the page will load if the improvement is implemented.<br>
+**Diagnostics** provide additional information about how a page adheres to best practices for web development.<br>
+**Passed Audits** indicates the audits that have been passed by the page.<br>
 
 ## Browserstack
 

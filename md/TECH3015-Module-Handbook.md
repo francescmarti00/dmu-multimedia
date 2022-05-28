@@ -532,7 +532,7 @@ This coursework constitutes **60% of the overall module mark**.
 | This coursework is:                      |                           **Individual** |
 | Date set:                                |                    **11th January 2022** |
 | Date and time due:                       | **12pm (midday) on Monday 9th May 2022** |
-| Your marked coursework and feedback due: |               **Thursday 8th June 2022** |
+| Your marked coursework and feedback due: |               **Wednesday 8th June 2022** |
 
 ---
 
